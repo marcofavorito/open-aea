@@ -6,9 +6,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="Everything you need to know about AEAs." name="description"/>
-<link href="https://docs.fetch.ai/api/decision_maker/gop/" rel="canonical"/>
-<meta content="developer@fetch.ai" name="author"/>
+<meta content="Everything you need to know about (open) AEAs." name="description"/>
+<link href="https://valory-xyz.github.io/open-aea/api/manager/utils/" rel="canonical"/>
+<meta content="developer@fetch.ai,info@valory.xyz" name="author"/>
 <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
 <meta content="Copied to clipboard" name="lang:clipboard.copied"/>
 <meta content="en" name="lang:search.language"/>
@@ -19,8 +19,8 @@
 <meta content="# matching documents" name="lang:search.result.other"/>
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
 <link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-4.6.3" name="generator"/>
-<title>GOP - aea</title>
+<meta content="mkdocs-1.1, mkdocs-material-4.6.3" name="generator"/>
+<title>Utils - open-aea</title>
 <link href="../../../assets/stylesheets/application.adb8469c.css" rel="stylesheet"/>
 <script src="../../../assets/javascripts/modernizr.86422ebf.js"></script>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -38,14 +38,14 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#aeadecision_makergop" tabindex="0">
+<a class="md-skip" href="#aeamanagerutils" tabindex="0">
         Skip to content
       </a>
 <header class="md-header" data-md-component="header">
 <nav class="md-header-nav md-grid">
 <div class="md-flex">
 <div class="md-flex__cell md-flex__cell--shrink">
-<a aria-label="aea" class="md-header-nav__button md-logo" href="https://docs.fetch.ai/" title="aea">
+<a aria-label="open-aea" class="md-header-nav__button md-logo" href="https://valory-xyz.github.io/open-aea/" title="open-aea">
 <i class="md-icon">code</i>
 </a>
 </div>
@@ -55,11 +55,11 @@
 <div class="md-flex__cell md-flex__cell--stretch">
 <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
 <span class="md-header-nav__topic">
-              aea
+              open-aea
             </span>
 <span class="md-header-nav__topic">
               
-                GOP
+                Utils
               
             </span>
 </div>
@@ -68,7 +68,7 @@
 </div>
 <div class="md-flex__cell md-flex__cell--shrink">
 <div class="md-header-nav__source">
-<a class="md-source" data-md-source="github" href="https://github.com/agents-aea/docs/" title="Go to repository">
+<a class="md-source" data-md-source="github" href="https://github.com/valory-xyz/open-aea/" title="Go to repository">
 <div class="md-source__icon">
 <svg height="24" viewbox="0 0 24 24" width="24">
 <use height="24" width="24" xlink:href="#__github"></use>
@@ -113,7 +113,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../generic-skills/">
+<a class="md-tabs__link" href="../../../connect-a-frontend/">
           Development - Use Case
         </a>
 </li>
@@ -127,13 +127,13 @@
 <div class="md-sidebar__inner">
 <nav class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title md-nav__title--site" for="__drawer">
-<a class="md-nav__button md-logo" href="https://docs.fetch.ai/" title="aea">
+<a class="md-nav__button md-logo" href="https://valory-xyz.github.io/open-aea/" title="open-aea">
 <i class="md-icon">code</i>
 </a>
-    aea
+    open-aea
   </label>
 <div class="md-nav__source">
-<a class="md-source" data-md-source="github" href="https://github.com/agents-aea/docs/" title="Go to repository">
+<a class="md-source" data-md-source="github" href="https://github.com/valory-xyz/open-aea/" title="Go to repository">
 <div class="md-source__icon">
 <svg height="24" viewbox="0 0 24 24" width="24">
 <use height="24" width="24" xlink:href="#__github"></use>
@@ -224,16 +224,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../aries-cloud-agent-demo/" title="Aries Cloud Agents Demo">
-      Aries Cloud Agents Demo
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../car-park-skills/" title="Car park skills">
-      Car park skills
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../gym-example/" title="Gym example">
       Gym example
     </a>
@@ -244,43 +234,8 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../ml-skills/" title="ML skills">
-      ML skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../oracle-demo/" title="Oracle skills">
-      Oracle skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../aggregation-demo/" title="Aggegation skill">
-      Aggegation skill
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../tac-skills/" title="TAC skills">
-      TAC skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../tac-skills-contract/" title="TAC skills ledger-based">
-      TAC skills ledger-based
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../tac/" title="TAC external app">
       TAC external app
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../thermometer-skills/" title="Thermometer skills">
-      Thermometer skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../weather-skills/" title="Weather skills">
-      Weather skills
     </a>
 </li>
 </ul>
@@ -312,11 +267,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../skill-guide/" title="Build your first skill - search &amp; discovery">
-      Build your first skill - search &amp; discovery
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../core-components-2/" title="Core components - Part 2">
       Core components - Part 2
     </a>
@@ -324,11 +274,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../interaction-protocol/" title="How AEAs talk to each other - interaction protocols">
       How AEAs talk to each other - interaction protocols
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../generic-skills-step-by-step/" title="Trade between two AEAs">
-      Trade between two AEAs
     </a>
 </li>
 <li class="md-nav__item">
@@ -415,11 +360,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../prometheus/" title="Prometheus monitoring">
-      Prometheus monitoring
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../known-limits/" title="Known limitations">
       Known limitations
     </a>
@@ -427,11 +367,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../build-aea-programmatically/" title="Build an AEA programmatically">
       Build an AEA programmatically
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../cli-vs-programmatic-aeas/" title="CLI vs programmatic AEAs">
-      CLI vs programmatic AEAs
     </a>
 </li>
 <li class="md-nav__item">
@@ -558,6 +493,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../acn/" title="Agent Communication Network">
       Agent Communication Network
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../acn-internals/" title="ACN Internals">
+      ACN Internals
     </a>
 </li>
 </ul>
@@ -745,6 +685,11 @@
       Loader
     </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../components/utils/" title="Utils">
+      Utils
+    </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -898,8 +843,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-18" id="nav-7-7-18" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-18" id="nav-7-7-18" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-7-18">
       Decision Maker
     </label>
@@ -909,233 +854,14 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../base/" title="Base">
+<a class="md-nav__link" href="../../decision_maker/base/" title="Base">
       Base
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../default/" title="Default">
+<a class="md-nav__link" href="../../decision_maker/default/" title="Default">
       Default
     </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        GOP
-      </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="GOP">
-      GOP
-    </a>
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table of contents</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#goalpursuitreadiness-objects">
-    GoalPursuitReadiness Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#status-objects">
-    Status Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init__">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_ready">
-    is_ready
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update">
-    update
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ownershipstate-objects">
-    OwnershipState Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___1">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set">
-    set
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#apply_delta">
-    apply_delta
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_initialized">
-    is_initialized
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#amount_by_currency_id">
-    amount_by_currency_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#quantities_by_good_id">
-    quantities_by_good_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_affordable_transaction">
-    is_affordable_transaction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_affordable">
-    is_affordable
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update_1">
-    update
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#apply_transactions">
-    apply_transactions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__copy__">
-    __copy__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#preferences-objects">
-    Preferences Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___2">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set_1">
-    set
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_initialized_1">
-    is_initialized
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exchange_params_by_currency_id">
-    exchange_params_by_currency_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#utility_params_by_good_id">
-    utility_params_by_good_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logarithmic_utility">
-    logarithmic_utility
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linear_utility">
-    linear_utility
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#utility">
-    utility
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#marginal_utility">
-    marginal_utility
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#utility_diff_from_transaction">
-    utility_diff_from_transaction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_utility_enhancing">
-    is_utility_enhancing
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__copy___1">
-    __copy__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#decisionmakerhandler-objects">
-    DecisionMakerHandler Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#signingdialogues-objects">
-    SigningDialogues Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___3">
-    __init__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#stateupdatedialogues-objects">
-    StateUpdateDialogues Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___4">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___5">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#handle">
-    handle
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -1269,6 +995,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../helpers/ipfs/base/" title="Base">
       Base
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../helpers/ipfs/utils/" title="Utils">
+      Utils
     </a>
 </li>
 </ul>
@@ -1445,8 +1176,8 @@
       Mail
     </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-23" id="nav-7-7-23" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-23" id="nav-7-7-23" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-7-23">
       Manager
     </label>
@@ -1456,14 +1187,58 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../manager/manager/" title="Manager">
+<a class="md-nav__link" href="../manager/" title="Manager">
       Manager
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../manager/project/" title="Project">
+<a class="md-nav__link" href="../project/" title="Project">
       Project
     </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        Utils
+      </label>
+<a class="md-nav__link md-nav__link--active" href="./" title="Utils">
+      Utils
+    </a>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get_lib_path">
+    get_lib_path
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#make_venv">
+    make_venv
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project_install_and_build">
+    project_install_and_build
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get_venv_dir_for_project">
+    get_venv_dir_for_project
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project_check">
+    project_check
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run_in_venv">
+    run_in_venv
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1537,43 +1312,10 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-4" id="nav-7-7-24-4" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-7-24-4">
-      Default Protocol
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-4">
-        Default Protocol
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../protocols/default/custom_types/" title="Custom Types">
-      Custom Types
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../protocols/default/dialogues/" title="Dialogues">
-      Dialogues
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../protocols/default/message/" title="Message">
-      Message
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../protocols/default/serialization/" title="Serialization">
-      Serialization
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-5" id="nav-7-7-24-5" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-5">
       Signing Protocol
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-5">
+<label class="md-nav__title" for="nav-7-7-24-4">
         Signing Protocol
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1594,34 +1336,6 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../protocols/signing/serialization/" title="Serialization">
-      Serialization
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-6" id="nav-7-7-24-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-6">
-      State Update Protocol
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-6">
-        State Update Protocol
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../protocols/state_update/dialogues/" title="Dialogues">
-      Dialogues
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../protocols/state_update/message/" title="Message">
-      Message
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../protocols/state_update/serialization/" title="Serialization">
       Serialization
     </a>
 </li>
@@ -1715,6 +1429,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../test_tools/test_cases/" title="Test Cases">
       Test Cases
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../test_tools/test_contract/" title="Test Contract">
+      Test Contract
     </a>
 </li>
 <li class="md-nav__item">
@@ -1863,11 +1582,6 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../generic-skills/" title="Generic skills">
-      Generic skills
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../connect-a-frontend/" title="Front-end intergration">
       Front-end intergration
     </a>
@@ -1875,21 +1589,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../http-connection-and-skill/" title="HTTP Connection">
       HTTP Connection
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../orm-integration/" title="ORM integration">
-      ORM integration
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../erc1155-skills/" title="Contract deploy and interact">
-      Contract deploy and interact
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../p2p-connection/" title="P2P Connection">
-      P2P Connection
     </a>
 </li>
 <li class="md-nav__item">
@@ -1922,209 +1621,34 @@
 <label class="md-nav__title" for="__toc">Table of contents</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#goalpursuitreadiness-objects">
-    GoalPursuitReadiness Objects
+<a class="md-nav__link" href="#get_lib_path">
+    get_lib_path
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#status-objects">
-    Status Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init__">
-    __init__
+<a class="md-nav__link" href="#make_venv">
+    make_venv
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#is_ready">
-    is_ready
+<a class="md-nav__link" href="#project_install_and_build">
+    project_install_and_build
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#update">
-    update
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ownershipstate-objects">
-    OwnershipState Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___1">
-    __init__
+<a class="md-nav__link" href="#get_venv_dir_for_project">
+    get_venv_dir_for_project
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#set">
-    set
+<a class="md-nav__link" href="#project_check">
+    project_check
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#apply_delta">
-    apply_delta
+<a class="md-nav__link" href="#run_in_venv">
+    run_in_venv
   </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_initialized">
-    is_initialized
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#amount_by_currency_id">
-    amount_by_currency_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#quantities_by_good_id">
-    quantities_by_good_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_affordable_transaction">
-    is_affordable_transaction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_affordable">
-    is_affordable
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update_1">
-    update
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#apply_transactions">
-    apply_transactions
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__copy__">
-    __copy__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#preferences-objects">
-    Preferences Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___2">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set_1">
-    set
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_initialized_1">
-    is_initialized
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exchange_params_by_currency_id">
-    exchange_params_by_currency_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#utility_params_by_good_id">
-    utility_params_by_good_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logarithmic_utility">
-    logarithmic_utility
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linear_utility">
-    linear_utility
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#utility">
-    utility
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#marginal_utility">
-    marginal_utility
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#utility_diff_from_transaction">
-    utility_diff_from_transaction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_utility_enhancing">
-    is_utility_enhancing
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__copy___1">
-    __copy__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#decisionmakerhandler-objects">
-    DecisionMakerHandler Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#signingdialogues-objects">
-    SigningDialogues Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___3">
-    __init__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#stateupdatedialogues-objects">
-    StateUpdateDialogues Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___4">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___5">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#handle">
-    handle
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -2133,318 +1657,45 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<a class="md-icon md-content__icon" href="https://github.com/agents-aea/docs/edit/master/docs/api/decision_maker/gop.md" title="Edit this page"></a>
-<p><a name="aea.decision_maker.gop"></a></p>
-<h1 id="aeadecision_makergop">aea.decision<code>_</code>maker.gop</h1>
-<p>This module contains the decision maker class.</p>
-<p><a name="aea.decision_maker.gop.GoalPursuitReadiness"></a></p>
-<h2 id="goalpursuitreadiness-objects">GoalPursuitReadiness Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">GoalPursuitReadiness</span><span class="p">()</span>
+<a class="md-icon md-content__icon" href="https://github.com/valory-xyz/open-aea/edit/master/docs/api/manager/utils.md" title="Edit this page"></a>
+<p><a name="aea.manager.utils"></a></p>
+<h1 id="aeamanagerutils">aea.manager.utils</h1>
+<p>Multiagent manager utils.</p>
+<p><a name="aea.manager.utils.get_lib_path"></a></p>
+<h4 id="get_lib_path">get<code>_</code>lib<code>_</code>path</h4>
+<div class="highlight"><pre><span></span><code><span class="n">get_lib_path</span><span class="p">(</span><span class="n">env_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
-<p>The goal pursuit readiness.</p>
-<p><a name="aea.decision_maker.gop.GoalPursuitReadiness.Status"></a></p>
-<h2 id="status-objects">Status Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Status</span><span class="p">(</span><span class="n">Enum</span><span class="p">)</span>
+<p>Get librarty path for env dir.</p>
+<p><a name="aea.manager.utils.make_venv"></a></p>
+<h4 id="make_venv">make<code>_</code>venv</h4>
+<div class="highlight"><pre><span></span><code><span class="n">make_venv</span><span class="p">(</span><span class="n">env_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">set_env</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
-<p>The enum of the readiness status.</p>
-<p>In particular, it can be one of the following:</p>
-<ul>
-<li>Status.READY: when the agent is ready to pursuit its goal</li>
-<li>Status.NOT_READY: when the agent is not ready to pursuit its goal</li>
-</ul>
-<p><a name="aea.decision_maker.gop.GoalPursuitReadiness.__init__"></a></p>
-<h4 id="__init__"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Instantiate the goal pursuit readiness.</p>
-<p><a name="aea.decision_maker.gop.GoalPursuitReadiness.is_ready"></a></p>
-<h4 id="is_ready">is<code>_</code>ready</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">is_ready</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Get the readiness.</p>
-<p><a name="aea.decision_maker.gop.GoalPursuitReadiness.update"></a></p>
-<h4 id="update">update</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">update</span><span class="p">(</span><span class="n">new_status</span><span class="p">:</span> <span class="n">Status</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Update the goal pursuit readiness.</p>
+<p>Make venv and update variable to use it.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
-<li><code>new_status</code>: the new status</li>
+<li><code>env_dir</code>: str, path for new env dir</li>
+<li><code>set_env</code>: bool. use evn within this python process (update, sys.executable and sys.path)</li>
 </ul>
-<p><a name="aea.decision_maker.gop.OwnershipState"></a></p>
-<h2 id="ownershipstate-objects">OwnershipState Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">OwnershipState</span><span class="p">(</span><span class="n">BaseOwnershipState</span><span class="p">)</span>
+<p><a name="aea.manager.utils.project_install_and_build"></a></p>
+<h4 id="project_install_and_build">project<code>_</code>install<code>_</code>and<code>_</code>build</h4>
+<div class="highlight"><pre><span></span><code><span class="n">project_install_and_build</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="n">Project</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
-<p>Represent the ownership state of an agent (can proxy a ledger).</p>
-<p><a name="aea.decision_maker.gop.OwnershipState.__init__"></a></p>
-<h4 id="__init___1"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+<p>Install project dependencies and build required components.</p>
+<p><a name="aea.manager.utils.get_venv_dir_for_project"></a></p>
+<h4 id="get_venv_dir_for_project">get<code>_</code>venv<code>_</code>dir<code>_</code>for<code>_</code>project</h4>
+<div class="highlight"><pre><span></span><code><span class="n">get_venv_dir_for_project</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="n">Project</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
-<p>Instantiate an ownership state object.</p>
-<p><a name="aea.decision_maker.gop.OwnershipState.set"></a></p>
-<h4 id="set">set</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nb">set</span><span class="p">(</span><span class="n">amount_by_currency_id</span><span class="p">:</span> <span class="n">CurrencyHoldings</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">quantities_by_good_id</span><span class="p">:</span> <span class="n">GoodHoldings</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="p">,)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+<p>Get virtual env directory for project specified.</p>
+<p><a name="aea.manager.utils.project_check"></a></p>
+<h4 id="project_check">project<code>_</code>check</h4>
+<div class="highlight"><pre><span></span><code><span class="n">project_check</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="n">Project</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
-<p>Set values on the ownership state.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>amount_by_currency_id</code>: the currency endowment of the agent in this state.</li>
-<li><code>quantities_by_good_id</code>: the good endowment of the agent in this state.</li>
-<li><code>kwargs</code>: the keyword arguments.</li>
-</ul>
-<p><a name="aea.decision_maker.gop.OwnershipState.apply_delta"></a></p>
-<h4 id="apply_delta">apply<code>_</code>delta</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">apply_delta</span><span class="p">(</span><span class="n">delta_amount_by_currency_id</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">delta_quantities_by_good_id</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="p">,)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+<p>Perform project loads well.</p>
+<p><a name="aea.manager.utils.run_in_venv"></a></p>
+<h4 id="run_in_venv">run<code>_</code>in<code>_</code>venv</h4>
+<div class="highlight"><pre><span></span><code><span class="n">run_in_venv</span><span class="p">(</span><span class="n">env_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">timeout</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span>
 </code></pre></div>
-<p>Apply a state update to the ownership state.</p>
-<p>This method is used to apply a raw state update without a transaction.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>delta_amount_by_currency_id</code>: the delta in the currency amounts</li>
-<li><code>delta_quantities_by_good_id</code>: the delta in the quantities by good</li>
-<li><code>kwargs</code>: the keyword arguments</li>
-</ul>
-<p><a name="aea.decision_maker.gop.OwnershipState.is_initialized"></a></p>
-<h4 id="is_initialized">is<code>_</code>initialized</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">is_initialized</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Get the initialization status.</p>
-<p><a name="aea.decision_maker.gop.OwnershipState.amount_by_currency_id"></a></p>
-<h4 id="amount_by_currency_id">amount<code>_</code>by<code>_</code>currency<code>_</code>id</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">amount_by_currency_id</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CurrencyHoldings</span>
-</code></pre></div>
-<p>Get currency holdings in this state.</p>
-<p><a name="aea.decision_maker.gop.OwnershipState.quantities_by_good_id"></a></p>
-<h4 id="quantities_by_good_id">quantities<code>_</code>by<code>_</code>good<code>_</code>id</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">quantities_by_good_id</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">GoodHoldings</span>
-</code></pre></div>
-<p>Get good holdings in this state.</p>
-<p><a name="aea.decision_maker.gop.OwnershipState.is_affordable_transaction"></a></p>
-<h4 id="is_affordable_transaction">is<code>_</code>affordable<code>_</code>transaction</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">is_affordable_transaction</span><span class="p">(</span><span class="n">terms</span><span class="p">:</span> <span class="n">Terms</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Check if the transaction is affordable (and consistent).</p>
-<p>E.g. check that the agent state has enough money if it is a buyer or enough holdings if it is a seller.
-Note, the agent is the sender of the transaction message by design.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>terms</code>: the transaction terms</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>True if the transaction is legal wrt the current state, false otherwise.</p>
-<p><a name="aea.decision_maker.gop.OwnershipState.is_affordable"></a></p>
-<h4 id="is_affordable">is<code>_</code>affordable</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">is_affordable</span><span class="p">(</span><span class="n">terms</span><span class="p">:</span> <span class="n">Terms</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Check if the tx is affordable.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>terms</code>: the transaction terms</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>whether the transaction is affordable or not</p>
-<p><a name="aea.decision_maker.gop.OwnershipState.update"></a></p>
-<h4 id="update_1">update</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">update</span><span class="p">(</span><span class="n">terms</span><span class="p">:</span> <span class="n">Terms</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Update the agent state from a transaction.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>terms</code>: the transaction terms</li>
-</ul>
-<p><a name="aea.decision_maker.gop.OwnershipState.apply_transactions"></a></p>
-<h4 id="apply_transactions">apply<code>_</code>transactions</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">apply_transactions</span><span class="p">(</span><span class="n">list_of_terms</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Terms</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="s2">"OwnershipState"</span>
-</code></pre></div>
-<p>Apply a list of transactions to (a copy of) the current state.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>list_of_terms</code>: the sequence of transaction terms.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the final state.</p>
-<p><a name="aea.decision_maker.gop.OwnershipState.__copy__"></a></p>
-<h4 id="__copy__"><code>__</code>copy<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">__copy__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"OwnershipState"</span>
-</code></pre></div>
-<p>Copy the object.</p>
-<p><a name="aea.decision_maker.gop.Preferences"></a></p>
-<h2 id="preferences-objects">Preferences Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Preferences</span><span class="p">(</span><span class="n">BasePreferences</span><span class="p">)</span>
-</code></pre></div>
-<p>Class to represent the preferences.</p>
-<p><a name="aea.decision_maker.gop.Preferences.__init__"></a></p>
-<h4 id="__init___2"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Instantiate an agent preference object.</p>
-<p><a name="aea.decision_maker.gop.Preferences.set"></a></p>
-<h4 id="set_1">set</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nb">set</span><span class="p">(</span><span class="n">exchange_params_by_currency_id</span><span class="p">:</span> <span class="n">ExchangeParams</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">utility_params_by_good_id</span><span class="p">:</span> <span class="n">UtilityParams</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="p">,)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Set values on the preferences.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>exchange_params_by_currency_id</code>: the exchange params.</li>
-<li><code>utility_params_by_good_id</code>: the utility params for every asset.</li>
-<li><code>kwargs</code>: the keyword arguments.</li>
-</ul>
-<p><a name="aea.decision_maker.gop.Preferences.is_initialized"></a></p>
-<h4 id="is_initialized_1">is<code>_</code>initialized</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">is_initialized</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Get the initialization status.</p>
-<p><strong>Returns</strong>:</p>
-<p>True if exchange_params_by_currency_id and utility_params_by_good_id are not None.</p>
-<p><a name="aea.decision_maker.gop.Preferences.exchange_params_by_currency_id"></a></p>
-<h4 id="exchange_params_by_currency_id">exchange<code>_</code>params<code>_</code>by<code>_</code>currency<code>_</code>id</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">exchange_params_by_currency_id</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ExchangeParams</span>
-</code></pre></div>
-<p>Get exchange parameter for each currency.</p>
-<p><a name="aea.decision_maker.gop.Preferences.utility_params_by_good_id"></a></p>
-<h4 id="utility_params_by_good_id">utility<code>_</code>params<code>_</code>by<code>_</code>good<code>_</code>id</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">utility_params_by_good_id</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UtilityParams</span>
-</code></pre></div>
-<p>Get utility parameter for each good.</p>
-<p><a name="aea.decision_maker.gop.Preferences.logarithmic_utility"></a></p>
-<h4 id="logarithmic_utility">logarithmic<code>_</code>utility</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">logarithmic_utility</span><span class="p">(</span><span class="n">quantities_by_good_id</span><span class="p">:</span> <span class="n">GoodHoldings</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span>
-</code></pre></div>
-<p>Compute agent's utility given her utility function params and a good bundle.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>quantities_by_good_id</code>: the good holdings (dictionary) with the identifier (key) and quantity (value) for each good</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>utility value</p>
-<p><a name="aea.decision_maker.gop.Preferences.linear_utility"></a></p>
-<h4 id="linear_utility">linear<code>_</code>utility</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">linear_utility</span><span class="p">(</span><span class="n">amount_by_currency_id</span><span class="p">:</span> <span class="n">CurrencyHoldings</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span>
-</code></pre></div>
-<p>Compute agent's utility given her utility function params and a currency bundle.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>amount_by_currency_id</code>: the currency holdings (dictionary) with the identifier (key) and quantity (value) for each currency</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>utility value</p>
-<p><a name="aea.decision_maker.gop.Preferences.utility"></a></p>
-<h4 id="utility">utility</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">utility</span><span class="p">(</span><span class="n">quantities_by_good_id</span><span class="p">:</span> <span class="n">GoodHoldings</span><span class="p">,</span> <span class="n">amount_by_currency_id</span><span class="p">:</span> <span class="n">CurrencyHoldings</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span>
-</code></pre></div>
-<p>Compute the utility given the good and currency holdings.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>quantities_by_good_id</code>: the good holdings</li>
-<li><code>amount_by_currency_id</code>: the currency holdings</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the utility value.</p>
-<p><a name="aea.decision_maker.gop.Preferences.marginal_utility"></a></p>
-<h4 id="marginal_utility">marginal<code>_</code>utility</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">marginal_utility</span><span class="p">(</span><span class="n">ownership_state</span><span class="p">:</span> <span class="n">BaseOwnershipState</span><span class="p">,</span> <span class="n">delta_quantities_by_good_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">GoodHoldings</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">delta_amount_by_currency_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">CurrencyHoldings</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="p">,)</span> <span class="o">-&gt;</span> <span class="nb">float</span>
-</code></pre></div>
-<p>Compute the marginal utility.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>ownership_state</code>: the ownership state against which to compute the marginal utility.</li>
-<li><code>delta_quantities_by_good_id</code>: the change in good holdings</li>
-<li><code>delta_amount_by_currency_id</code>: the change in money holdings</li>
-<li><code>kwargs</code>: the keyword arguments</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the marginal utility score</p>
-<p><a name="aea.decision_maker.gop.Preferences.utility_diff_from_transaction"></a></p>
-<h4 id="utility_diff_from_transaction">utility<code>_</code>diff<code>_</code>from<code>_</code>transaction</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">utility_diff_from_transaction</span><span class="p">(</span><span class="n">ownership_state</span><span class="p">:</span> <span class="n">BaseOwnershipState</span><span class="p">,</span> <span class="n">terms</span><span class="p">:</span> <span class="n">Terms</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span>
-</code></pre></div>
-<p>Simulate a transaction and get the resulting utility difference (taking into account the fee).</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>ownership_state</code>: the ownership state against which to apply the transaction.</li>
-<li><code>terms</code>: the transaction terms.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the score.</p>
-<p><a name="aea.decision_maker.gop.Preferences.is_utility_enhancing"></a></p>
-<h4 id="is_utility_enhancing">is<code>_</code>utility<code>_</code>enhancing</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">is_utility_enhancing</span><span class="p">(</span><span class="n">ownership_state</span><span class="p">:</span> <span class="n">BaseOwnershipState</span><span class="p">,</span> <span class="n">terms</span><span class="p">:</span> <span class="n">Terms</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Check if the tx is utility enhancing.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>ownership_state</code>: the ownership state against which to apply the transaction.</li>
-<li><code>terms</code>: the transaction terms</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>whether the transaction is utility enhancing or not</p>
-<p><a name="aea.decision_maker.gop.Preferences.__copy__"></a></p>
-<h4 id="__copy___1"><code>__</code>copy<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">__copy__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"Preferences"</span>
-</code></pre></div>
-<p>Copy the object.</p>
-<p><a name="aea.decision_maker.gop.DecisionMakerHandler"></a></p>
-<h2 id="decisionmakerhandler-objects">DecisionMakerHandler Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">DecisionMakerHandler</span><span class="p">(</span><span class="n">BaseDecisionMakerHandler</span><span class="p">)</span>
-</code></pre></div>
-<p>This class implements the decision maker.</p>
-<p><a name="aea.decision_maker.gop.DecisionMakerHandler.SigningDialogues"></a></p>
-<h2 id="signingdialogues-objects">SigningDialogues Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">SigningDialogues</span><span class="p">(</span><span class="n">BaseSigningDialogues</span><span class="p">)</span>
-</code></pre></div>
-<p>This class keeps track of all oef_search dialogues.</p>
-<p><a name="aea.decision_maker.gop.DecisionMakerHandler.SigningDialogues.__init__"></a></p>
-<h4 id="__init___3"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">self_address</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize dialogues.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>self_address</code>: the address of the entity for whom dialogues are maintained</li>
-<li><code>kwargs</code>: the keyword arguments</li>
-</ul>
-<p><a name="aea.decision_maker.gop.DecisionMakerHandler.StateUpdateDialogues"></a></p>
-<h2 id="stateupdatedialogues-objects">StateUpdateDialogues Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">StateUpdateDialogues</span><span class="p">(</span><span class="n">BaseStateUpdateDialogues</span><span class="p">)</span>
-</code></pre></div>
-<p>This class keeps track of all oef_search dialogues.</p>
-<p><a name="aea.decision_maker.gop.DecisionMakerHandler.StateUpdateDialogues.__init__"></a></p>
-<h4 id="__init___4"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">self_address</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize dialogues.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>self_address</code>: the address of the entity for whom dialogues are maintained</li>
-<li><code>kwargs</code>: the keyword arguments</li>
-</ul>
-<p><a name="aea.decision_maker.gop.DecisionMakerHandler.__init__"></a></p>
-<h4 id="__init___5"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">identity</span><span class="p">:</span> <span class="n">Identity</span><span class="p">,</span> <span class="n">wallet</span><span class="p">:</span> <span class="n">Wallet</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize the decision maker.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>identity</code>: the identity</li>
-<li><code>wallet</code>: the wallet</li>
-<li><code>config</code>: the user defined configuration of the handler</li>
-</ul>
-<p><a name="aea.decision_maker.gop.DecisionMakerHandler.handle"></a></p>
-<h4 id="handle">handle</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">handle</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Handle an internal message from the skills.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>message</code>: the internal message</li>
-</ul>
+<p>Run python function in a dedicated process with virtual env specified.</p>
 </article>
 </div>
 </div>
@@ -2452,7 +1703,7 @@ Note, the agent is the sender of the transaction message by design.</p>
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../default/" rel="prev" title="Default">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../project/" rel="prev" title="Project">
 <div class="md-flex__cell md-flex__cell--shrink">
 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
 </div>
@@ -2461,11 +1712,11 @@ Note, the agent is the sender of the transaction message by design.</p>
 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Default
+                Project
               </span>
 </div>
 </a>
-<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../../error_handler/base/" rel="next" title="Base">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../../protocols/base/" rel="next" title="Base">
 <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
 <span class="md-flex__ellipsis">
 <span class="md-footer-nav__direction">
@@ -2495,7 +1746,7 @@ Note, the agent is the sender of the transaction message by design.</p>
 </footer>
 </div>
 <script src="../../../assets/javascripts/application.c33a9706.js"></script>
-<script>app.initialize({version:"1.1.2",url:{base:"../../.."}})</script>
-<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+<script>app.initialize({version:"1.1",url:{base:"../../.."}})</script>
+<script src="https://unpkg.com/mermaid@8.10.1/dist/mermaid.min.js"></script>
 </body>
 </html>

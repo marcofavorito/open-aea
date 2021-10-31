@@ -6,9 +6,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="Everything you need to know about AEAs." name="description"/>
-<link href="https://docs.fetch.ai/api/protocols/default/dialogues/" rel="canonical"/>
-<meta content="developer@fetch.ai" name="author"/>
+<meta content="Everything you need to know about (open) AEAs." name="description"/>
+<link href="https://valory-xyz.github.io/open-aea/api/helpers/ipfs/utils/" rel="canonical"/>
+<meta content="developer@fetch.ai,info@valory.xyz" name="author"/>
 <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
 <meta content="Copied to clipboard" name="lang:clipboard.copied"/>
 <meta content="en" name="lang:search.language"/>
@@ -19,8 +19,8 @@
 <meta content="# matching documents" name="lang:search.result.other"/>
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
 <link href="../../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-4.6.3" name="generator"/>
-<title>Dialogues - aea</title>
+<meta content="mkdocs-1.1, mkdocs-material-4.6.3" name="generator"/>
+<title>Utils - open-aea</title>
 <link href="../../../../assets/stylesheets/application.adb8469c.css" rel="stylesheet"/>
 <script src="../../../../assets/javascripts/modernizr.86422ebf.js"></script>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -38,14 +38,14 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#packagesfetchaiprotocolsdefaultdialogues" tabindex="0">
+<a class="md-skip" href="#aeahelpersipfsutils" tabindex="0">
         Skip to content
       </a>
 <header class="md-header" data-md-component="header">
 <nav class="md-header-nav md-grid">
 <div class="md-flex">
 <div class="md-flex__cell md-flex__cell--shrink">
-<a aria-label="aea" class="md-header-nav__button md-logo" href="https://docs.fetch.ai/" title="aea">
+<a aria-label="open-aea" class="md-header-nav__button md-logo" href="https://valory-xyz.github.io/open-aea/" title="open-aea">
 <i class="md-icon">code</i>
 </a>
 </div>
@@ -55,11 +55,11 @@
 <div class="md-flex__cell md-flex__cell--stretch">
 <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
 <span class="md-header-nav__topic">
-              aea
+              open-aea
             </span>
 <span class="md-header-nav__topic">
               
-                Dialogues
+                Utils
               
             </span>
 </div>
@@ -68,7 +68,7 @@
 </div>
 <div class="md-flex__cell md-flex__cell--shrink">
 <div class="md-header-nav__source">
-<a class="md-source" data-md-source="github" href="https://github.com/agents-aea/docs/" title="Go to repository">
+<a class="md-source" data-md-source="github" href="https://github.com/valory-xyz/open-aea/" title="Go to repository">
 <div class="md-source__icon">
 <svg height="24" viewbox="0 0 24 24" width="24">
 <use height="24" width="24" xlink:href="#__github"></use>
@@ -113,7 +113,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../generic-skills/">
+<a class="md-tabs__link" href="../../../../connect-a-frontend/">
           Development - Use Case
         </a>
 </li>
@@ -127,13 +127,13 @@
 <div class="md-sidebar__inner">
 <nav class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title md-nav__title--site" for="__drawer">
-<a class="md-nav__button md-logo" href="https://docs.fetch.ai/" title="aea">
+<a class="md-nav__button md-logo" href="https://valory-xyz.github.io/open-aea/" title="open-aea">
 <i class="md-icon">code</i>
 </a>
-    aea
+    open-aea
   </label>
 <div class="md-nav__source">
-<a class="md-source" data-md-source="github" href="https://github.com/agents-aea/docs/" title="Go to repository">
+<a class="md-source" data-md-source="github" href="https://github.com/valory-xyz/open-aea/" title="Go to repository">
 <div class="md-source__icon">
 <svg height="24" viewbox="0 0 24 24" width="24">
 <use height="24" width="24" xlink:href="#__github"></use>
@@ -224,16 +224,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../aries-cloud-agent-demo/" title="Aries Cloud Agents Demo">
-      Aries Cloud Agents Demo
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../car-park-skills/" title="Car park skills">
-      Car park skills
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../../gym-example/" title="Gym example">
       Gym example
     </a>
@@ -244,43 +234,8 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../ml-skills/" title="ML skills">
-      ML skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../oracle-demo/" title="Oracle skills">
-      Oracle skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../aggregation-demo/" title="Aggegation skill">
-      Aggegation skill
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tac-skills/" title="TAC skills">
-      TAC skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../tac-skills-contract/" title="TAC skills ledger-based">
-      TAC skills ledger-based
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../../tac/" title="TAC external app">
       TAC external app
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../thermometer-skills/" title="Thermometer skills">
-      Thermometer skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../weather-skills/" title="Weather skills">
-      Weather skills
     </a>
 </li>
 </ul>
@@ -312,11 +267,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../skill-guide/" title="Build your first skill - search &amp; discovery">
-      Build your first skill - search &amp; discovery
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../../core-components-2/" title="Core components - Part 2">
       Core components - Part 2
     </a>
@@ -324,11 +274,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../interaction-protocol/" title="How AEAs talk to each other - interaction protocols">
       How AEAs talk to each other - interaction protocols
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../generic-skills-step-by-step/" title="Trade between two AEAs">
-      Trade between two AEAs
     </a>
 </li>
 <li class="md-nav__item">
@@ -415,11 +360,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../prometheus/" title="Prometheus monitoring">
-      Prometheus monitoring
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../../known-limits/" title="Known limitations">
       Known limitations
     </a>
@@ -427,11 +367,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../build-aea-programmatically/" title="Build an AEA programmatically">
       Build an AEA programmatically
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../cli-vs-programmatic-aeas/" title="CLI vs programmatic AEAs">
-      CLI vs programmatic AEAs
     </a>
 </li>
 <li class="md-nav__item">
@@ -558,6 +493,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../acn/" title="Agent Communication Network">
       Agent Communication Network
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../acn-internals/" title="ACN Internals">
+      ACN Internals
     </a>
 </li>
 </ul>
@@ -745,6 +685,11 @@
       Loader
     </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../components/utils/" title="Utils">
+      Utils
+    </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -918,11 +863,6 @@
       Default
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../decision_maker/gop/" title="GOP">
-      GOP
-    </a>
-</li>
 </ul>
 </nav>
 </li>
@@ -949,8 +889,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20" id="nav-7-7-20" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20" id="nav-7-7-20" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-7-20">
       Helpers
     </label>
@@ -970,12 +910,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/acn/agent_record/" title="Agent Record">
+<a class="md-nav__link" href="../../acn/agent_record/" title="Agent Record">
       Agent Record
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/acn/uri/" title="URI">
+<a class="md-nav__link" href="../../acn/uri/" title="URI">
       URI
     </a>
 </li>
@@ -983,67 +923,67 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/async_friendly_queue/" title="Async Friendly Queue">
+<a class="md-nav__link" href="../../async_friendly_queue/" title="Async Friendly Queue">
       Async Friendly Queue
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/async_utils/" title="Async Utils">
+<a class="md-nav__link" href="../../async_utils/" title="Async Utils">
       Async Utils
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/base/" title="Base">
+<a class="md-nav__link" href="../../base/" title="Base">
       Base
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/constants/" title="Constants">
+<a class="md-nav__link" href="../../constants/" title="Constants">
       Constants
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/env_vars/" title="Env Vars">
+<a class="md-nav__link" href="../../env_vars/" title="Env Vars">
       Env Vars
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/exception_policy/" title="Exception Policy">
+<a class="md-nav__link" href="../../exception_policy/" title="Exception Policy">
       Exception Policy
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/exec_timeout/" title="Exec Timeout">
+<a class="md-nav__link" href="../../exec_timeout/" title="Exec Timeout">
       Exec Timeout
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/file_io/" title="File IO">
+<a class="md-nav__link" href="../../file_io/" title="File IO">
       File IO
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/file_lock/" title="File Lock">
+<a class="md-nav__link" href="../../file_lock/" title="File Lock">
       File Lock
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/http_requests/" title="HttpRequests">
+<a class="md-nav__link" href="../../http_requests/" title="HttpRequests">
       HttpRequests
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/install_dependency/" title="Install Dependency">
+<a class="md-nav__link" href="../../install_dependency/" title="Install Dependency">
       Install Dependency
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/io/" title="IO">
+<a class="md-nav__link" href="../../io/" title="IO">
       IO
     </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-14" id="nav-7-7-20-14" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-14" id="nav-7-7-20-14" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-7-20-14">
       IPFS
     </label>
@@ -1053,15 +993,21 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/ipfs/base/" title="Base">
+<a class="md-nav__link" href="../base/" title="Base">
       Base
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./" title="Utils">
+      Utils
     </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/logging/" title="Logging">
+<a class="md-nav__link" href="../../logging/" title="Logging">
       Logging
     </a>
 </li>
@@ -1076,7 +1022,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/multiaddr/base/" title="Base">
+<a class="md-nav__link" href="../../multiaddr/base/" title="Base">
       Base
     </a>
 </li>
@@ -1084,12 +1030,12 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/multiple_executor/" title="MultipleExecutor">
+<a class="md-nav__link" href="../../multiple_executor/" title="MultipleExecutor">
       MultipleExecutor
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/pipe/" title="Pipe">
+<a class="md-nav__link" href="../../pipe/" title="Pipe">
       Pipe
     </a>
 </li>
@@ -1104,7 +1050,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/preference_representations/base/" title="Base">
+<a class="md-nav__link" href="../../preference_representations/base/" title="Base">
       Base
     </a>
 </li>
@@ -1112,7 +1058,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/profiling/" title="Profiling">
+<a class="md-nav__link" href="../../profiling/" title="Profiling">
       Profiling
     </a>
 </li>
@@ -1127,12 +1073,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/search/generic/" title="Generic">
+<a class="md-nav__link" href="../../search/generic/" title="Generic">
       Generic
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/search/models/" title="Models">
+<a class="md-nav__link" href="../../search/models/" title="Models">
       Models
     </a>
 </li>
@@ -1140,7 +1086,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/serializers/" title="Serializers">
+<a class="md-nav__link" href="../../serializers/" title="Serializers">
       Serializers
     </a>
 </li>
@@ -1155,7 +1101,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/storage/generic_storage/" title="GenericStorage">
+<a class="md-nav__link" href="../../storage/generic_storage/" title="GenericStorage">
       GenericStorage
     </a>
 </li>
@@ -1170,12 +1116,12 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/storage/backends/base/" title="Base">
+<a class="md-nav__link" href="../../storage/backends/base/" title="Base">
       Base
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/storage/backends/sqlite/" title="Sqlite">
+<a class="md-nav__link" href="../../storage/backends/sqlite/" title="Sqlite">
       Sqlite
     </a>
 </li>
@@ -1186,7 +1132,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/sym_link/" title="Sym Link">
+<a class="md-nav__link" href="../../sym_link/" title="Sym Link">
       Sym Link
     </a>
 </li>
@@ -1201,7 +1147,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/transaction/base/" title="Base">
+<a class="md-nav__link" href="../../transaction/base/" title="Base">
       Base
     </a>
 </li>
@@ -1209,12 +1155,12 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/win32/" title="Win32">
+<a class="md-nav__link" href="../../win32/" title="Win32">
       Win32
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/yaml_utils/" title="YamlUtils">
+<a class="md-nav__link" href="../../yaml_utils/" title="YamlUtils">
       YamlUtils
     </a>
 </li>
@@ -1251,11 +1197,16 @@
       Project
     </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../manager/utils/" title="Utils">
+      Utils
+    </a>
+</li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24" id="nav-7-7-24" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24" id="nav-7-7-24" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-7-24">
       Protocols
     </label>
@@ -1265,7 +1216,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../base/" title="Base">
+<a class="md-nav__link" href="../../../protocols/base/" title="Base">
       Base
     </a>
 </li>
@@ -1280,7 +1231,7 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../dialogue/base/" title="Base">
+<a class="md-nav__link" href="../../../protocols/dialogue/base/" title="Base">
       Base
     </a>
 </li>
@@ -1298,163 +1249,55 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../generator/base/" title="Base">
+<a class="md-nav__link" href="../../../protocols/generator/base/" title="Base">
       Base
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../generator/common/" title="Common">
+<a class="md-nav__link" href="../../../protocols/generator/common/" title="Common">
       Common
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../generator/extract_specification/" title="Extract Specification">
+<a class="md-nav__link" href="../../../protocols/generator/extract_specification/" title="Extract Specification">
       Extract Specification
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../generator/validate/" title="Validate">
+<a class="md-nav__link" href="../../../protocols/generator/validate/" title="Validate">
       Validate
     </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-4" id="nav-7-7-24-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-4">
-      Default Protocol
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-4">
-        Default Protocol
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../custom_types/" title="Custom Types">
-      Custom Types
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        Dialogues
-      </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Dialogues">
-      Dialogues
-    </a>
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table of contents</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#defaultdialogue-objects">
-    DefaultDialogue Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#role-objects">
-    Role Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#endstate-objects">
-    EndState Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init__">
-    __init__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#defaultdialogues-objects">
-    DefaultDialogues Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___1">
-    __init__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../message/" title="Message">
-      Message
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../serialization/" title="Serialization">
-      Serialization
-    </a>
-</li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-5" id="nav-7-7-24-5" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-5">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-4" id="nav-7-7-24-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-7-7-24-4">
       Signing Protocol
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-5">
+<label class="md-nav__title" for="nav-7-7-24-4">
         Signing Protocol
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../signing/custom_types/" title="Custom Types">
+<a class="md-nav__link" href="../../../protocols/signing/custom_types/" title="Custom Types">
       Custom Types
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../signing/dialogues/" title="Dialogues">
+<a class="md-nav__link" href="../../../protocols/signing/dialogues/" title="Dialogues">
       Dialogues
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../signing/message/" title="Message">
+<a class="md-nav__link" href="../../../protocols/signing/message/" title="Message">
       Message
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../signing/serialization/" title="Serialization">
-      Serialization
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-6" id="nav-7-7-24-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-6">
-      State Update Protocol
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-6">
-        State Update Protocol
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../state_update/dialogues/" title="Dialogues">
-      Dialogues
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../state_update/message/" title="Message">
-      Message
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../state_update/serialization/" title="Serialization">
+<a class="md-nav__link" href="../../../protocols/signing/serialization/" title="Serialization">
       Serialization
     </a>
 </li>
@@ -1548,6 +1391,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../test_tools/test_cases/" title="Test Cases">
       Test Cases
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../test_tools/test_contract/" title="Test Contract">
+      Test Contract
     </a>
 </li>
 <li class="md-nav__item">
@@ -1696,11 +1544,6 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../generic-skills/" title="Generic skills">
-      Generic skills
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../../../connect-a-frontend/" title="Front-end intergration">
       Front-end intergration
     </a>
@@ -1708,21 +1551,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../http-connection-and-skill/" title="HTTP Connection">
       HTTP Connection
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../orm-integration/" title="ORM integration">
-      ORM integration
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../erc1155-skills/" title="Contract deploy and interact">
-      Contract deploy and interact
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../p2p-connection/" title="P2P Connection">
-      P2P Connection
     </a>
 </li>
 <li class="md-nav__item">
@@ -1752,105 +1580,16 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table of contents</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#defaultdialogue-objects">
-    DefaultDialogue Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#role-objects">
-    Role Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#endstate-objects">
-    EndState Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init__">
-    __init__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#defaultdialogues-objects">
-    DefaultDialogues Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___1">
-    __init__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<a class="md-icon md-content__icon" href="https://github.com/agents-aea/docs/edit/master/docs/api/protocols/default/dialogues.md" title="Edit this page"></a>
-<p><a name="packages.fetchai.protocols.default.dialogues"></a></p>
-<h1 id="packagesfetchaiprotocolsdefaultdialogues">packages.fetchai.protocols.default.dialogues</h1>
-<p>This module contains the classes required for default dialogue management.</p>
-<ul>
-<li>DefaultDialogue: The dialogue class maintains state of a dialogue and manages it.</li>
-<li>DefaultDialogues: The dialogues class keeps track of all dialogues.</li>
-</ul>
-<p><a name="packages.fetchai.protocols.default.dialogues.DefaultDialogue"></a></p>
-<h2 id="defaultdialogue-objects">DefaultDialogue Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">DefaultDialogue</span><span class="p">(</span><span class="n">Dialogue</span><span class="p">)</span>
-</code></pre></div>
-<p>The default dialogue class maintains state of a dialogue and manages it.</p>
-<p><a name="packages.fetchai.protocols.default.dialogues.DefaultDialogue.Role"></a></p>
-<h2 id="role-objects">Role Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Role</span><span class="p">(</span><span class="n">Dialogue</span><span class="o">.</span><span class="n">Role</span><span class="p">)</span>
-</code></pre></div>
-<p>This class defines the agent's role in a default dialogue.</p>
-<p><a name="packages.fetchai.protocols.default.dialogues.DefaultDialogue.EndState"></a></p>
-<h2 id="endstate-objects">EndState Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">EndState</span><span class="p">(</span><span class="n">Dialogue</span><span class="o">.</span><span class="n">EndState</span><span class="p">)</span>
-</code></pre></div>
-<p>This class defines the end states of a default dialogue.</p>
-<p><a name="packages.fetchai.protocols.default.dialogues.DefaultDialogue.__init__"></a></p>
-<h4 id="__init__"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">,</span> <span class="n">self_address</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="n">role</span><span class="p">:</span> <span class="n">Dialogue</span><span class="o">.</span><span class="n">Role</span><span class="p">,</span> <span class="n">message_class</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DefaultMessage</span><span class="p">]</span> <span class="o">=</span> <span class="n">DefaultMessage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize a dialogue.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>dialogue_label</code>: the identifier of the dialogue</li>
-<li><code>self_address</code>: the address of the entity for whom this dialogue is maintained</li>
-<li><code>role</code>: the role of the agent this dialogue is maintained for</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>None</p>
-<p><a name="packages.fetchai.protocols.default.dialogues.DefaultDialogues"></a></p>
-<h2 id="defaultdialogues-objects">DefaultDialogues Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">DefaultDialogues</span><span class="p">(</span><span class="n">Dialogues</span><span class="p">,</span>  <span class="n">ABC</span><span class="p">)</span>
-</code></pre></div>
-<p>This class keeps track of all default dialogues.</p>
-<p><a name="packages.fetchai.protocols.default.dialogues.DefaultDialogues.__init__"></a></p>
-<h4 id="__init___1"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">self_address</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="n">role_from_first_message</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">Message</span><span class="p">,</span> <span class="n">Address</span><span class="p">],</span> <span class="n">Dialogue</span><span class="o">.</span><span class="n">Role</span><span class="p">],</span> <span class="n">dialogue_class</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">DefaultDialogue</span><span class="p">]</span> <span class="o">=</span> <span class="n">DefaultDialogue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize dialogues.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>self_address</code>: the address of the entity for whom dialogues are maintained</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>None</p>
+<a class="md-icon md-content__icon" href="https://github.com/valory-xyz/open-aea/edit/master/docs/api/helpers/ipfs/utils.md" title="Edit this page"></a>
+<p><a name="aea.helpers.ipfs.utils"></a></p>
+<h1 id="aeahelpersipfsutils">aea.helpers.ipfs.utils</h1>
+<p>This module contains utility methods for ipfs helpers.</p>
 </article>
 </div>
 </div>
@@ -1858,7 +1597,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../custom_types/" rel="prev" title="Custom Types">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../base/" rel="prev" title="Base">
 <div class="md-flex__cell md-flex__cell--shrink">
 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
 </div>
@@ -1867,17 +1606,17 @@
 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Custom Types
+                Base
               </span>
 </div>
 </a>
-<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../message/" rel="next" title="Message">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../../logging/" rel="next" title="Logging">
 <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
 <span class="md-flex__ellipsis">
 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Message
+                Logging
               </span>
 </div>
 <div class="md-flex__cell md-flex__cell--shrink">
@@ -1901,7 +1640,7 @@
 </footer>
 </div>
 <script src="../../../../assets/javascripts/application.c33a9706.js"></script>
-<script>app.initialize({version:"1.1.2",url:{base:"../../../.."}})</script>
-<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+<script>app.initialize({version:"1.1",url:{base:"../../../.."}})</script>
+<script src="https://unpkg.com/mermaid@8.10.1/dist/mermaid.min.js"></script>
 </body>
 </html>

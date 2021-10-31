@@ -1,755 +1,675 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://docs.fetch.ai/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/version/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/version/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/upgrading/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/upgrading/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/language-agnostic-definition/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/language-agnostic-definition/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/agent-oriented-development/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/agent-oriented-development/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/vision/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/vision/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/app-areas/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/app-areas/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/oef-ledger/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/oef-ledger/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/identity/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/identity/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/trust/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/trust/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/demos/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/demos/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/aries-cloud-agent-demo/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/gym-example/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/car-park-skills/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/gym-skill/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/gym-example/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/tac/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/gym-skill/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/quickstart/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/ml-skills/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/core-components-1/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/oracle-demo/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/aea-vs-mvc/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/aggregation-demo/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/core-components-2/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/tac-skills/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/interaction-protocol/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/tac-skills-contract/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/development-setup/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/tac/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/step-one/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/thermometer-skills/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/build-aea-step-by-step/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/weather-skills/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/scaffolding/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/quickstart/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/protocol-generator/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/core-components-1/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/logging/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/aea-vs-mvc/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/multiplexer-standalone/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/skill-guide/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/standalone-transaction/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/core-components-2/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/decision-maker-transaction/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/interaction-protocol/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/skill-testing/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/generic-skills-step-by-step/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/deployment/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/development-setup/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/12-factor/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/step-one/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/known-limits/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/build-aea-step-by-step/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/build-aea-programmatically/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/scaffolding/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/agent-vs-aea/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/protocol-generator/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/modes/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/logging/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/generic-storage/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/multiplexer-standalone/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/multi-agent-manager/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/standalone-transaction/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/debug/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/decision-maker-transaction/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/runtime-cost/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/skill-testing/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/por/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/deployment/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/security/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/12-factor/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/design-principles/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/prometheus/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/diagram/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/known-limits/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/connection/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/build-aea-programmatically/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/protocol/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/cli-vs-programmatic-aeas/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/skill/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/agent-vs-aea/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/contract/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/modes/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/decision-maker/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/generic-storage/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/ledger-integration/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/multi-agent-manager/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/message-routing/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/debug/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/config/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/runtime-cost/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/limits/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/por/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/acn/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/security/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/acn-internals/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/design-principles/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/simple-oef/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/diagram/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/defining-data-models/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/connection/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/query-language/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/protocol/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/simple-oef-usage/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/skill/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/cli-how-to/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/contract/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/cli-commands/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/decision-maker/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/package-imports/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/ledger-integration/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/wealth/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/message-routing/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/performance-benchmark/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/config/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/abstract_agent/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/limits/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/aea/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/acn/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/aea_builder/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/simple-oef/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/agent/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/defining-data-models/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/agent_loop/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/query-language/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/common/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/simple-oef-usage/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/exceptions/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/cli-how-to/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/launcher/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/cli-commands/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/multiplexer/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/package-imports/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/runner/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/wealth/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/runtime/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/performance-benchmark/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/components/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/abstract_agent/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/components/loader/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/aea/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/components/utils/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/aea_builder/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/configurations/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/agent/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/configurations/constants/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/agent_loop/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/configurations/data_types/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/common/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/configurations/loader/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/exceptions/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/configurations/manager/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/launcher/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/configurations/pypi/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/multiplexer/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/configurations/utils/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/runner/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/configurations/validation/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/runtime/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/connections/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/components/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/context/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/components/loader/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/contracts/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/configurations/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/crypto/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/configurations/constants/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/crypto/helpers/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/configurations/data_types/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/crypto/ledger_apis/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/configurations/loader/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/crypto/plugin/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/configurations/manager/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/crypto/wallet/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/configurations/pypi/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/crypto/registries/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/configurations/utils/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/decision_maker/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/configurations/validation/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/decision_maker/default/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/connections/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/error_handler/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/context/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/error_handler/default/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/contracts/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/acn/agent_record/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/crypto/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/acn/uri/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/crypto/helpers/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/async_friendly_queue/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/crypto/ledger_apis/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/async_utils/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/crypto/plugin/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/crypto/wallet/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/constants/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/crypto/registries/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/env_vars/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/decision_maker/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/exception_policy/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/decision_maker/default/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/exec_timeout/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/decision_maker/gop/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/file_io/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/error_handler/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/file_lock/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/error_handler/default/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/http_requests/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/acn/agent_record/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/install_dependency/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/acn/uri/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/io/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/async_friendly_queue/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/ipfs/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/async_utils/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/ipfs/utils/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/logging/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/constants/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/multiaddr/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/env_vars/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/multiple_executor/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/exception_policy/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/pipe/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/exec_timeout/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/preference_representations/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/file_io/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/profiling/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/file_lock/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/search/generic/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/http_requests/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/search/models/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/install_dependency/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/serializers/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/io/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/storage/generic_storage/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/ipfs/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/storage/backends/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/logging/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/storage/backends/sqlite/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/multiaddr/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/sym_link/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/multiple_executor/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/transaction/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/pipe/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/win32/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/preference_representations/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/helpers/yaml_utils/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/profiling/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/identity/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/search/generic/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/mail/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/search/models/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/manager/manager/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/serializers/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/manager/project/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/storage/generic_storage/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/manager/utils/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/storage/backends/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/storage/backends/sqlite/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/dialogue/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/sym_link/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/generator/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/transaction/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/generator/common/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/win32/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/generator/extract_specification/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/helpers/yaml_utils/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/generator/validate/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/identity/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/signing/custom_types/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/mail/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/signing/dialogues/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/manager/manager/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/signing/message/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/manager/project/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/protocols/signing/serialization/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/registries/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/dialogue/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/registries/filter/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/generator/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/registries/resources/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/generator/common/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/skills/base/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/generator/extract_specification/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/skills/behaviours/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/generator/validate/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/skills/tasks/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/default/custom_types/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/test_tools/constants/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/default/dialogues/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/test_tools/exceptions/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/default/message/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/test_tools/generic/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/default/serialization/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/test_tools/test_cases/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/signing/custom_types/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/test_tools/test_contract/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/signing/dialogues/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/test_tools/test_skill/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/signing/message/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_cli_ipfs/core/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/signing/serialization/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_cli_ipfs/ipfs_utils/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/state_update/dialogues/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_ledger_cosmos/cosmos/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/state_update/message/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_ledger_ethereum/ethereum/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/protocols/state_update/serialization/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_ledger_fetchai/fetchai/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/registries/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_ledger_fetchai/_cosmos/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/registries/filter/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/connect-a-frontend/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/registries/resources/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/http-connection-and-skill/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/skills/base/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/raspberry-set-up/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/skills/behaviours/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/glossary/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.fetch.ai/api/skills/tasks/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/test_tools/constants/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/test_tools/exceptions/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/test_tools/generic/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/test_tools/test_cases/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/test_tools/test_skill/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/plugins/aea_cli_ipfs/core/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/plugins/aea_cli_ipfs/ipfs_utils/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/plugins/aea_ledger_cosmos/cosmos/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/plugins/aea_ledger_ethereum/ethereum/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/plugins/aea_ledger_fetchai/fetchai/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/api/plugins/aea_ledger_fetchai/_cosmos/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/generic-skills/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/connect-a-frontend/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/http-connection-and-skill/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/orm-integration/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/erc1155-skills/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/p2p-connection/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/raspberry-set-up/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/glossary/</loc>
-     <lastmod>2021-06-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.fetch.ai/questions-and-answers/</loc>
-     <lastmod>2021-06-03</lastmod>
+     <loc>https://valory-xyz.github.io/open-aea/questions-and-answers/</loc>
+     <lastmod>2021-10-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

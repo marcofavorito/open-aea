@@ -6,9 +6,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="Everything you need to know about AEAs." name="description"/>
-<link href="https://docs.fetch.ai/generic-skills/" rel="canonical"/>
-<meta content="developer@fetch.ai" name="author"/>
+<meta content="Everything you need to know about (open) AEAs." name="description"/>
+<link href="https://valory-xyz.github.io/open-aea/acn-internals/" rel="canonical"/>
+<meta content="developer@fetch.ai,info@valory.xyz" name="author"/>
 <meta content="Copy to clipboard" name="lang:clipboard.copy"/>
 <meta content="Copied to clipboard" name="lang:clipboard.copied"/>
 <meta content="en" name="lang:search.language"/>
@@ -19,8 +19,8 @@
 <meta content="# matching documents" name="lang:search.result.other"/>
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-4.6.3" name="generator"/>
-<title>Generic skills - aea</title>
+<meta content="mkdocs-1.1, mkdocs-material-4.6.3" name="generator"/>
+<title>ACN Internals - open-aea</title>
 <link href="../assets/stylesheets/application.adb8469c.css" rel="stylesheet"/>
 <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -38,14 +38,14 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#discussion" tabindex="0">
+<a class="md-skip" href="#messages-and-data-structures" tabindex="0">
         Skip to content
       </a>
 <header class="md-header" data-md-component="header">
 <nav class="md-header-nav md-grid">
 <div class="md-flex">
 <div class="md-flex__cell md-flex__cell--shrink">
-<a aria-label="aea" class="md-header-nav__button md-logo" href="https://docs.fetch.ai/" title="aea">
+<a aria-label="open-aea" class="md-header-nav__button md-logo" href="https://valory-xyz.github.io/open-aea/" title="open-aea">
 <i class="md-icon">code</i>
 </a>
 </div>
@@ -55,11 +55,11 @@
 <div class="md-flex__cell md-flex__cell--stretch">
 <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
 <span class="md-header-nav__topic">
-              aea
+              open-aea
             </span>
 <span class="md-header-nav__topic">
               
-                Generic skills
+                ACN Internals
               
             </span>
 </div>
@@ -68,7 +68,7 @@
 </div>
 <div class="md-flex__cell md-flex__cell--shrink">
 <div class="md-header-nav__source">
-<a class="md-source" data-md-source="github" href="https://github.com/agents-aea/docs/" title="Go to repository">
+<a class="md-source" data-md-source="github" href="https://github.com/valory-xyz/open-aea/" title="Go to repository">
 <div class="md-source__icon">
 <svg height="24" viewbox="0 0 24 24" width="24">
 <use height="24" width="24" xlink:href="#__github"></use>
@@ -113,7 +113,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="./">
+<a class="md-tabs__link" href="../connect-a-frontend/">
           Development - Use Case
         </a>
 </li>
@@ -127,13 +127,13 @@
 <div class="md-sidebar__inner">
 <nav class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title md-nav__title--site" for="__drawer">
-<a class="md-nav__button md-logo" href="https://docs.fetch.ai/" title="aea">
+<a class="md-nav__button md-logo" href="https://valory-xyz.github.io/open-aea/" title="open-aea">
 <i class="md-icon">code</i>
 </a>
-    aea
+    open-aea
   </label>
 <div class="md-nav__source">
-<a class="md-source" data-md-source="github" href="https://github.com/agents-aea/docs/" title="Go to repository">
+<a class="md-source" data-md-source="github" href="https://github.com/valory-xyz/open-aea/" title="Go to repository">
 <div class="md-source__icon">
 <svg height="24" viewbox="0 0 24 24" width="24">
 <use height="24" width="24" xlink:href="#__github"></use>
@@ -224,16 +224,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aries-cloud-agent-demo/" title="Aries Cloud Agents Demo">
-      Aries Cloud Agents Demo
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../car-park-skills/" title="Car park skills">
-      Car park skills
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../gym-example/" title="Gym example">
       Gym example
     </a>
@@ -244,43 +234,8 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ml-skills/" title="ML skills">
-      ML skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../oracle-demo/" title="Oracle skills">
-      Oracle skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../aggregation-demo/" title="Aggegation skill">
-      Aggegation skill
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../tac-skills/" title="TAC skills">
-      TAC skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../tac-skills-contract/" title="TAC skills ledger-based">
-      TAC skills ledger-based
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../tac/" title="TAC external app">
       TAC external app
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../thermometer-skills/" title="Thermometer skills">
-      Thermometer skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../weather-skills/" title="Weather skills">
-      Weather skills
     </a>
 </li>
 </ul>
@@ -312,11 +267,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../skill-guide/" title="Build your first skill - search &amp; discovery">
-      Build your first skill - search &amp; discovery
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../core-components-2/" title="Core components - Part 2">
       Core components - Part 2
     </a>
@@ -327,11 +277,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../generic-skills-step-by-step/" title="Trade between two AEAs">
-      Trade between two AEAs
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../development-setup/" title="Development setup">
       Development setup
     </a>
@@ -339,8 +284,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" id="nav-7" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-7" id="nav-7" type="checkbox"/>
 <label class="md-nav__link" for="nav-7">
       Development - Advanced
     </label>
@@ -415,11 +360,6 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../prometheus/" title="Prometheus monitoring">
-      Prometheus monitoring
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../known-limits/" title="Known limitations">
       Known limitations
     </a>
@@ -427,11 +367,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../build-aea-programmatically/" title="Build an AEA programmatically">
       Build an AEA programmatically
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../cli-vs-programmatic-aeas/" title="CLI vs programmatic AEAs">
-      CLI vs programmatic AEAs
     </a>
 </li>
 <li class="md-nav__item">
@@ -545,8 +480,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" id="nav-7-3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" id="nav-7-3" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-3">
       Agent Communication
     </label>
@@ -559,6 +494,179 @@
 <a class="md-nav__link" href="../acn/" title="Agent Communication Network">
       Agent Communication Network
     </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        ACN Internals
+      </label>
+<a class="md-nav__link md-nav__link--active" href="./" title="ACN Internals">
+      ACN Internals
+    </a>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#messages-and-data-structures">
+    Messages and Data Structures
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#agent-record">
+    Agent Record
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-message">
+    ACN Message
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#status">
+    Status
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#register">
+    Register
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lookuprequest">
+    LookupRequest
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lookupresponse">
+    LookupResponse
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aeaenvelope">
+    AeaEnvelope
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-protocol-interactions">
+    ACN Protocol Interactions
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#registration-interaction">
+    "Registration" Interaction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#look-up-interaction">
+    "Look-up" Interaction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#routing-interaction">
+    "Routing" Interaction
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#joining-the-acn-network">
+    Joining the ACN network
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relay-connections">
+    Relay connections
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#delegate-connections">
+    Delegate connections
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-transport">
+    ACN transport
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-envelope-entrance-agent-peer">
+    ACN Envelope Entrance: Agent -&gt; Peer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-envelope-routing">
+    ACN Envelope Routing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-envelope-exit-peer-agent">
+    ACN Envelope Exit: Peer -&gt; Agent
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#connect-your-aea-to-the-acn">
+    Connect your AEA to the ACN
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-fetchaip2p_libp2p-connection">
+    The fetchai/p2p_libp2p connection
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-fetchaip2p_libp2p_delegate-connection">
+    The fetchai/p2p_libp2p_delegate connection
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#known-issues-and-limitations">
+    Known issues and limitations
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#delegate-client-on-client-disconnectionreconnection">
+    Delegate client on client disconnection/reconnection
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#golang-node-python-client-libp2p-connection">
+    Golang Node &lt;&gt; Python Client libp2p connection
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-a-peer-should-do-if-it-receives-an-acknowledgement-with-an-error">
+    What a peer should do if it receives an acknowledgement with an error?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#no-possibility-of-switching-peers">
+    No possibility of switching peers
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -745,6 +853,11 @@
       Loader
     </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api/components/utils/" title="Utils">
+      Utils
+    </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -918,11 +1031,6 @@
       Default
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../api/decision_maker/gop/" title="GOP">
-      GOP
-    </a>
-</li>
 </ul>
 </nav>
 </li>
@@ -1055,6 +1163,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../api/helpers/ipfs/base/" title="Base">
       Base
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api/helpers/ipfs/utils/" title="Utils">
+      Utils
     </a>
 </li>
 </ul>
@@ -1251,6 +1364,11 @@
       Project
     </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api/manager/utils/" title="Utils">
+      Utils
+    </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1323,43 +1441,10 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-4" id="nav-7-7-24-4" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-7-24-4">
-      Default Protocol
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-4">
-        Default Protocol
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../api/protocols/default/custom_types/" title="Custom Types">
-      Custom Types
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../api/protocols/default/dialogues/" title="Dialogues">
-      Dialogues
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../api/protocols/default/message/" title="Message">
-      Message
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../api/protocols/default/serialization/" title="Serialization">
-      Serialization
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-5" id="nav-7-7-24-5" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-5">
       Signing Protocol
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-5">
+<label class="md-nav__title" for="nav-7-7-24-4">
         Signing Protocol
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1380,34 +1465,6 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../api/protocols/signing/serialization/" title="Serialization">
-      Serialization
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-6" id="nav-7-7-24-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-6">
-      State Update Protocol
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-6">
-        State Update Protocol
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../api/protocols/state_update/dialogues/" title="Dialogues">
-      Dialogues
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../api/protocols/state_update/message/" title="Message">
-      Message
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../api/protocols/state_update/serialization/" title="Serialization">
       Serialization
     </a>
 </li>
@@ -1501,6 +1558,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../api/test_tools/test_cases/" title="Test Cases">
       Test Cases
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api/test_tools/test_contract/" title="Test Contract">
+      Test Contract
     </a>
 </li>
 <li class="md-nav__item">
@@ -1638,8 +1700,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-8" id="nav-8" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" id="nav-8" type="checkbox"/>
 <label class="md-nav__link" for="nav-8">
       Development - Use Case
     </label>
@@ -1648,93 +1710,6 @@
         Development - Use Case
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        Generic skills
-      </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Generic skills">
-      Generic skills
-    </a>
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table of contents</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#discussion">
-    Discussion
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#communication">
-    Communication
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#preparation-instructions">
-    Preparation instructions
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dependencies">
-    Dependencies
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#demo-instructions">
-    Demo instructions
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create-the-seller-aea">
-    Create the seller AEA
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create-the-buyer-aea">
-    Create the buyer AEA
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add-keys-for-the-seller-aea">
-    Add keys for the seller AEA
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add-keys-and-generate-wealth-for-the-buyer-aea">
-    Add keys and generate wealth for the buyer AEA
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update-the-skill-configurations">
-    Update the skill configurations
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update-the-skill-configurations_1">
-    Update the skill configurations
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#run-the-aeas">
-    Run the AEAs
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#delete-the-aeas">
-    Delete the AEAs
-  </a>
-</li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../connect-a-frontend/" title="Front-end intergration">
       Front-end intergration
@@ -1743,21 +1718,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../http-connection-and-skill/" title="HTTP Connection">
       HTTP Connection
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../orm-integration/" title="ORM integration">
-      ORM integration
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../erc1155-skills/" title="Contract deploy and interact">
-      Contract deploy and interact
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../p2p-connection/" title="P2P Connection">
-      P2P Connection
     </a>
 </li>
 <li class="md-nav__item">
@@ -1790,77 +1750,163 @@
 <label class="md-nav__title" for="__toc">Table of contents</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#discussion">
-    Discussion
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#communication">
-    Communication
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#preparation-instructions">
-    Preparation instructions
+<a class="md-nav__link" href="#messages-and-data-structures">
+    Messages and Data Structures
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#dependencies">
-    Dependencies
+<a class="md-nav__link" href="#agent-record">
+    Agent Record
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-message">
+    ACN Message
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#status">
+    Status
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#register">
+    Register
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lookuprequest">
+    LookupRequest
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lookupresponse">
+    LookupResponse
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aeaenvelope">
+    AeaEnvelope
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#demo-instructions">
-    Demo instructions
+<a class="md-nav__link" href="#acn-protocol-interactions">
+    ACN Protocol Interactions
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-the-seller-aea">
-    Create the seller AEA
+<a class="md-nav__link" href="#registration-interaction">
+    "Registration" Interaction
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-the-buyer-aea">
-    Create the buyer AEA
+<a class="md-nav__link" href="#look-up-interaction">
+    "Look-up" Interaction
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#add-keys-for-the-seller-aea">
-    Add keys for the seller AEA
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add-keys-and-generate-wealth-for-the-buyer-aea">
-    Add keys and generate wealth for the buyer AEA
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update-the-skill-configurations">
-    Update the skill configurations
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update-the-skill-configurations_1">
-    Update the skill configurations
+<a class="md-nav__link" href="#routing-interaction">
+    "Routing" Interaction
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#run-the-aeas">
-    Run the AEAs
+<a class="md-nav__link" href="#joining-the-acn-network">
+    Joining the ACN network
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relay-connections">
+    Relay connections
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#delete-the-aeas">
-    Delete the AEAs
+<a class="md-nav__link" href="#delegate-connections">
+    Delegate connections
   </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-transport">
+    ACN transport
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-envelope-entrance-agent-peer">
+    ACN Envelope Entrance: Agent -&gt; Peer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-envelope-routing">
+    ACN Envelope Routing
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acn-envelope-exit-peer-agent">
+    ACN Envelope Exit: Peer -&gt; Agent
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#connect-your-aea-to-the-acn">
+    Connect your AEA to the ACN
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-fetchaip2p_libp2p-connection">
+    The fetchai/p2p_libp2p connection
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-fetchaip2p_libp2p_delegate-connection">
+    The fetchai/p2p_libp2p_delegate connection
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#known-issues-and-limitations">
+    Known issues and limitations
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#delegate-client-on-client-disconnectionreconnection">
+    Delegate client on client disconnection/reconnection
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#golang-node-python-client-libp2p-connection">
+    Golang Node &lt;&gt; Python Client libp2p connection
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-a-peer-should-do-if-it-receives-an-acknowledgement-with-an-error">
+    What a peer should do if it receives an acknowledgement with an error?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#no-possibility-of-switching-peers">
+    No possibility of switching peers
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1869,225 +1915,738 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<a class="md-icon md-content__icon" href="https://github.com/agents-aea/docs/edit/master/docs/generic-skills.md" title="Edit this page"></a>
-<h1>Generic skills</h1>
-<p>The AEA generic buyer and seller skills demonstrate an interaction between two AEAs:</p>
+<a class="md-icon md-content__icon" href="https://github.com/valory-xyz/open-aea/edit/master/docs/acn-internals.md" title="Edit this page"></a>
+<h1>ACN Internals</h1>
+<p>The aim of this document is to describe at a high-level
+the main implementation of the Agent Communication Network (ACN).</p>
+<p>In particular:</p>
 <ul>
-<li>An AEA that provides a (data selling) service.</li>
-<li>An AEA that demands this service.</li>
+<li><a href="https://github.com/fetchai/agents-aea/tree/main/libs/go/libp2p_node" target="_blank">the <code>libp2p_node</code> Golang library<a></a>;</a></li>
+<li><a href="https://github.com/fetchai/agents-aea/tree/main/packages/fetchai/connections/p2p_libp2p" target="_blank">the <code>p2p_libp2p</code> AEA connection, written in Python, that implements the <em>direct connection</em> with an ACN peer<a></a>;</a></li>
+<li><a href="https://github.com/fetchai/agents-aea/tree/main/packages/fetchai/connections/p2p_libp2p_client" target="_blank">the <code>p2p_libp2p_client</code> AEA connection, written in Python, which implements the <em>delegate connection</em> with an ACN peer<a></a>.</a></li>
 </ul>
-<h2 id="discussion">Discussion</h2>
-<p>The scope of this guide is demonstrating how to create easily configurable AEAs. The buyer AEA finds the seller, negotiates the terms of trade, and if successful purchases the data by sending payment. The seller AEA sells the service specified in its <code>skill.yaml</code> file, delivering it to the buyer upon receiving payment. </p>
-<p>Note that these agents do not utilize a smart contract but interact with a ledger to complete a transaction. Moreover, in this setup, the buyer agent has to trust the seller to send the data upon successful payment.</p>
-<p>The corresponding packages can be customised to allow for a database or sensor to be defined from which data is loaded. This is done by first modifying the <code>has_data_source</code> variable in <code>skill.yaml</code> file of the <code>generic_seller</code> skill to <code>True</code>. Then you have to provide an implementation for the <code>collect_from_data_source(self)</code> method in the <code>strategy.py</code> file. More detailed instructions is beyond the scope of this guide.</p>
-<h2 id="communication">Communication</h2>
-<p>The following diagram shows the communication between various entities in this interaction.</p>
+<p>It is assumed the reader already knows what is the ACN and
+its purposes; if not, we suggest reading <a href="../acn">this page<a></a>.</a></p>
+<p>This documentation page is structured as follows:</p>
+<ul>
+<li>Firstly, the ACN protocol is described: all the messages
+and data structures involved, as well as some example of interaction
+protocol with these messages;</li>
+<li>Then, it is explained how a peer can join an existing ACN network,
+and the message exchange involved;</li>
+<li>It follows the description of the journey of an envelope
+  in the ACN network: from the agent connection to its contact
+  peer, between ACN peers, and then from the contact peer of the
+  destination agent to the target agent;</li>
+<li>The following section describes the functionalities
+  of the AEA connections that allow to communicate through
+  the ACN: <code>fetchai/p2p_libp2p</code> and <code>fetchia/p2p_libp2p_delegate</code>;</li>
+<li>The documentation ends with a section of known issues and limitations
+  of the current implementation.</li>
+</ul>
+<h2 id="messages-and-data-structures">Messages and Data Structures</h2>
+<p>At the foundation of the ACN there is the <em>ACN protocol</em>.
+The protocol messages and the reply structure are generated from this 
+<a href="https://github.com/fetchai/agents-aea/blob/develop/libs/go/libp2p_node/protocols/acn/v1_0_0/acn.yaml" target="_blank">protocol specification</a>,
+using the <a href="../protocol-generator" target="_blank">protocol generator</a>.
+Therefore, it uses <a href="https://developers.google.com/protocol-buffers" target="_blank">Protocol Buffers</a>
+as a serialization format,
+and the definition of the data structures involved is defined in this
+<a href="https://github.com/fetchai/agents-aea/blob/develop/libs/go/libp2p_node/protocols/acn/v1_0_0/acn.proto" target="_blank"><code>.proto</code> file</a>.</p>
+<p>To know more about the protocol generator, refer to the relevant
+section of the documentation:
+<a href="../protocol-generator" target="_blank">Protocol Generator</a>.</p>
+<h3 id="agent-record">Agent Record</h3>
+<p>An <em>agent record</em> is a data structure containing information about an
+agent and its Proof-of-Representation (PoR) to be used by a peer for other peers.
+This data structure is used as a payload in other ACN messages (see below).</p>
+<p>The <code>AgentRecord</code> data structure contains the following fields:</p>
+<ul>
+<li><code>service_id</code>: a string describing the service identifier.</li>
+<li><code>ledger_id</code>: a string. It is the identifier of the ledger 
+    this agent record is associated to.
+    Currently, the allowed values are:<ul>
+<li><code>fetchai</code>, the identifier for the Fetch.AI ledger;</li>
+<li><code>ethereum</code>, the identifier for the Ethereum ledger;</li>
+<li><code>cosmos</code>, the identifier for the Cosmos ledger;</li>
+</ul>
+</li>
+<li><code>address</code>: a string. It is the public key of a public-private key pair.
+    It is used as an identifier for routing purposes.</li>
+<li><code>public_key</code>: a string. The representative's public key. Used in case of (PoR).</li>
+<li><code>peer_public_key</code>: a string. The public key of the peer.</li>
+<li><code>signature</code>: a string. The signature for PoR.</li>
+<li><code>not_before</code>: a string. Specify the lower bound for certificate validity.
+    If it is a string, it must follow the format: <code>YYYY-MM-DD</code>. It will be interpreted as time zone UTC-0</li>
+<li><code>not_after</code>: a string. Specify the upper bound for certificate validity. 
+    If it is a string, it must follow the format: <code>YYYY-MM-DD</code>. It will be interpreted as time zone UTC-0.</li>
+</ul>
+<h3 id="acn-message">ACN Message</h3>
+<p>Entities in the ACN (i.e. either agents or peers) exchange <em>ACN messages</em>.
+An ACN message contains a <code>payload</code> field,
+which is the actual content of the message.</p>
+<p>There are different types of payloads:</p>
+<ul>
+<li><code>Status</code></li>
+<li><code>Register</code></li>
+<li><code>LookupRequest</code></li>
+<li><code>LookupResponse</code></li>
+<li><code>AeaEnvelope</code></li>
+</ul>
+<h3 id="status">Status</h3>
+<p>The <code>Status</code> payload is used as a response message to inform 
+the sender about the handling of certain requests.
+The payload contains:</p>
+<ul>
+<li>the <code>status_code</code>, a positive integer among the ones in the 
+  <a href="https://github.com/fetchai/agents-aea/blob/develop/libs/go/libp2p_node/protocols/acn/v1_0_0/acn.proto" target="_blank">Protobuf file</a>.</li>
+<li>a list of error messages (string).</li>
+</ul>
+<p>A status code <code>0</code>, identified as <code>SUCCESS</code>, 
+means that the request has been processed successfully.
+Status codes greater than <code>0</code> can be:</p>
+<ul>
+<li>
+<p>Generic errors: errors that occur under generic circumstances.</p>
+<ul>
+<li><code>ERROR_UNSUPPORTED_VERSION</code>, with integer value <code>1</code>: the receiver of the message
+     does not support the protocol version of the sender;</li>
+<li><code>ERROR_UNEXPECTED_PAYLOAD</code>, with integer value <code>2</code>: the payload could not be
+     deserialised on the receiver side;</li>
+<li><code>ERROR_GENERIC</code>, with integer value <code>3</code>: an internal error;</li>
+<li><code>ERROR_SERIALIZATION</code>, with integer value <code>4</code>: a serialization error occurred
+     on the receiving end;</li>
+</ul>
+</li>
+<li>
+<p>Register errors: errors that occur during agent registration operations in the ACN. </p>
+<ul>
+<li><code>ERROR_WRONG_AGENT_ADDRESS</code>, with integer value <code>10</code>:
+     the PoR by a peer from another peer does not match the destination address of
+     the envelope to be routed by the receiving peer.</li>
+<li><code>ERROR_WRONG_PUBLIC_KEY</code>, with integer value <code>11</code>: the
+     representative peer public key does not match the one in the agent record;</li>
+<li><code>ERROR_INVALID_PROOF</code>, with integer value <code>12</code>: the signature is invalid;</li>
+<li><code>ERROR_UNSUPPORTED_LEDGER</code>, with integer value <code>13</code>: the ledger of the PoR is not supported by the peer;</li>
+</ul>
+</li>
+<li>
+<p>Lookup and delivery errors: errors that occur during lookup to the DHT and envelope delivery operations in the ACN.</p>
+<ul>
+<li><code>ERROR_UNKNOWN_AGENT_ADDRESS</code>, with integer value <code>20</code>: the requested agent address has not been found in the local DHT of the peer;</li>
+<li><code>ERROR_AGENT_NOT_READY</code>, with integer value <code>21</code>: the agent is not ready for envelope delivery.</li>
+</ul>
+</li>
+</ul>
+<h3 id="register">Register</h3>
+<p>The <code>Register</code> payload is used to request a peer to register an agent among his known ones.
+The payload contains the field <code>record</code>, which is an instance of <code>AgentRecord</code>.</p>
+<h3 id="lookuprequest">LookupRequest</h3>
+<p>The <code>LookupRequest</code> payload is sent between peer to look-up addresses in the Distributed Hash Table (DHT).
+It contains the agent address (a string) that the sender needs to correctly route an envelope.</p>
+<h3 id="lookupresponse">LookupResponse</h3>
+<p>The <code>LookupResponse</code> payload is the response sent by a peer that received a <code>LookupRequest</code>.
+It contains the <code>AgentRecord</code> associated to the requested address.</p>
+<h3 id="aeaenvelope">AeaEnvelope</h3>
+<p>The <code>AeaEnvelope</code> payload contains the envelope sent by an agent and to be delivered to another agent.
+It contains:</p>
+<ul>
+<li><code>envelope</code>: the envelope to be forwarded, in byte representation;</li>
+<li>an <code>AgentRecord</code> (see above).</li>
+</ul>
+<h2 id="acn-protocol-interactions">ACN Protocol Interactions</h2>
+<p>The ACN protocol specifies three different possible interactions:</p>
+<ul>
+<li>the <em>registration</em> interaction</li>
+<li>the <em>look-up</em> interaction</li>
+<li>the <em>routing</em> interaction</li>
+</ul>
+<h3 id="registration-interaction">"Registration" Interaction</h3>
+<p>The registration interaction is used by delegate agents or relayed peers
+to register themselves to another peer.</p>
 <div class="mermaid">
     sequenceDiagram
-        participant Search
-        participant Buyer_AEA
-        participant Seller_AEA
-        participant Blockchain
-
-        activate Buyer_AEA
-        activate Search
-        activate Seller_AEA
-        activate Blockchain
-
-        Seller_AEA-&gt;&gt;Search: register_service
-        Buyer_AEA-&gt;&gt;Search: search_agents
-        Search--&gt;&gt;Buyer_AEA: list_of_agents
-        Buyer_AEA-&gt;&gt;Seller_AEA: call_for_proposal
-        Seller_AEA-&gt;&gt;Buyer_AEA: propose
-        Buyer_AEA-&gt;&gt;Seller_AEA: accept
-        Seller_AEA-&gt;&gt;Buyer_AEA: match_accept
-        Buyer_AEA-&gt;&gt;Blockchain: transfer_funds
-        Buyer_AEA-&gt;&gt;Seller_AEA: send_transaction_hash
-        Seller_AEA-&gt;&gt;Blockchain: check_transaction_status
-        Seller_AEA-&gt;&gt;Buyer_AEA: send_data
-
-        deactivate Buyer_AEA
-        deactivate Search
-        deactivate Seller_AEA
-        deactivate Blockchain
+        participant Agent/RelayedPeer
+        participant Peer
+        Agent/RelayedPeer-&gt;&gt;Peer: Register(AgentRecord)
+        alt success
+            note over Peer: check PoR
+            Peer-&gt;&gt;Agent/RelayedPeer: Status(SUCCESS)
+        else wrong agent address
+            Peer-&gt;&gt;Agent/RelayedPeer: Status(ERROR_WRONG_AGENT_ADDRESS)
+        else wrong public key
+            Peer-&gt;&gt;Agent/RelayedPeer: Status(ERROR_WRONG_PUBLIC_KEY)
+        else invalid proof of representation
+            Peer-&gt;&gt;Agent/RelayedPeer: Status(ERROR_INVALID_PROOF)
+        else unsupported ledger
+            Peer-&gt;&gt;Agent/RelayedPeer: Status(ERROR_UNSUPPORTED_LEDGER)
+        end
+</div>
+<h3 id="look-up-interaction">"Look-up" Interaction</h3>
+<p>The look-up interaction is used by a peer
+to request information to another peer about an agent address.</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Peer1
+        participant Peer2
+        Peer1-&gt;&gt;Peer2: LookupRequest(address)
+        alt success
+            Peer2-&gt;&gt;Peer1: LookupResponse(AgentRecord)
+        else unknown agent address
+            Peer2-&gt;&gt;Peer1: Status(ERROR_UNKNOWN_AGENT_ADDRESS)
+        end
+</div>
+<h3 id="routing-interaction">"Routing" Interaction</h3>
+<p>The routing interaction is used by agents
+and peers to route the envelope through the ACN.</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Peer1
+        participant Peer2
+        Peer1-&gt;&gt;Peer2: AeaEnvelope(envelope, AgentRecord)
+        alt success
+            note over Peer2: check PoR
+            Peer2-&gt;&gt;Peer1: Status(SUCCESS)
+        else error on decoding of Envelope payload
+            Peer2-&gt;&gt;Peer1: Status(ERROR_SERIALIZATION)
+        else PoR errors
+            note over Peer1,Peer2: see above 
+        end
 
 </div>
-<h2 id="preparation-instructions">Preparation instructions</h2>
-<h3 id="dependencies">Dependencies</h3>
-<p>Follow the <a href="../quickstart/#preliminaries">Preliminaries</a> and <a href="../quickstart/#installation">Installation</a> sections from the AEA quick start.</p>
-<h2 id="demo-instructions">Demo instructions</h2>
-<h3 id="create-the-seller-aea">Create the seller AEA</h3>
-<p>First, fetch the seller AEA:
-<div class="highlight"><pre><span></span><code>aea fetch fetchai/generic_seller:0.27.0 --alias my_seller_aea
-<span class="nb">cd</span> my_seller_aea
-aea install
-aea build
-</code></pre></div></p>
-<details><summary>Alternatively, create from scratch.</summary>
-<p>
-
-The following steps create the seller from scratch:
-<div class="highlight"><pre><span></span><code>aea create my_seller_aea
-<span class="nb">cd</span> my_seller_aea
-aea add connection fetchai/p2p_libp2p:0.24.0
-aea add connection fetchai/soef:0.25.0
-aea add connection fetchai/ledger:0.18.0
-aea add skill fetchai/generic_seller:0.26.0
-aea config <span class="nb">set</span> --type dict agent.dependencies <span class="se">\</span>
-<span class="s1">'{</span>
-<span class="s1">  "aea-ledger-fetchai": {"version": "&lt;2.0.0,&gt;=1.0.0"}</span>
-<span class="s1">}'</span>
-aea config <span class="nb">set</span> agent.default_connection fetchai/p2p_libp2p:0.24.0
-aea config <span class="nb">set</span> --type dict agent.default_routing <span class="se">\</span>
-<span class="s1">'{</span>
-<span class="s1">  "fetchai/ledger_api:1.0.0": "fetchai/ledger:0.18.0",</span>
-<span class="s1">  "fetchai/oef_search:1.0.0": "fetchai/soef:0.25.0"</span>
-<span class="s1">}'</span>
-aea install
-aea build
-</code></pre></div>
-</p>
-</details>
-<h3 id="create-the-buyer-aea">Create the buyer AEA</h3>
-<p>Then, in another terminal fetch the buyer AEA:
-<div class="highlight"><pre><span></span><code>aea fetch fetchai/generic_buyer:0.28.0 --alias my_buyer_aea
-<span class="nb">cd</span> my_buyer_aea
-aea install
-aea build
-</code></pre></div></p>
-<details><summary>Alternatively, create from scratch.</summary>
-<p>
-
-The following steps create the buyer from scratch:
-<div class="highlight"><pre><span></span><code>aea create my_buyer_aea
-<span class="nb">cd</span> my_buyer_aea
-aea add connection fetchai/p2p_libp2p:0.24.0
-aea add connection fetchai/soef:0.25.0
-aea add connection fetchai/ledger:0.18.0
-aea add skill fetchai/generic_buyer:0.25.0
-aea config <span class="nb">set</span> --type dict agent.dependencies <span class="se">\</span>
-<span class="s1">'{</span>
-<span class="s1">  "aea-ledger-fetchai": {"version": "&lt;2.0.0,&gt;=1.0.0"}</span>
-<span class="s1">}'</span>
-aea config <span class="nb">set</span> agent.default_connection fetchai/p2p_libp2p:0.24.0
-aea config <span class="nb">set</span> --type dict agent.default_routing <span class="se">\</span>
-<span class="s1">'{</span>
-<span class="s1">  "fetchai/ledger_api:1.0.0": "fetchai/ledger:0.18.0",</span>
-<span class="s1">  "fetchai/oef_search:1.0.0": "fetchai/soef:0.25.0"</span>
-<span class="s1">}'</span>
-aea install
-aea build
-</code></pre></div>
-</p>
-</details>
-<h3 id="add-keys-for-the-seller-aea">Add keys for the seller AEA</h3>
-<p>Create the private key for the seller AEA based on the network you want to transact. To generate and add a private-public key pair for Fetch.ai <code>AgentLand</code> use:
-<div class="highlight"><pre><span></span><code>aea generate-key fetchai
-aea add-key fetchai fetchai_private_key.txt
-</code></pre></div></p>
-<p>Next, create a private key used to secure the AEA's communications:
-<div class="highlight"><pre><span></span><code>aea generate-key fetchai fetchai_connection_private_key.txt
-aea add-key fetchai fetchai_connection_private_key.txt --connection
-</code></pre></div></p>
-<p>Finally, certify the key for use by the connections that request that:
-<div class="highlight"><pre><span></span><code>aea issue-certificates
-</code></pre></div></p>
-<h3 id="add-keys-and-generate-wealth-for-the-buyer-aea">Add keys and generate wealth for the buyer AEA</h3>
-<p>The buyer needs to have some wealth to purchase the data from the seller.</p>
-<p>First, create the private key for the buyer AEA based on the network you want to transact. To generate and add a private-public key pair for Fetch.ai <code>AgentLand</code> use:
-<div class="highlight"><pre><span></span><code>aea generate-key fetchai
-aea add-key fetchai fetchai_private_key.txt
-</code></pre></div></p>
-<p>Then, create some wealth for your buyer based on the network you want to transact with. On the Fetch.ai <code>AgentLand</code> network:
-<div class="highlight"><pre><span></span><code>aea generate-wealth fetchai
-</code></pre></div></p>
-<p>Next, create a private key used to secure the AEA's communications:
-<div class="highlight"><pre><span></span><code>aea generate-key fetchai fetchai_connection_private_key.txt
-aea add-key fetchai fetchai_connection_private_key.txt --connection
-</code></pre></div></p>
-<p>Finally, certify the key for use by the connections that request that:
-<div class="highlight"><pre><span></span><code>aea issue-certificates
-</code></pre></div></p>
-<h3 id="update-the-skill-configurations">Update the skill configurations</h3>
-<p>The default skill configurations assume that the transaction is settled against the Fetch.ai ledger.</p>
-<p>In the generic seller's skill configuration file (<code>my_seller_aea/vendor/fetchai/skills/generi_seller/skill.yaml</code>) the <code>data_for_sale</code> is the data the seller AEA is offering for sale. In the following case, this is a one item dictionary where key is <code>generic</code> and value is <code>data</code>.</p>
-<p>Furthermore, the <code>service_data</code> is used to register the seller's service in the <a href="../simple-oef">SOEF search node</a> and make your agent discoverable. 
-<div class="highlight"><pre><span></span><code><span class="nt">models</span><span class="p">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">...</span>
-  <span class="l l-Scalar l-Scalar-Plain">strategy</span><span class="p p-Indicator">:</span>
-    <span class="nt">args</span><span class="p">:</span>
-      <span class="nt">currency_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">FET</span>
-      <span class="nt">data_for_sale</span><span class="p">:</span>
-        <span class="nt">generic</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">data</span>
-      <span class="nt">has_data_source</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-      <span class="nt">is_ledger_tx</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-      <span class="nt">ledger_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fetchai</span>
-      <span class="nt">location</span><span class="p">:</span>
-        <span class="nt">latitude</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">51.5194</span>
-        <span class="nt">longitude</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.127</span>
-      <span class="nt">service_data</span><span class="p">:</span>
-        <span class="nt">key</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">seller_service</span>
-        <span class="nt">value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">generic_service</span>
-      <span class="nt">service_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">generic_service</span>
-      <span class="nt">unit_price</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
-    <span class="nt">class_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GenericStrategy</span>
-</code></pre></div></p>
-<p>The generic buyer skill configuration file (<code>my_buyer_aea/vendor/fetchai/skills/generic_buyer/skill.yaml</code>) includes the <code>search_query</code> which has to match the <code>service_data</code> of the seller.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">models</span><span class="p">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">...</span>
-  <span class="l l-Scalar l-Scalar-Plain">strategy</span><span class="p p-Indicator">:</span>
-    <span class="nt">args</span><span class="p">:</span>
-      <span class="nt">currency_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">FET</span>
-      <span class="nt">is_ledger_tx</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-      <span class="nt">ledger_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fetchai</span>
-      <span class="nt">location</span><span class="p">:</span>
-        <span class="nt">latitude</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">51.5194</span>
-        <span class="nt">longitude</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.127</span>
-      <span class="nt">max_negotiations</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
-      <span class="nt">max_tx_fee</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
-      <span class="nt">max_unit_price</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">20</span>
-      <span class="nt">search_query</span><span class="p">:</span>
-        <span class="nt">constraint_type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">==</span>
-        <span class="nt">search_key</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">seller_service</span>
-        <span class="nt">search_value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">generic_service</span>
-      <span class="nt">search_radius</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5.0</span>
-      <span class="nt">service_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">generic_service</span>
-    <span class="nt">class_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GenericStrategy</span>
-</code></pre></div>
-<h3 id="update-the-skill-configurations_1">Update the skill configurations</h3>
-<p>Both skills are abstract skills, make them instantiable:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> my_seller_aea
-aea config <span class="nb">set</span> vendor.fetchai.skills.generic_seller.is_abstract <span class="nb">false</span> --type bool
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> my_buyer_aea
-aea config <span class="nb">set</span> vendor.fetchai.skills.generic_buyer.is_abstract <span class="nb">false</span> --type bool
-</code></pre></div>
-<h2 id="run-the-aeas">Run the AEAs</h2>
-<p>First, run the seller AEA:</p>
-<div class="highlight"><pre><span></span><code>aea run
-</code></pre></div>
-<p>Once you see a message of the form <code>To join its network use multiaddr 'SOME_ADDRESS'</code> take note of this address. (Alternatively, use <code>aea get-multiaddress fetchai -c -i fetchai/p2p_libp2p:0.24.0 -u public_uri</code> to retrieve the address.)
-This is the entry peer address for the local <a href="../acn">agent communication network</a> created by the seller.</p>
-<p>Then, configure the buyer to connect to this same local ACN by running the following command in the buyer terminal, replacing <code>SOME_ADDRESS</code> with the value you noted above:
-<div class="highlight"><pre><span></span><code>aea config <span class="nb">set</span> --type dict vendor.fetchai.connections.p2p_libp2p.config <span class="se">\</span>
-<span class="s1">'{</span>
-<span class="s1">  "delegate_uri": "127.0.0.1:11001",</span>
-<span class="s1">  "entry_peers": ["SOME_ADDRESS"],</span>
-<span class="s1">  "local_uri": "127.0.0.1:9001",</span>
-<span class="s1">  "log_file": "libp2p_node.log",</span>
-<span class="s1">  "public_uri": "127.0.0.1:9001"</span>
-<span class="s1">}'</span>
-</code></pre></div></p>
-<p>Then run the buyer AEA:</p>
-<div class="highlight"><pre><span></span><code>aea run
-</code></pre></div>
-<p>You will see that the AEAs negotiate and then transact using the Fetch.ai testnet.</p>
-<h2 id="delete-the-aeas">Delete the AEAs</h2>
-<p>When you're done, stop the agents (<code>CTRL+C</code>), go up a level and delete the AEAs.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> ..
-aea delete my_seller_aea
-aea delete my_buyer_aea
-</code></pre></div>
+<h2 id="joining-the-acn-network">Joining the ACN network</h2>
+<p>When an ACN peer wants to join the network, it has
+to start from a list of <em>bootstrap peers</em>, i.e.
+a list of ACN peers to connect with (at least one).</p>
+<p>Each node handles four different types of <a href="https://docs.libp2p.io/concepts/stream-multiplexing/" target="_blank">libp2p streams</a>:</p>
+<ul>
+<li>the <em>notification stream</em>, identified by the URI <code>/aea-notif/</code>:
+  this stream is used by new peers to notify their existence to</li>
+<li>the <em>address stream</em>, identified by the URI <code>/aea-address/</code>:
+  used to send look-up requests and look-up responses;</li>
+<li>the <em>envelope stream</em>, identified by the URI <code>/aea/</code>:
+  used to forward and to receive ACN envelopes;</li>
+<li>the <em>register relay stream</em>, identified by the URI <code>/aea-register/</code>:
+  this is to receive messages from clients that want to register their agents addresses;
+  this peer, and then it can register their addresses.</li>
+</ul>
+<p>To begin with, the node process initializes
+the transport connections with the bootstrap peers,
+the local copy of the Kademlia Distributed
+Hash Table (DHT), 
+the persistent storage for agent records,
+and performs other non-functional operations 
+like setting up the <a href="https://prometheus.io/" target="_blank"> Prometheus monitoring system</a>.
+Optionally, can also start listening for relay connections
+and delegate connections.</p>
+<p>Then, it sets up the notification stream and notifies the bootstrap peers (if any).</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Peer1
+        participant Peer2
+        participant Peer3
+        note over Peer1: notify<br/>bootstrap peers
+        Peer1-&gt;&gt;Peer2: notify
+        Peer2-&gt;&gt;Peer2: wait until notifying peer <br/>added to DHT
+        activate Peer2
+        Peer1-&gt;&gt;Peer3: notify
+        Peer3-&gt;&gt;Peer3: wait until notifying peer <br/>added to DHT
+        activate Peer3
+        note over Peer2,Peer3: Peer1 registered to DHT
+        deactivate Peer2
+        deactivate Peer3
+        loop for each local/relay/delegate address 
+            Peer1-&gt;&gt;Peer1: compute CID from address
+            Peer1-&gt;&gt;Peer2: register address
+            Peer1-&gt;&gt;Peer3: register address
+        end
+        note over Peer1: set up:<br/>- address stream<br/>- envelope stream<br/>- register relay stream
+</div>
+<h3 id="relay-connections">Relay connections</h3>
+<p>If the ACN node is configured to run the relay service,
+it sets up the register relay stream, waiting for registration
+requests.</p>
+<p>The following diagram shows an example of the message exchanged
+during a registration request:</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Agent
+        participant Peer
+        Agent-&gt;&gt;Peer: Register
+        alt decoding error of ACN message
+            Peer-&gt;&gt;Agent: Status(ERROR_SERIALIZATION)
+        else wrong payload
+            Peer-&gt;&gt;Agent: Status(ERROR_UNEXPECTED_PAYLOAD)
+        else PoR check fails
+            alt wrong agent address
+                Peer-&gt;&gt;Agent: Status(ERROR_WRONG_AGENT_ADDRESS)
+            else unsupported ledger
+                Peer-&gt;&gt;Agent: Status(ERROR_UNSUPPORTED_LEDGER)
+            else agent address and public key don't match
+                Peer-&gt;&gt;Agent: Status(ERROR_WRONG_AGENT_ADDRESS)
+            else invalid proof
+                Peer-&gt;&gt;Agent: Status(ERROR_INVALID_PROOF)
+            end
+        else PoR check succeeds
+            Peer-&gt;&gt;Agent: Status(SUCCESS)
+            note over Peer: announce agent address<br/>to other peers
+        end
+</div>
+<h3 id="delegate-connections">Delegate connections</h3>
+<p>If the ACN node is configured to run the delegate service,
+it start listening from a TCP socket at a configurable URI.</p>
+<p>To see a diagram of the message exchanged
+during a registration request read 
+<a href="../acn-internals#registration-interaction" target="_blank">this section</a>.</p>
+<h2 id="acn-transport">ACN transport</h2>
+<p>In the following sections, we describe the main three steps of the routing
+of an envelope through the ACN:</p>
+<ul>
+<li><em>ACN entrance</em>: when an envelope sent by an agent enters 
+  the peer-to-peer network via the peer the agent is connected to
+  i.e. agent-to-peer communication;</li>
+<li><em>ACN routing</em>: when an envelope gets routed through the peer-to-peer network,
+  i.e. peer-to-peer communication;</li>
+<li><em>ACN exit</em>: when an envelope gets delivered to the receiving agent
+  through its representative peer, i.e. peer-to-agent communication.</li>
+</ul>
+<h3 id="acn-envelope-entrance-agent-peer">ACN Envelope Entrance: Agent -&gt; Peer</h3>
+<p>In this section, we will describe the interaction protocols between agents and peers 
+for the messages sent by the agent to the ACN network;
+in particular, the communication from the contact peer of an agent to the agent.</p>
+<p>The following diagram explains the exchange of messages on entering an envelope in the ACN.</p>
+<p>In the case of <em>direct connection</em>, 
+<code>Agent</code> is a Python process, whereas <code>Peer</code> is in a separate (Golang) process.
+The logic of the Python Agent client is implemented in 
+the <a href="https://github.com/fetchai/agents-aea/tree/main/packages/fetchai/connections/p2p_libp2p" target="_blank">AEA connection <code>fetchai/p2p_libp2p</code></a>
+The communication between <code>Agent</code> and <code>Peer</code> is done through 
+an OS pipe for Inter-Process Communication (IPC) between the AEA's process and the libp2p node process;
+then, the message gets enqueued to an output queue by an input coroutine.
+Finally, the envelope ends up in an output queue, 
+which is processed by an output coroutine and routed to the next peer.</p>
+<p>In the case of <em>delegate connection</em>, 
+the message exchange is very similar; however, instead of using 
+pipes, the communication is done through the network, i.e. TCP,
+with a peer which has the delegate service enabled.
+The logic of the <code>Agent</code> client connected with a delegate connection
+is implemented in 
+the <a href="https://github.com/fetchai/agents-aea/tree/main/packages/fetchai/connections/p2p_libp2p_client" target="_blank">AEA connection <code>fetchai/p2p_libp2p_client</code></a> </p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Agent
+        participant Peer
+        loop until Status(success) received
+            Agent-&gt;&gt;Peer: AeaEnvelope
+            Agent-&gt;&gt;Agent: wait
+            note left of Agent: Wait until<br/>Status(success)
+            alt successful case
+                Peer-&gt;&gt;Agent: Status(success)
+                note over Agent: break loop
+            else ack-timeout OR conn-error
+                note left of Agent: continue: Try to<br/>resend/reconnect
+            else version not supported
+                Peer-&gt;&gt;Agent: Status(ERROR_UNSUPPORTED_VERSION)
+            else error on decoding of ACN message
+                Peer-&gt;&gt;Agent: Status(ERROR_SERIALIZATION)
+            else error on decoding of Envelope payload
+                Peer-&gt;&gt;Agent: Status(ERROR_SERIALIZATION)
+            else the payload cannot be handled
+                Peer-&gt;&gt;Agent: Status(ERROR_UNEXPECTED_PAYLOAD)
+            end
+        end
+        note over Peer: route envelope<br/>to next peer
+</div>
+<h3 id="acn-envelope-routing">ACN Envelope Routing</h3>
+<p>In this section, we describe the interaction between peers
+when it comes to envelope routing.</p>
+<p>Assume an envelope arrives from an agent to peer <code>Peer1</code>,
+i.e. <code>Peer1</code> is the first hop 
+of the routing.
+Let <code>Agent</code> be the local agent directly connected
+to <code>Peer1</code>, <code>Peer2</code> a direct peer
+of peer <code>Peer1</code>.</p>
+<p>When the envelope is leaving <code>Peer1</code>,
+we may have different scenario:</p>
+<p>1) In case of direct connection,
+   and the field <code>sender</code> of the envelope
+   is not the local agent address: 
+   the message is considered invalid, and it is dropped. </p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Agent
+        participant Peer1
+        participant Peer2
+        Agent-&gt;&gt;Peer1: AeaEnvelope
+        alt envelope sender not registered locally
+            note over Peer1: stop, log error
+        end
+</div>
+<p>2) the <code>target</code> of the envelope is 
+   the local agent connected to the peer:
+   the envelope is routed to the local agent.</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Agent
+        participant Peer1
+        participant Peer2
+        Agent-&gt;&gt;Peer1: AeaEnvelope
+        alt target == peer1.my_agent
+            note over Peer1: envelope destinated<br/> to local agent,<br/> not routing
+            loop agent not ready
+                note over Peer1: sleep for 100ms
+            end
+            Peer1-&gt;&gt;Agent: AeaEnvelope
+            Agent-&gt;&gt;Peer1: Status(Success)
+        end
+</div>
+<p>3) the <code>target</code> is a delegate client.
+   Send the envelope via TCP.</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Delegate
+        participant Peer1
+        participant Peer2
+        Delegate-&gt;&gt;Peer1: AeaEnvelope
+        alt destination is a delegate
+            note over Peer1: send envelope<br/> to delegate via TCP
+            Peer1-&gt;&gt;Delegate: AeaEnvelope
+            Delegate-&gt;&gt;Peer1: Status(Success)
+        end
+</div>
+<p>4) Otherwise, look up the local DHT.
+  If an entry is found, use it;
+   otherwise, send a look-up request
+   to connected peers.</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Agent
+        participant Peer1
+        participant Peer2
+        Agent-&gt;&gt;Peer1: AeaEnvelope
+        alt address found in DHT
+            note over Peer1: destination is a<br/>relay client
+        else lookup address in DHT
+            note over Peer1: send lookup request<br/> to all peers
+            Peer1-&gt;&gt;Peer2: LookupRequest
+            alt generic error
+                Peer2-&gt;&gt;Peer1: Status(GENERIC_ERROR)
+            else look-up response
+                Peer2-&gt;&gt;Peer1: LookupResponse
+                note over Peer1: Check PoR
+            else not found
+                Peer2-&gt;&gt;Peer1:Status(UNKNOWN_AGENT_ADDRESS)
+            end
+        end
+        note over Peer1,Peer2: Now Peer1 knows the contact peer<br/>is PeerX
+</div>
+<p>In particular, when a peer receives a LookupRequest message,
+it does the following:</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Peer1
+        participant Peer2
+        Peer1-&gt;&gt;Peer2: LookupRequest
+        alt error
+            Peer2-&gt;&gt;Peer1: Status(Error)
+        else local agent/relay/delegate
+            note over Peer2: requested address is<br/>a local agent<br/>OR<br/>requested address is<br/>in my relay clients<br/>OR<br/>requested address is<br/>in my delegate clients
+            Peer2-&gt;&gt;Peer1: LookupResponse
+            note over Peer1: Check PoR
+        else not found locally
+            note over Peer2: send lookup request<br/>to other peers...
+            alt found
+                Peer2-&gt;&gt;Peer1: LookupResponse
+                note over Peer1: Check PoR
+            else not found
+                Peer2-&gt;&gt;Peer1:Status(UNKNOWN_AGENT_ADDRESS)
+            end
+        end
+</div>
+<p>Let <code>Peer3</code> the contact peer of the recipient of the envelope. 
+The following diagram shows how the contact peer of the 
+envelope recipient handles the incoming envelope:</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Peer1
+        participant Peer3
+        Peer1-&gt;&gt;Peer3: AeaEnvelope
+        alt decoding error of ACN message
+            Peer3-&gt;&gt;Peer1: Status(ERROR_SERIALIZATION)
+        else unexpected payload
+            Peer3-&gt;&gt;Peer1: Status(ERROR_UNEXPECTED_PAYLOAD)
+        else decoding error of envelope payload
+            Peer3-&gt;&gt;Peer1: Status(ERROR_SERIALIZATION)        
+        else PoR check fails
+            alt wrong agent address
+                Peer3-&gt;&gt;Peer1: Status(ERROR_WRONG_AGENT_ADDRESS)
+            else unsupported ledger
+                Peer3-&gt;&gt;Peer1: Status(ERROR_UNSUPPORTED_LEDGER)
+            else agent address and public key don't match
+                Peer3-&gt;&gt;Peer1: Status(ERROR_WRONG_AGENT_ADDRESS)
+            else invalid proof
+                Peer3-&gt;&gt;Peer1: Status(ERROR_INVALID_PROOF)
+            end
+        else PoR check succeeds
+            alt target is delegate, not ready
+                Peer3-&gt;&gt;Peer1: Status(ERROR_AGENT_NOT_READY)
+            else exists delegate, ready
+                note over Peer3: forward envelope via<br/>delegate connection
+                Peer3-&gt;&gt;Peer1: Status(SUCCESS)
+            else target is local agent, not ready
+                Peer3-&gt;&gt;Peer1: Status(ERROR_AGENT_NOT_READY)
+            else target is local agent, ready
+                note over Peer3: forward envelope via<br/>direct connection
+                Peer3-&gt;&gt;Peer1: Status(SUCCESS)
+            else agent does not exist
+                Peer3-&gt;&gt;Peer1: Status(ERROR_UNKNOWN_AGENT_ADDRESS)
+            end
+        end
+</div>
+<h3 id="acn-envelope-exit-peer-agent">ACN Envelope Exit: Peer -&gt; Agent</h3>
+<p>The following diagram explains the exchange of messages on exiting an envelope in the ACN.
+That is, the communication from the contact peer of an agent to the agent.</p>
+<p>The same message exchange is done 
+both in the case of direct connection and
+delegate connection,
+similarly for what has been described for the envelope entrance
+<a href="../acn-internals#acn-envelope-entrance-agent-peer">(see above)</a>.</p>
+<div class="mermaid">
+    sequenceDiagram
+        participant Agent
+        participant Peer
+        Peer-&gt;&gt;Agent: AeaEnvelope
+        alt successful case
+            Agent-&gt;&gt;Peer: Status(success)
+        else ack-timeout OR conn-error
+            note left of Peer: do nothing
+        else error on decoding of ACN message
+            Agent-&gt;&gt;Peer: Status(GENERIC_ERROR)
+        else error on decoding of Envelope payload
+            Agent-&gt;&gt;Peer: Status(GENERIC_ERROR)
+        else wrong payload
+            Agent-&gt;&gt;Peer: Status(GENERIC_ERROR)
+        end
+</div>
+<h2 id="connect-your-aea-to-the-acn">Connect your AEA to the ACN</h2>
+<p>To connect the AEA to the ACN network,
+there are two AEA connections available:</p>
+<ul>
+<li>the <code>fetchai/p2p_libp2p</code>, that implements
+  a direct connection, and</li>
+<li>the <code>fetchai/p2p_libp2p_delegate</code> connection,
+  that implements the delegate connection.</li>
+</ul>
+<p>For more information on the AEA connection package type,
+refer to <a href="../connection/" target="_blank">this guide</a>.</p>
+<h3 id="the-fetchaip2p_libp2p-connection">The <code>fetchai/p2p_libp2p</code> connection</h3>
+<p>The source code of the <code>fetchai/p2p_libp2p</code> connection<br/>
+can be downloaded from 
+<a href="https://aea-registry.fetch.ai/details/connection/fetchai/p2p_libp2p/latest" target="_blank">the AEA Registry</a>,
+or from <a href="https://github.com/fetchai/agents-aea/tree/main/packages/fetchai/connections/p2p_libp2p" target="_blank">the main AEA framework repository.</a></p>
+<p>The package provides the connection class <code>P2PLibp2pConnection</code>,
+which implements the <code>Connection</code> interface and
+therefore can be used by the Multiplexer as any other connection.</p>
+<ul>
+<li>The <code>connect</code> method of this connection spawns a new instance
+  of the <a href="https://github.com/fetchai/agents-aea/blob/main/libs/go/libp2p_node/libp2p_node.go" target="_blank"><code>libp2p_node</code> program</a>
+(i.e. an ACN peer node) and connects to it through OS pipes. 
+Then, it sets up the <em>message receiving loop</em>,
+  which enqueues messages in the input queue to be read by <code>read</code> method calls,
+  and the <em>message sending loop</em>, 
+  which dequeues messages from the output queue and forwards them to the Libp2p node. 
+The loops are run concurrently in the Multiplexer thread, 
+  using the Python asynchronous programming library <code>asyncio</code>.  </li>
+</ul>
+<div class="mermaid">
+    sequenceDiagram
+        participant Libp2p Connection
+        participant sending loop
+        participant receiving loop
+        participant Libp2p Node
+        Libp2p Connection-&gt;&gt;Libp2p Node: spawn process
+        activate Libp2p Node
+        Libp2p Connection-&gt;&gt;sending loop: start recv loop
+        sending loop-&gt;&gt;sending loop: wait messages from output queue
+        activate sending loop
+        Libp2p Connection-&gt;&gt;receiving loop: start send loop
+        receiving loop-&gt;&gt;receiving loop: wait messages from input queue
+        activate receiving loop
+        deactivate Libp2p Node
+        deactivate sending loop
+        deactivate receiving loop
+</div>
+<ul>
+<li>The <code>send</code> method enqueues a message in the output queue.
+The message is then dequeued by the sending loop,
+and then sent to the Libp2p node. </li>
+</ul>
+<div class="mermaid">
+    sequenceDiagram
+        participant Libp2p Connection
+        participant sending loop
+        participant Libp2p Node
+        activate sending loop
+        Libp2p Connection-&gt;&gt;Libp2p Connection: enqueue message to output queue
+        sending loop-&gt;&gt;sending loop: dequeue message from output queue
+        deactivate sending loop
+        sending loop-&gt;&gt;Libp2p Node: AeaEnvelope
+        sending loop-&gt;&gt;sending loop: wait for status
+        activate sending loop
+        alt success
+            note over Libp2p Node: route envelope
+            Libp2p Node-&gt;&gt;sending loop: Status(SUCCESS)
+            deactivate sending loop
+            note over sending loop: OK
+        else timed out
+            note over sending loop: raise with error
+        else acn message decoding error 
+            Libp2p Node-&gt;&gt;sending loop: Status(ERROR_SERIALIZATION)
+        else unexpected payload
+            Libp2p Node-&gt;&gt;sending loop: Status(ERROR_UNEXPECTED_PAYLOAD)
+        else envelope decoding error 
+            Libp2p Node-&gt;&gt;sending loop: Status(ERROR_SERIALIZATION)
+        end
+</div>
+<ul>
+<li>The <code>receive</code> method dequeues a message from the input queue.
+The queue is populated by the receiving loop,
+which receives messages from the Libp2p node. </li>
+</ul>
+<div class="mermaid">
+    sequenceDiagram
+        participant Libp2p Connection
+        participant receiving loop
+        participant Libp2p Node
+        activate receiving loop
+        Libp2p Node-&gt;&gt;receiving loop: AeaEnvelope
+        deactivate receiving loop
+        Libp2p Node-&gt;&gt;Libp2p Node: wait for status
+        activate Libp2p Node
+        alt success
+            note over receiving loop: enqueue envelope<br/>to input queue
+            receiving loop-&gt;&gt;Libp2p Node: Status(SUCCESS)
+            deactivate Libp2p Node
+            note over receiving loop: OK
+        else timed out
+            note over Libp2p Node: ignore
+        else acn message decoding error 
+            receiving loop-&gt;&gt;Libp2p Node: Status(ERROR_SERIALIZATION)
+        else unexpected payload
+            receiving loop-&gt;&gt;Libp2p Node: Status(ERROR_UNEXPECTED_PAYLOAD)
+        else envelope decoding error 
+            receiving loop-&gt;&gt;Libp2p Node: Status(ERROR_SERIALIZATION)
+        end
+        Libp2p Connection-&gt;&gt;receiving loop: read message from output queue
+        note over Libp2p Connection: return message<br/>to Multiplexer
+</div>
+<ul>
+<li>the <code>disconnect</code> method stops both the receiving loop and the sending loop,
+  and stops the Libp2p node.</li>
+</ul>
+<h3 id="the-fetchaip2p_libp2p_delegate-connection">The <code>fetchai/p2p_libp2p_delegate</code> connection</h3>
+<p>The source code of the <code>fetchai/p2p_libp2p_delegate</code> connection<br/>
+can be downloaded from
+<a href="https://aea-registry.fetch.ai/details/connection/fetchai/p2p_libp2p_client/latest" target="_blank">the main AEA framework repository.</a>
+or from <a href="https://github.com/fetchai/agents-aea/tree/main/packages/fetchai/connections/p2p_libp2p_client" target="_blank">the main AEA framework repository.</a></p>
+<p>The package provides the connection class <code>P2PLibp2pClientConnection</code>,
+which implements the <code>Connection</code> interface and
+therefore can be used by the Multiplexer as any other connection.</p>
+<ul>
+<li>The <code>connect</code> method of this connection will set up a TCP
+  connection to the URI of the delegate peer. Then, it will
+  send a <code>Register</code> request to register the agent among the peer's
+  client connections.
+  On registration success, it sets up the <em>message receiving loop</em>, 
+  which enqueues messages in the input queue to be read by read method calls, 
+  and the <em>message sending loop</em>, which dequeues messages from the output queue 
+  and forwards them to the Libp2p node. 
+  The loops are run concurrently in the Multiplexer thread, 
+  using the Python asynchronous programming library <code>asyncio</code>.</li>
+</ul>
+<div class="mermaid">
+    sequenceDiagram
+        participant Libp2p Client Connection
+        participant Libp2p Node
+        activate Libp2p Node
+        Libp2p Node-&gt;&gt;Libp2p Node: listening for TCP connections
+        Libp2p Client Connection-&gt;&gt;Libp2p Node: Register (via TCP)
+        deactivate Libp2p Node
+        alt decoding error of ACN message
+            Libp2p Node-&gt;&gt;Libp2p Client Connection: Status(ERROR_SERIALIZATION)
+        else wrong payload
+            Libp2p Node-&gt;&gt;Libp2p Client Connection: Status(ERROR_UNEXPECTED_PAYLOAD)
+        else PoR check fails
+            alt wrong agent address
+                Libp2p Node-&gt;&gt;Libp2p Client Connection: Status(ERROR_WRONG_AGENT_ADDRESS)
+            else unsupported ledger
+                Libp2p Node-&gt;&gt;Libp2p Client Connection: Status(ERROR_UNSUPPORTED_LEDGER)
+            else agent address and public key don't match
+                Libp2p Node-&gt;&gt;Libp2p Client Connection: Status(ERROR_WRONG_AGENT_ADDRESS)
+            else invalid proof
+                Libp2p Node-&gt;&gt;Libp2p Client Connection: Status(ERROR_INVALID_PROOF)
+            end
+        else PoR check succeeds
+            Libp2p Node-&gt;&gt;Libp2p Client Connection: Status(SUCCESS)
+            note over Libp2p Node: announce agent<br/>address to<br/>other peers
+            Libp2p Node-&gt;&gt;Libp2p Node: wait data from socket 
+            activate Libp2p Node
+            deactivate Libp2p Node
+        end
+</div>
+<ul>
+<li>
+<p>The <code>send</code> method and the <code>receive</code> methods behave similarly to
+  the <code>send</code> and <code>receive</code> methods of the
+  <a href="../acn-internals#the-fetchaip2p_libp2p-connection" target="_blank"><code>p2p_libp2p connection</code></a>, 
+  in terms of message exchange;
+  however, the communication is done via TCP rather than pipes.</p>
+</li>
+<li>
+<p>The <code>disconnect</code> method interrupts the connection with the delegate peer,
+  without explicitly unregistering.</p>
+</li>
+</ul>
+<h2 id="known-issues-and-limitations">Known issues and limitations</h2>
+<p>In this section, we provide a list of known issues
+and limitations of the current implementation
+of the ACN, considering both the ACN nodes (written in Golang)
+and the AEA connections, for the Python AEA framework, to interact with them.</p>
+<h3 id="delegate-client-on-client-disconnectionreconnection">Delegate client on client disconnection/reconnection</h3>
+<p>In case of disconnection/reconnection, delegate client record will be removed.
+This can cause two problems: either the delegate client is not found, 
+or connection is closed during the send operation.</p>
+<p>Possible solutions:</p>
+<ul>
+<li>Create more complicated structure for clients storage;</li>
+<li>Keep the delegate client record for longer; </li>
+<li>Clean up the record by timeout, per client queues.</li>
+</ul>
+<p>Code references:</p>
+<ul>
+<li>record removed: <a href="https://github.com/fetchai/agents-aea/blob/1db1720081969bcec1be5a2000ca176475d2b487/libs/go/libp2p_node/dht/dhtpeer/dhtpeer.go#L864" target="_blank">https://github.com/fetchai/agents-aea/blob/1db1720081969bcec1be5a2000ca176475d2b487/libs/go/libp2p_node/dht/dhtpeer/dhtpeer.go#L864</a></li>
+<li>send code: <a href="https://github.com/fetchai/agents-aea/blob/1db1720081969bcec1be5a2000ca176475d2b487/libs/go/libp2p_node/dht/dhtpeer/dhtpeer.go#L955" target="_blank">https://github.com/fetchai/agents-aea/blob/1db1720081969bcec1be5a2000ca176475d2b487/libs/go/libp2p_node/dht/dhtpeer/dhtpeer.go#L955</a></li>
+</ul>
+<h3 id="golang-node-python-client-libp2p-connection">Golang Node &lt;&gt; Python Client <code>libp2p</code> connection</h3>
+<p>In case of connection between the Golang side (i.e. ACN node) 
+and the Python side (i.e. the <code>libp2p</code> AEA connection) is broken, 
+there is no reconnection attempt.
+The Golang side connect to the Python server opened, 
+but if the connection is broken Golang can try to reconnect; 
+however, the Python side does not know about this and will restart
+the node completely.</p>
+<p>Possible solutions: the problem requires updates on both sides and assume possible timeouts on broken connection.
+If connection is broken, the Python side awaits for reconnection from Golang side, 
+and restart node completely after timeout.</p>
+<h3 id="what-a-peer-should-do-if-it-receives-an-acknowledgement-with-an-error">What a peer should do if it receives an acknowledgement with an error?</h3>
+<p>If an ACN response is the <code>Status</code> with error code different from <code>SUCCESS</code>,
+the forwarding to other peers is not repeated. </p>
+<p>A possible solution is to resend the message; however,
+not clear why it should help in case of healthy connection,
+how many times the sender should retry, and how it would help.</p>
+<p>Discussion on GitHub: 
+<a href="https://github.com/fetchai/agents-aea/pull/2509#discussion_r642628983" target="_blank">https://github.com/fetchai/agents-aea/pull/2509#discussion_r642628983</a></p>
+<h3 id="no-possibility-of-switching-peers">No possibility of switching peers</h3>
+<p>In case of a peer becoming unavailable, a delegate client or relay client currently has no means to automatically switch the peer. In particular, the DHT should be updated when a client switches peers.</p>
 </article>
 </div>
 </div>
@@ -2095,7 +2654,7 @@ aea delete my_buyer_aea
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../api/plugins/aea_ledger_fetchai/_cosmos/" rel="prev" title="Helper">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../acn/" rel="prev" title="Agent Communication Network">
 <div class="md-flex__cell md-flex__cell--shrink">
 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
 </div>
@@ -2104,17 +2663,17 @@ aea delete my_buyer_aea
 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Helper
+                Agent Communication Network
               </span>
 </div>
 </a>
-<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../connect-a-frontend/" rel="next" title="Front-end intergration">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../simple-oef/" rel="next" title="Simple OEF">
 <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
 <span class="md-flex__ellipsis">
 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Front-end intergration
+                Simple OEF
               </span>
 </div>
 <div class="md-flex__cell md-flex__cell--shrink">
@@ -2138,7 +2697,7 @@ aea delete my_buyer_aea
 </footer>
 </div>
 <script src="../assets/javascripts/application.c33a9706.js"></script>
-<script>app.initialize({version:"1.1.2",url:{base:".."}})</script>
-<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+<script>app.initialize({version:"1.1",url:{base:".."}})</script>
+<script src="https://unpkg.com/mermaid@8.10.1/dist/mermaid.min.js"></script>
 </body>
 </html>
