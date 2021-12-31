@@ -27,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
 <link href="../assets/fonts/material-icons.css" rel="stylesheet"/>
-<link href="../css/my-styles.css" rel="stylesheet"/>
+<link href="../stylesheets/extra.css" rel="stylesheet"/>
 </head>
 <body dir="ltr">
 <svg class="md-svg">
@@ -38,7 +38,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#system-requirements" tabindex="0">
+<a class="md-skip" href="#dependencies-system-requirements" tabindex="0">
         Skip to content
       </a>
 <header class="md-header" data-md-component="header">
@@ -93,7 +93,7 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../language-agnostic-definition/">
+<a class="md-tabs__link" href="../agent-oriented-development/">
           Concepts
         </a>
 </li>
@@ -109,12 +109,17 @@
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../step-one/">
-          Development - Advanced
+          Development - Intermediate
         </a>
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../connect-a-frontend/">
           Development - Use Case
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../generic-storage/">
+          Development - Advanced
         </a>
 </li>
 </ul>
@@ -171,11 +176,6 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../language-agnostic-definition/" title="Language Agnostic Definition">
-      Language Agnostic Definition
-    </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../agent-oriented-development/" title="Agent-oriented development">
       Agent-oriented development
     </a>
@@ -205,6 +205,16 @@
       Trust minimisation
     </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../language-agnostic-definition/" title="Language Agnostic Definition">
+      Language Agnostic Definition
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../registry/" title="Agent &amp; component registry">
+      Agent &amp; component registry
+    </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -221,6 +231,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../demos/" title="Demos">
       Demos
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../demos/echo_demo/" title="Echo Demo">
+      Echo Demo
     </a>
 </li>
 <li class="md-nav__item">
@@ -263,8 +278,8 @@
 <label class="md-nav__title" for="__toc">Table of contents</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#system-requirements">
-    System Requirements
+<a class="md-nav__link" href="#dependencies-system-requirements">
+    Dependencies &amp; System Requirements
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
@@ -287,23 +302,57 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#preliminaries">
-    Preliminaries
+<a class="md-nav__link" href="#getting-started">
+    Getting Started
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#installation">
-    Installation
+<a class="md-nav__link" href="#installation-of-open-aea">
+    Installation of Open-AEA
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#setup-author-name">
-    Setup author name
+<a class="md-nav__link" href="#setup-open-aea-components">
+    Setup Open-AEA Components
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#echo-skill-demo">
     Echo skill demo
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-aea-dependencies">
+    Install AEA dependencies
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-and-create-a-private-key">
+    Add and create a private key
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run-the-aea">
+    Run the AEA
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interact-with-the-aea">
+    Interact with the AEA
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stop-the-aea">
+    Stop the AEA
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-does-this-aea-work">
+    How Does This AEA work?
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
@@ -322,38 +371,18 @@
     Stub connection
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#install-aea-dependencies">
-    Install AEA dependencies
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add-and-create-a-private-key">
-    Add and create a private key
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#run-the-aea">
-    Run the AEA
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add-a-message-to-the-input-file">
-    Add a message to the input file
-  </a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#stop-the-aea">
-    Stop the AEA
+<a class="md-nav__link" href="#test-quickstart">
+    Test Quickstart
   </a>
-</li>
+<nav class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#write-a-test-for-the-aea">
-    Write a test for the AEA
+<a class="md-nav__link" href="#write-a-simple-test-for-the-aea">
+    Write a simple test for the AEA
   </a>
 </li>
 <li class="md-nav__item">
@@ -397,27 +426,37 @@
       Development setup
     </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../logging/" title="Logging">
+      Logging
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../debug/" title="Debugging">
+      Debugging
+    </a>
+</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" id="nav-7" type="checkbox"/>
 <label class="md-nav__link" for="nav-7">
-      Development - Advanced
+      Development - Intermediate
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
 <label class="md-nav__title" for="nav-7">
-        Development - Advanced
+        Development - Intermediate
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" id="nav-7-1" type="checkbox"/>
 <label class="md-nav__link" for="nav-7-1">
-      Topic guides
+      Developing New Components
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
 <label class="md-nav__title" for="nav-7-1">
-        Topic guides
+        Developing New Components
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -438,91 +477,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../protocol-generator/" title="Generating protocols">
       Generating protocols
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../logging/" title="Logging">
-      Logging
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../multiplexer-standalone/" title="Use multiplexer stand-alone">
-      Use multiplexer stand-alone
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../standalone-transaction/" title="Create stand-alone transaction">
-      Create stand-alone transaction
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../decision-maker-transaction/" title="Create decision-maker transaction">
-      Create decision-maker transaction
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../skill-testing/" title="Testing Skills">
-      Testing Skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../deployment/" title="Deployment">
-      Deployment
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../12-factor/" title="12-Factor app and AEAs">
-      12-Factor app and AEAs
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../known-limits/" title="Known limitations">
-      Known limitations
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../build-aea-programmatically/" title="Build an AEA programmatically">
-      Build an AEA programmatically
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../agent-vs-aea/" title="AEAs vs agents">
-      AEAs vs agents
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../modes/" title="Modes of running an AEA">
-      Modes of running an AEA
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../generic-storage/" title="Generic Storage">
-      Generic Storage
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../multi-agent-manager/" title="Multi agent manager">
-      Multi agent manager
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../debug/" title="Debugging">
-      Debugging
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../runtime-cost/" title="Profiling">
-      Profiling
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../por/" title="Proof of Representation">
-      Proof of Representation
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../security/" title="Security">
-      Security
     </a>
 </li>
 </ul>
@@ -596,13 +550,142 @@
 </ul>
 </nav>
 </li>
+</ul>
+</nav>
+</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" id="nav-7-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-3">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" id="nav-8" type="checkbox"/>
+<label class="md-nav__link" for="nav-8">
+      Development - Use Case
+    </label>
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-8">
+        Development - Use Case
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../connect-a-frontend/" title="Front-end intergration">
+      Front-end intergration
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../http-connection-and-skill/" title="HTTP Connection">
+      HTTP Connection
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../raspberry-set-up/" title="Build an AEA on a Raspberry Pi">
+      Build an AEA on a Raspberry Pi
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" id="nav-9" type="checkbox"/>
+<label class="md-nav__link" for="nav-9">
+      Development - Advanced
+    </label>
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-9">
+        Development - Advanced
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-1" id="nav-9-1" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-1">
+      Topic Guides
+    </label>
+<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+<label class="md-nav__title" for="nav-9-1">
+        Topic Guides
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../generic-storage/" title="Generic Storage">
+      Generic Storage
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../multi-agent-manager/" title="Multi agent manager">
+      Multi agent manager
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../multiplexer-standalone/" title="Use multiplexer stand-alone">
+      Use multiplexer stand-alone
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../standalone-transaction/" title="Create stand-alone transaction">
+      Create stand-alone transaction
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../decision-maker-transaction/" title="Create decision-maker transaction">
+      Create decision-maker transaction
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../skill-testing/" title="Testing Skills">
+      Testing Skills
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../deployment/" title="Deployment">
+      Deployment
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../12-factor/" title="12-Factor app and AEAs">
+      12-Factor app and AEAs
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../known-limits/" title="Known limitations">
+      Known limitations
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../build-aea-programmatically/" title="Build an AEA programmatically">
+      Build an AEA programmatically
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../agent-vs-aea/" title="AEAs vs agents">
+      AEAs vs agents
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../modes/" title="Modes of running an AEA">
+      Modes of running an AEA
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../runtime-cost/" title="Profiling">
+      Profiling
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../por/" title="Proof of Representation">
+      Proof of Representation
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../security/" title="Security">
+      Security
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-2" id="nav-9-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-2">
       Agent Communication
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-7-3">
+<label class="md-nav__title" for="nav-9-2">
         Agent Communication
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -620,12 +703,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" id="nav-7-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-4">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-3" id="nav-9-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-3">
       Search &amp; Discovery
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-7-4">
+<label class="md-nav__title" for="nav-9-3">
         Search &amp; Discovery
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -653,22 +736,22 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-5" id="nav-7-5" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-5">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-4" id="nav-9-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-4">
       Developer Interfaces
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-7-5">
+<label class="md-nav__title" for="nav-9-4">
         Developer Interfaces
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-5-1" id="nav-7-5-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-5-1">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-4-1" id="nav-9-4-1" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-4-1">
       CLI
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-5-1">
+<label class="md-nav__title" for="nav-9-4-1">
         CLI
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -699,12 +782,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-6" id="nav-7-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-6">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-5" id="nav-9-5" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-5">
       Benchmarks
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-7-6">
+<label class="md-nav__title" for="nav-9-5">
         Benchmarks
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -717,12 +800,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7" id="nav-7-7" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6" id="nav-9-6" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6">
       API
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-7-7">
+<label class="md-nav__title" for="nav-9-6">
         API
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -782,12 +865,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-12" id="nav-7-7-12" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-12">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-12" id="nav-9-6-12" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-12">
       Components
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-12">
+<label class="md-nav__title" for="nav-9-6-12">
         Components
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -810,12 +893,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-13" id="nav-7-7-13" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-13">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-13" id="nav-9-6-13" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-13">
       Configurations
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-13">
+<label class="md-nav__title" for="nav-9-6-13">
         Configurations
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -863,12 +946,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-14" id="nav-7-7-14" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-14">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-14" id="nav-9-6-14" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-14">
       Connections
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-14">
+<label class="md-nav__title" for="nav-9-6-14">
         Connections
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -886,12 +969,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-16" id="nav-7-7-16" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-16">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-16" id="nav-9-6-16" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-16">
       Contracts
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-16">
+<label class="md-nav__title" for="nav-9-6-16">
         Contracts
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -904,12 +987,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-17" id="nav-7-7-17" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-17">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-17" id="nav-9-6-17" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-17">
       Crypto
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-17">
+<label class="md-nav__title" for="nav-9-6-17">
         Crypto
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -939,12 +1022,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-17-6" id="nav-7-7-17-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-17-6">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-17-6" id="nav-9-6-17-6" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-17-6">
       Registries
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-17-6">
+<label class="md-nav__title" for="nav-9-6-17-6">
         Registries
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -960,12 +1043,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-18" id="nav-7-7-18" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-18">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-18" id="nav-9-6-18" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-18">
       Decision Maker
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-18">
+<label class="md-nav__title" for="nav-9-6-18">
         Decision Maker
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -983,12 +1066,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-19" id="nav-7-7-19" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-19">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-19" id="nav-9-6-19" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-19">
       Error Handler
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-19">
+<label class="md-nav__title" for="nav-9-6-19">
         Error Handler
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1006,22 +1089,22 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20" id="nav-7-7-20" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20" id="nav-9-6-20" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20">
       Helpers
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-20">
+<label class="md-nav__title" for="nav-9-6-20">
         Helpers
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-1" id="nav-7-7-20-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20-1">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20-1" id="nav-9-6-20-1" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20-1">
       ACN
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-20-1">
+<label class="md-nav__title" for="nav-9-6-20-1">
         ACN
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1099,12 +1182,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-14" id="nav-7-7-20-14" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20-14">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20-14" id="nav-9-6-20-14" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20-14">
       IPFS
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-20-14">
+<label class="md-nav__title" for="nav-9-6-20-14">
         IPFS
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1127,12 +1210,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-16" id="nav-7-7-20-16" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20-16">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20-16" id="nav-9-6-20-16" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20-16">
       MultiAddress
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-20-16">
+<label class="md-nav__title" for="nav-9-6-20-16">
         MultiAddress
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1155,12 +1238,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-19" id="nav-7-7-20-19" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20-19">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20-19" id="nav-9-6-20-19" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20-19">
       Preferences
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-20-19">
+<label class="md-nav__title" for="nav-9-6-20-19">
         Preferences
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1178,12 +1261,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-21" id="nav-7-7-20-21" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20-21">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20-21" id="nav-9-6-20-21" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20-21">
       Search
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-20-21">
+<label class="md-nav__title" for="nav-9-6-20-21">
         Search
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1206,12 +1289,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-23" id="nav-7-7-20-23" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20-23">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20-23" id="nav-9-6-20-23" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20-23">
       Storage
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-20-23">
+<label class="md-nav__title" for="nav-9-6-20-23">
         Storage
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1221,12 +1304,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-23-2" id="nav-7-7-20-23-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20-23-2">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20-23-2" id="nav-9-6-20-23-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20-23-2">
       Backends
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-7-7-20-23-2">
+<label class="md-nav__title" for="nav-9-6-20-23-2">
         Backends
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1252,12 +1335,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-20-25" id="nav-7-7-20-25" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-20-25">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-20-25" id="nav-9-6-20-25" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-20-25">
       Transaction
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-20-25">
+<label class="md-nav__title" for="nav-9-6-20-25">
         Transaction
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1293,12 +1376,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-23" id="nav-7-7-23" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-23">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-23" id="nav-9-6-23" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-23">
       Manager
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-23">
+<label class="md-nav__title" for="nav-9-6-23">
         Manager
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1321,12 +1404,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24" id="nav-7-7-24" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-24" id="nav-9-6-24" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-24">
       Protocols
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-24">
+<label class="md-nav__title" for="nav-9-6-24">
         Protocols
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1336,12 +1419,12 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-2" id="nav-7-7-24-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-2">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-24-2" id="nav-9-6-24-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-24-2">
       Dialogue
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-2">
+<label class="md-nav__title" for="nav-9-6-24-2">
         Dialogue
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1354,12 +1437,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-3" id="nav-7-7-24-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-3">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-24-3" id="nav-9-6-24-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-24-3">
       Generator
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-3">
+<label class="md-nav__title" for="nav-9-6-24-3">
         Generator
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1387,12 +1470,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-24-4" id="nav-7-7-24-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-24-4">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-24-4" id="nav-9-6-24-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-24-4">
       Signing Protocol
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-24-4">
+<label class="md-nav__title" for="nav-9-6-24-4">
         Signing Protocol
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1423,12 +1506,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-25" id="nav-7-7-25" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-25">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-25" id="nav-9-6-25" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-25">
       Registries
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-25">
+<label class="md-nav__title" for="nav-9-6-25">
         Registries
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1451,12 +1534,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-26" id="nav-7-7-26" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-26">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-26" id="nav-9-6-26" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-26">
       Skills
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-26">
+<label class="md-nav__title" for="nav-9-6-26">
         Skills
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1479,12 +1562,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-27" id="nav-7-7-27" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-27">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-27" id="nav-9-6-27" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-27">
       Test Tools
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-27">
+<label class="md-nav__title" for="nav-9-6-27">
         Test Tools
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1522,38 +1605,43 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-28" id="nav-7-7-28" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-28">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-28" id="nav-9-6-28" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-28">
       Plugins
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-7-7-28">
+<label class="md-nav__title" for="nav-9-6-28">
         Plugins
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-28-1" id="nav-7-7-28-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-28-1">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-28-1" id="nav-9-6-28-1" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-28-1">
       CLI
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-28-1">
+<label class="md-nav__title" for="nav-9-6-28-1">
         CLI
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-28-1-1" id="nav-7-7-28-1-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-28-1-1">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-28-1-1" id="nav-9-6-28-1-1" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-28-1-1">
       IPFS
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-7-7-28-1-1">
+<label class="md-nav__title" for="nav-9-6-28-1-1">
         IPFS
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../api/plugins/aea_cli_ipfs/core/" title="API">
       API
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api/plugins/aea_cli_ipfs/registry/" title="Registry">
+      Registry
     </a>
 </li>
 <li class="md-nav__item">
@@ -1568,22 +1656,22 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-28-2" id="nav-7-7-28-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-28-2">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-28-2" id="nav-9-6-28-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-28-2">
       Ledger
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-7-7-28-2">
+<label class="md-nav__title" for="nav-9-6-28-2">
         Ledger
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-28-2-1" id="nav-7-7-28-2-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-28-2-1">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-28-2-1" id="nav-9-6-28-2-1" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-28-2-1">
       Cosmos
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-7-7-28-2-1">
+<label class="md-nav__title" for="nav-9-6-28-2-1">
         Cosmos
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1596,12 +1684,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-28-2-2" id="nav-7-7-28-2-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-28-2-2">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-28-2-2" id="nav-9-6-28-2-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-28-2-2">
       Ethereum
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-7-7-28-2-2">
+<label class="md-nav__title" for="nav-9-6-28-2-2">
         Ethereum
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1614,12 +1702,12 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-7-28-2-3" id="nav-7-7-28-2-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-7-28-2-3">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6-28-2-3" id="nav-9-6-28-2-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-9-6-28-2-3">
       Fetchai
     </label>
 <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-7-7-28-2-3">
+<label class="md-nav__title" for="nav-9-6-28-2-3">
         Fetchai
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
@@ -1648,34 +1736,6 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" id="nav-8" type="checkbox"/>
-<label class="md-nav__link" for="nav-8">
-      Development - Use Case
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-8">
-        Development - Use Case
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../connect-a-frontend/" title="Front-end intergration">
-      Front-end intergration
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../http-connection-and-skill/" title="HTTP Connection">
-      HTTP Connection
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../raspberry-set-up/" title="Build an AEA on a Raspberry Pi">
-      Build an AEA on a Raspberry Pi
-    </a>
-</li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../glossary/" title="Glossary">
       Glossary
@@ -1698,8 +1758,8 @@
 <label class="md-nav__title" for="__toc">Table of contents</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#system-requirements">
-    System Requirements
+<a class="md-nav__link" href="#dependencies-system-requirements">
+    Dependencies &amp; System Requirements
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
@@ -1722,23 +1782,57 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#preliminaries">
-    Preliminaries
+<a class="md-nav__link" href="#getting-started">
+    Getting Started
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#installation">
-    Installation
+<a class="md-nav__link" href="#installation-of-open-aea">
+    Installation of Open-AEA
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#setup-author-name">
-    Setup author name
+<a class="md-nav__link" href="#setup-open-aea-components">
+    Setup Open-AEA Components
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#echo-skill-demo">
     Echo skill demo
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-aea-dependencies">
+    Install AEA dependencies
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-and-create-a-private-key">
+    Add and create a private key
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run-the-aea">
+    Run the AEA
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interact-with-the-aea">
+    Interact with the AEA
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stop-the-aea">
+    Stop the AEA
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-does-this-aea-work">
+    How Does This AEA work?
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
@@ -1757,38 +1851,18 @@
     Stub connection
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#install-aea-dependencies">
-    Install AEA dependencies
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add-and-create-a-private-key">
-    Add and create a private key
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#run-the-aea">
-    Run the AEA
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add-a-message-to-the-input-file">
-    Add a message to the input file
-  </a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#stop-the-aea">
-    Stop the AEA
+<a class="md-nav__link" href="#test-quickstart">
+    Test Quickstart
   </a>
-</li>
+<nav class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#write-a-test-for-the-aea">
-    Write a test for the AEA
+<a class="md-nav__link" href="#write-a-simple-test-for-the-aea">
+    Write a simple test for the AEA
   </a>
 </li>
 <li class="md-nav__item">
@@ -1813,12 +1887,9 @@
 <article class="md-content__inner md-typeset">
 <a class="md-icon md-content__icon" href="https://github.com/valory-xyz/open-aea/edit/master/docs/quickstart.md" title="Edit this page"></a>
 <h1>AEA quick start</h1>
-<p>If you want to create Autonomous Economic Agents (AEAs) that can act independently of constant user input and autonomously execute actions to achieve their objective, you can use the AEA framework.</p>
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/mwkAUh-_uxA" width="560"></iframe>
-<p>This example will take you through a simple AEA to familiarise you with the basics of the framework.</p>
-<h2 id="system-requirements">System Requirements</h2>
-<p>The AEA framework can be used on <code>Windows</code>, <code>Ubuntu/Debian</code> and <code>MacOS</code>.</p>
-<p>You need <a href="https://www.python.org/downloads/" target="_blank">Python 3.6</a> or higher as well as <a href="https://golang.org/dl/" target="_blank">Go 1.14.2</a> or higher installed.</p>
+<h2 id="dependencies-system-requirements">Dependencies &amp; System Requirements</h2>
+<p>The AEA framework can be used on <code>Windows</code>, <code>Ubuntu/Debian</code> and <code>MacOS</code>. There are a number of base requirements to be installed prior to usage.</p>
+<p>You need <a href="https://www.python.org/downloads/" target="_blank">Python 3.6</a> or higher as well as <a href="https://go.dev/dl/" target="_blank">Go 1.14.2</a> or higher installed.</p>
 <p>​GCC installation is required:
 * Ubuntu: <code>apt-get install gcc</code>
 * Windows (with <a href="https://chocolatey.org/" target="_blank"><code>choco</code></a>
@@ -1831,7 +1902,7 @@
 The following hints can help:
 
 <ul>
-<li>To install Go, follow the official guide, depending on your platform <a href="https://golang.org/doc/install" target="_blank">here</a></li>
+<li>To install Go, follow the official guide, depending on your platform <a href="https://go.dev/doc/install" target="_blank">here</a></li>
 <li>Python is already included by default on 
 many Linux distributions (e.g. Ubuntu), as well as MacOS.
 To check you have the right version, open a terminal and run: 
@@ -1841,8 +1912,8 @@ To check you have the right version, open a terminal and run:
 <li>To install Python on Windows machines, you can download a specific release <a href="https://www.python.org/downloads/" target="_blank">here</a>.</li>
 <li>Ubuntu/Debian systems only: install Python headers,
   depending on the Python version you have installed on your machine.
-  E.g. for Python 3.7: 
-<div class="highlight"><pre><span></span><code>sudo apt-get install python3.7-dev
+  E.g. for Python 3.8: 
+<div class="highlight"><pre><span></span><code>sudo apt-get install python3.8-dev
 </code></pre></div>
 </li>
 <li>Windows users: install <a href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019" target="_blank">tools for Visual Studio</a>.</li>
@@ -1888,15 +1959,10 @@ Once successfully logged into the docker container,
 you can follow the rest of the guide the same way as if not using docker.
 ​
 </details>
-<h2 id="preliminaries">Preliminaries</h2>
+<h2 id="getting-started">Getting Started</h2>
 <p>Ensure, you are in a clean working directory:</p>
 <ul>
-<li>
-<p>either you create it manually <code>mkdir my_aea_projects/ &amp;&amp; cd my_aea_projects/</code>, then add an empty directory called <code>packages</code> with the following command <code>mkdir packages/</code>,</p>
-</li>
-<li>
-<p>or you clone the template repo as described in <code>Approach 1</code> in the <a href="../development-setup#approach-1">development setup</a> guide.</p>
-</li>
+<li>Create it manually <code>mkdir my_aea_projects/ &amp;&amp; cd my_aea_projects/</code>, then add an empty directory called <code>packages</code> with the following command <code>mkdir packages/</code>,</li>
 </ul>
 <p>At this point, when typing <code>ls</code> you should see a single folder called <code>packages</code> in your working environment. This will act as your local registry for AEA components.</p>
 <p>Unless you are using the docker image, we highly recommend using a virtual environment to ensure consistency across dependencies.</p>
@@ -1904,50 +1970,79 @@ you can follow the rest of the guide the same way as if not using docker.
 <div class="highlight"><pre><span></span><code>which pipenv
 </code></pre></div>
 <p>If you don't have it, install it. Instructions are <a href="https://pypi.org/project/pipenv/" target="_blank">here</a>.</p>
-<p>Once installed, create a new environment and open it (here we use Python 3.7 but the AEA framework supports any Python &gt;= 3.6).</p>
-<div class="highlight"><pre><span></span><code>touch Pipfile <span class="o">&amp;&amp;</span> pipenv --python <span class="m">3</span>.7 <span class="o">&amp;&amp;</span> pipenv shell
+<p>Once installed, create a new environment and open it (here we use Python 3.8 but the AEA framework supports any Python &gt;= 3.6).</p>
+<div class="highlight"><pre><span></span><code>touch Pipfile <span class="o">&amp;&amp;</span> pipenv --python <span class="m">3</span>.8 <span class="o">&amp;&amp;</span> pipenv shell
 </code></pre></div>
-<h2 id="installation">Installation</h2>
+<h2 id="installation-of-open-aea">Installation of Open-AEA</h2>
 <p>The following installs the entire AEA package which also includes a <a href="../cli-commands">command-line interface (CLI)</a>. (You can skip this step if you used the install script above: <a href="../quickstart#option-2-using-an-automated-install-script">Option 2 </a>.)</p>
-<div class="highlight"><pre><span></span><code>pip install aea<span class="o">[</span>all<span class="o">]</span>
+<div class="highlight"><pre><span></span><code>pip install open-aea<span class="o">[</span>all<span class="o">]</span>
 </code></pre></div>
 <p>If you are using <code>zsh</code> rather than <code>bash</code> type
-<div class="highlight"><pre><span></span><code>pip install <span class="s1">'aea[all]'</span>
+<div class="highlight"><pre><span></span><code>pip install <span class="s1">'open-aea[all]'</span>
+pip install <span class="s1">'open-aea-ledger-ethereum'</span>
 </code></pre></div></p>
 <p>If the installation steps fail, it might be a dependency issue. Make sure you have followed all the relevant system specific steps above under <code>System Requirements</code>.</p>
-<h2 id="setup-author-name">Setup author name</h2>
-<p>AEAs are composed from components. AEAs and AEA components can be developed by anyone and pushed to the <a href="https://aea-registry.fetch.ai" target="_blank">AEA registry</a> for others to use. To use the registry, we need to register an author name.</p>
-<p>You can set up your author name using the <code>init</code> command:
-<div class="highlight"><pre><span></span><code>aea init
+<h2 id="setup-open-aea-components">Setup Open-AEA Components</h2>
+<p>AEAs are composed from components. AEAs and AEA components can be developed by anyone and pushed to an <a href="https://ipfs.io/" target="_blank">IPFS registry</a> for others to use.</p>
+<p>To load Valory packages please use <a href="https://subversion.apache.org/packages.html" target="_blank">SVN</a> to checkout the specific folders;
+<div class="highlight"><pre><span></span><code>svn checkout https://github.com/valory-xyz/open-aea/trunk/packages packages
 </code></pre></div></p>
-<p>This is your unique author (or developer) name in the AEA ecosystem.</p>
-<p>You should see a similar output (with your input instead of the sample username and email):
-<div class="highlight"><pre><span></span><code>Do you have a Registry account? <span class="o">[</span>y/N<span class="o">]</span>: n
-Create a new account on the Registry now:
-Username: fetchai
-Email: hello@fetch.ai
-Password:
-Please make sure that passwords are equal.
-Confirm password:
-    _     _____     _
+<h2 id="echo-skill-demo">Echo skill demo</h2>
+<p>This is a simple demo that introduces you to the main components of an AEA. </p>
+<p>The fastest way to have your first AEA is to fetch one that already exists!</p>
+<div class="highlight"><pre><span></span><code>aea fetch open_aea/my_first_aea:0.1.0 --local
+<span class="nb">cd</span> my_first_aea
+</code></pre></div>
+<h3 id="install-aea-dependencies">Install AEA dependencies</h3>
+<div class="highlight"><pre><span></span><code>aea install
+</code></pre></div>
+<h3 id="add-and-create-a-private-key">Add and create a private key</h3>
+<p>All AEAs need a private key to run. Add one now:</p>
+<div class="highlight"><pre><span></span><code>aea generate-key ethereum
+aea add-key ethereum
+</code></pre></div>
+<h3 id="run-the-aea">Run the AEA</h3>
+<p>Run the AEA.</p>
+<div class="highlight"><pre><span></span><code>aea run
+</code></pre></div>
+<p>You will see the echo skill running in the terminal window (an output similar to the one below).</p>
+<div class="highlight"><pre><span></span><code>    _     _____     _
    / <span class="se">\ </span>  <span class="p">|</span> ____<span class="p">|</span>   / <span class="se">\</span>
   / _ <span class="se">\ </span> <span class="p">|</span>  _<span class="p">|</span>    / _ <span class="se">\</span>
  / ___ <span class="se">\ </span><span class="p">|</span> <span class="p">|</span>___  / ___ <span class="se">\</span>
 /_/   <span class="se">\_\|</span>_____<span class="p">|</span>/_/   <span class="se">\_\</span>
 
-v1.1.0
+v1.3.0
 
-AEA configurations successfully initialized: <span class="o">{</span><span class="s1">'author'</span>: <span class="s1">'fetchai'</span><span class="o">}</span>
-</code></pre></div></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you would rather not create an account on the registry at this point, then run <code>aea init --local</code> instead.</p>
-</div>
-<h2 id="echo-skill-demo">Echo skill demo</h2>
-<p>This is a simple demo that introduces you to the main components of an AEA. </p>
-<p>The fastest way to have your first AEA is to fetch one that already exists!</p>
-<div class="highlight"><pre><span></span><code>aea fetch fetchai/my_first_aea:0.27.0
-<span class="nb">cd</span> my_first_aea
+Starting AEA <span class="s1">'my_first_aea'</span> <span class="k">in</span> <span class="s1">'async'</span> mode ...
+info: Echo Handler: setup method called.
+info: Echo Behaviour: setup method called.
+info: <span class="o">[</span>my_first_aea<span class="o">]</span>: Start processing messages...
+info: Echo Behaviour: act method called.
+info: Echo Behaviour: act method called.
+info: Echo Behaviour: act method called.
+...
+</code></pre></div>
+<h3 id="interact-with-the-aea">Interact with the AEA</h3>
+<p>From a different terminal and same directory (i.e. the <code>my_first_aea</code> project), you can send the AEA a message wrapped in an envelope via the input file.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">'my_first_aea,sender_aea,fetchai/default:1.0.0,\x12\x10\x08\x01\x12\x011*\t*\x07\n\x05hello,'</span> &gt;&gt; input_file
+</code></pre></div>
+<p>You will see the <code>Echo Handler</code> dealing with the envelope and responding with the same message to the <code>output_file</code>, and also decoding the Base64 encrypted message in this case.</p>
+<div class="highlight"><pre><span></span><code>info: Echo Behaviour: act method called.
+Echo Handler: <span class="nv">message</span><span class="o">=</span>Message<span class="o">(</span><span class="nv">sender</span><span class="o">=</span>sender_aea,to<span class="o">=</span>my_first_aea,content<span class="o">=</span>b<span class="s1">'hello'</span>,dialogue_reference<span class="o">=(</span><span class="s1">'1'</span>, <span class="s1">''</span><span class="o">)</span>,message_id<span class="o">=</span><span class="m">1</span>,performative<span class="o">=</span>bytes,target<span class="o">=</span><span class="m">0</span><span class="o">)</span>, <span class="nv">sender</span><span class="o">=</span>sender_aea
+info: Echo Behaviour: act method called.
+info: Echo Behaviour: act method called.
+</code></pre></div>
+<p>Note, due to the dialogue reference having to be incremented, you can only send the above envelope once! This approach does not work in conjunction with the <code>aea interact</code> command.</p>
+<h3 id="stop-the-aea">Stop the AEA</h3>
+<p>You can stop an AEA by pressing <code>CTRL C</code>.</p>
+<p>Once you do, you should see the AEA being interrupted and then calling the <code>teardown()</code> methods:</p>
+<div class="highlight"><pre><span></span><code>info: Echo Behaviour: act method called.
+info: Echo Behaviour: act method called.
+^C my_first_aea interrupted!
+my_first_aea stopping ...
+info: Echo Handler: teardown method called.
+info: Echo Behaviour: teardown method called.
 </code></pre></div>
 <p>To learn more about the folder structure of an AEA project read on <a href="../package-imports/">here</a>.</p>
 <details><summary>Alternatively: step by step install</summary>
@@ -1971,6 +2066,7 @@ Third, add the echo skill to the project.
 </code></pre></div>
 This copies the <code>fetchai/echo:0.19.0</code> skill code containing the "behaviours", and "handlers" into the project, ready to run. The identifier of the skill <code>fetchai/echo:0.19.0</code> consists of the name of the author of the skill, followed by the skill name and its version.
 </details>
+<h2 id="how-does-this-aea-work">How Does This AEA work?</h2>
 <h3 id="echo-skill">Echo skill</h3>
 <p>Just like humans, AEAs can have <em>skills</em> to achieve their tasks. As an agent developer, you can create skills to add to your own AEAs. You can also choose to publish your skills so others add them to their AEAs. More details on skills can be found on <a href="../skill/"> this page </a>.</p>
 <p>The above agent has an <a href="https://aea-registry.fetch.ai/details/skill/fetchai/echo/latest" target="_blank">echo skill</a>, fetched from <a href="https://aea-registry.fetch.ai" target="_blank">the registry</a>, which simply echoes any messages it receives back to its sender.</p>
@@ -1987,59 +2083,9 @@ This copies the <code>fetchai/echo:0.19.0</code> skill code containing the "beha
 <p>For example:</p>
 <div class="highlight"><pre><span></span><code>recipient_aea,sender_aea,fetchai/default:1.0.0,<span class="se">\x</span><span class="m">08</span><span class="se">\x</span><span class="m">01</span><span class="se">\x</span><span class="m">12</span><span class="se">\x</span><span class="m">011</span>*<span class="se">\x</span><span class="m">07</span><span class="se">\n\x</span>05hello,
 </code></pre></div>
-<h3 id="install-aea-dependencies">Install AEA dependencies</h3>
-<div class="highlight"><pre><span></span><code>aea install
-</code></pre></div>
-<h3 id="add-and-create-a-private-key">Add and create a private key</h3>
-<p>All AEAs need a private key to run. Add one now:</p>
-<div class="highlight"><pre><span></span><code>aea generate-key fetchai
-aea add-key fetchai
-</code></pre></div>
-<h3 id="run-the-aea">Run the AEA</h3>
-<p>Run the AEA.</p>
-<div class="highlight"><pre><span></span><code>aea run
-</code></pre></div>
-<p>You will see the echo skill running in the terminal window (an output similar to the one below).</p>
-<div class="highlight"><pre><span></span><code>    _     _____     _
-   / <span class="se">\ </span>  <span class="p">|</span> ____<span class="p">|</span>   / <span class="se">\</span>
-  / _ <span class="se">\ </span> <span class="p">|</span>  _<span class="p">|</span>    / _ <span class="se">\</span>
- / ___ <span class="se">\ </span><span class="p">|</span> <span class="p">|</span>___  / ___ <span class="se">\</span>
-/_/   <span class="se">\_\|</span>_____<span class="p">|</span>/_/   <span class="se">\_\</span>
-
-v1.1.0
-
-Starting AEA <span class="s1">'my_first_aea'</span> <span class="k">in</span> <span class="s1">'async'</span> mode ...
-info: Echo Handler: setup method called.
-info: Echo Behaviour: setup method called.
-info: <span class="o">[</span>my_first_aea<span class="o">]</span>: Start processing messages...
-info: Echo Behaviour: act method called.
-info: Echo Behaviour: act method called.
-info: Echo Behaviour: act method called.
-...
-</code></pre></div>
 <p>The framework first calls the <code>setup</code> methods in the skill's <code>Handler</code> and <code>Behaviour</code> classes in that order; after which it repeatedly calls the <code>act</code> method of <code>Behaviour</code> class. This is the main agent loop in action.</p>
-<h4 id="add-a-message-to-the-input-file">Add a message to the input file</h4>
-<p>From a different terminal and same directory (i.e. the <code>my_first_aea</code> project), you can send the AEA a message wrapped in an envelope via the input file.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">'my_first_aea,sender_aea,fetchai/default:1.0.0,\x12\x10\x08\x01\x12\x011*\t*\x07\n\x05hello,'</span> &gt;&gt; input_file
-</code></pre></div>
-<p>You will see the <code>Echo Handler</code> dealing with the envelope and responding with the same message to the <code>output_file</code>, and also decoding the Base64 encrypted message in this case.</p>
-<div class="highlight"><pre><span></span><code>info: Echo Behaviour: act method called.
-Echo Handler: <span class="nv">message</span><span class="o">=</span>Message<span class="o">(</span><span class="nv">sender</span><span class="o">=</span>sender_aea,to<span class="o">=</span>my_first_aea,content<span class="o">=</span>b<span class="s1">'hello'</span>,dialogue_reference<span class="o">=(</span><span class="s1">'1'</span>, <span class="s1">''</span><span class="o">)</span>,message_id<span class="o">=</span><span class="m">1</span>,performative<span class="o">=</span>bytes,target<span class="o">=</span><span class="m">0</span><span class="o">)</span>, <span class="nv">sender</span><span class="o">=</span>sender_aea
-info: Echo Behaviour: act method called.
-info: Echo Behaviour: act method called.
-</code></pre></div>
-<p>Note, due to the dialogue reference having to be incremented, you can only send the above envelope once! This approach does not work in conjunction with the <code>aea interact</code> command.</p>
-<h3 id="stop-the-aea">Stop the AEA</h3>
-<p>You can stop an AEA by pressing <code>CTRL C</code>.</p>
-<p>Once you do, you should see the AEA being interrupted and then calling the <code>teardown()</code> methods:</p>
-<div class="highlight"><pre><span></span><code>info: Echo Behaviour: act method called.
-info: Echo Behaviour: act method called.
-^C my_first_aea interrupted!
-my_first_aea stopping ...
-info: Echo Handler: teardown method called.
-info: Echo Behaviour: teardown method called.
-</code></pre></div>
-<h3 id="write-a-test-for-the-aea">Write a test for the AEA</h3>
+<h2 id="test-quickstart">Test Quickstart</h2>
+<h3 id="write-a-simple-test-for-the-aea">Write a simple test for the AEA</h3>
 <p>We can write an end-to-end test for the AEA utilising helper classes provided by the framework.</p>
 <details><summary>Writing tests</summary>
 
