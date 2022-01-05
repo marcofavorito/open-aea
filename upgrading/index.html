@@ -1742,13 +1742,13 @@
 <li>Cosmos crypto classes have been released in the <code>aea-ledger-cosmos</code> package.</li>
 </ul>
 <p>If an AEA project, or an AEA package, makes use of crypto functionalities, it will be needed to add the above packages as PyPI dependencies with version specifiers ranging from the latest minor and the latest minor + 1 (excluded). E.g. if the latest version if <code>0.1.0</code>, the version specifier should be <code>&lt;0.2.0,&gt;=0.1.0</code>:
-<div class="highlight"><pre><span></span><code><span class="nt">dependencies</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">aea-ledger-cosmos</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;2.0.0,&gt;=1.0.0</span><span class="w"></span>
-<span class="w">  </span><span class="nt">aea-ledger-ethereum</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;2.0.0,&gt;=1.0.0</span><span class="w"></span>
-<span class="w">  </span><span class="nt">aea-ledger-fetchai</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;2.0.0,&gt;=1.0.0</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">dependencies</span><span class="p">:</span>
+  <span class="nt">aea-ledger-cosmos</span><span class="p">:</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;2.0.0,&gt;=1.0.0</span>
+  <span class="nt">aea-ledger-ethereum</span><span class="p">:</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;2.0.0,&gt;=1.0.0</span>
+  <span class="nt">aea-ledger-fetchai</span><span class="p">:</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;2.0.0,&gt;=1.0.0</span>
 </code></pre></div>
 The version specifier sets are important, as these plug-ins, at version <code>0.1.0</code>, depend on a specific range of the <code>aea</code> package.</p>
 <p>Then, running <code>aea install</code> inside the AEA project should install them in the current Python environment.</p>

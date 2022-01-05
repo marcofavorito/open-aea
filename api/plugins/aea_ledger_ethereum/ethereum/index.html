@@ -1792,6 +1792,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#try_get_gas_pricing">
+    try_get_gas_pricing
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#update_with_gas_estimate">
     update_with_gas_estimate
   </a>
@@ -2159,6 +2164,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#get_transfer_transaction">
     get_transfer_transaction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#try_get_gas_pricing">
+    try_get_gas_pricing
   </a>
 </li>
 <li class="md-nav__item">
@@ -2621,6 +2631,12 @@
 </ul>
 <p><strong>Returns</strong>:</p>
 <p>the transfer transaction</p>
+<p><a name="plugins.aea-ledger-ethereum.aea_ledger_ethereum.ethereum.EthereumApi.try_get_gas_pricing"></a></p>
+<h4 id="try_get_gas_pricing">try<code>_</code>get<code>_</code>gas<code>_</code>pricing</h4>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@try_decorator</span><span class="p">(</span><span class="s2">"Unable to retrieve gas price: </span><span class="si">{}</span><span class="s2">"</span><span class="p">,</span> <span class="n">logger_method</span><span class="o">=</span><span class="s2">"warning"</span><span class="p">)</span>
+ <span class="o">|</span> <span class="n">try_get_gas_pricing</span><span class="p">(</span><span class="n">gas_price_strategy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">extra_config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]</span>
+</code></pre></div>
+<p>Try get the gas price based on the provided strategy.</p>
 <p><a name="plugins.aea-ledger-ethereum.aea_ledger_ethereum.ethereum.EthereumApi.update_with_gas_estimate"></a></p>
 <h4 id="update_with_gas_estimate">update<code>_</code>with<code>_</code>gas<code>_</code>estimate</h4>
 <div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">update_with_gas_estimate</span><span class="p">(</span><span class="n">transaction</span><span class="p">:</span> <span class="n">JSONLike</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">JSONLike</span>

@@ -1933,17 +1933,17 @@ the author username (i.e. the output of <code>aea config get agent.author</code>
         <span class="p">)</span>
 </code></pre></div></p>
 <p>Then, update the <code>skill.yaml</code> accordingly:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">handlers</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">http_handler</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w"></span>
-<span class="w">    </span><span class="nt">class_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HttpHandler</span><span class="w"></span>
-<span class="nt">models</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">default_dialogues</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w"></span>
-<span class="w">    </span><span class="nt">class_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DefaultDialogues</span><span class="w"></span>
-<span class="w">  </span><span class="nt">http_dialogues</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w"></span>
-<span class="w">    </span><span class="nt">class_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HttpDialogues</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">handlers</span><span class="p">:</span>
+  <span class="nt">http_handler</span><span class="p">:</span>
+    <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
+    <span class="nt">class_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">HttpHandler</span>
+<span class="nt">models</span><span class="p">:</span>
+  <span class="nt">default_dialogues</span><span class="p">:</span>
+    <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
+    <span class="nt">class_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">DefaultDialogues</span>
+  <span class="nt">http_dialogues</span><span class="p">:</span>
+    <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
+    <span class="nt">class_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">HttpDialogues</span>
 </code></pre></div>
 <p>Run the fingerprinter (note, you will have to replace the author name with your author handle):
 <div class="highlight"><pre><span></span><code>aea fingerprint skill fetchai/http_echo:0.20.0

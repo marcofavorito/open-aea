@@ -1770,8 +1770,8 @@ This message will be handled by the <code>fetchai/ledger:0.19.0</code> connectio
 <li><code>contract.yaml</code> containing the scaffolded configuration file</li>
 </ul>
 <p>Once your scaffold is in place, you can create a <code>build</code> folder in the package and copy the smart contract interface (e.g. bytes code and ABI) to it. Then, specify the path to the interfaces in the <code>contract.yaml</code>. For instance, if you use Ethereum, then you might specify the following:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nt">contract_interface_paths</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">ethereum</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">build/my_contract.json</span><span class="w"></span>
+<p><div class="highlight"><pre><span></span><code><span class="nt">contract_interface_paths</span><span class="p">:</span>
+    <span class="nt">ethereum</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">build/my_contract.json</span>
 </code></pre></div>
 where <code>ethereum</code> is the ledger id and <code>my_contract.json</code> is the file containing the byte code and ABI.</p>
 <p>Finally, you will want to implement the part of the contract interface you need in <code>contract.py</code>:</p>

@@ -1933,24 +1933,24 @@ not be updated.</p>
 <h3 id="skill-configuration">Skill configuration</h3>
 <p>Each skill has a <code>skill.yaml</code> configuration file which lists all <code>Behaviour</code>, <code>Handler</code>, and <code>Task</code> objects pertaining to the skill.</p>
 <p>It also details the protocol types used in the skill and points to shared modules, i.e. modules of type <code>Model</code>, which allow custom classes within the skill to be accessible in the skill context.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo</span><span class="w"></span>
-<span class="nt">authors</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fetchai</span><span class="w"></span>
-<span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.1.0</span><span class="w"></span>
-<span class="nt">license</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Apache-2.0</span><span class="w"></span>
-<span class="nt">behaviours</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">echo</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">class_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EchoBehaviour</span><span class="w"></span>
-<span class="w">    </span><span class="nt">args</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">tick_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0</span><span class="w"></span>
-<span class="nt">handlers</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">echo</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">class_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EchoHandler</span><span class="w"></span>
-<span class="w">    </span><span class="nt">args</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">foo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bar</span><span class="w"></span>
-<span class="nt">models</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w"></span>
-<span class="nt">dependencies</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w"></span>
-<span class="nt">protocols</span><span class="p">:</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fetchai/default:1.0.0</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">echo</span>
+<span class="nt">authors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fetchai</span>
+<span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.1.0</span>
+<span class="nt">license</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Apache-2.0</span>
+<span class="nt">behaviours</span><span class="p">:</span>
+  <span class="nt">echo</span><span class="p">:</span>
+    <span class="nt">class_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">EchoBehaviour</span>
+    <span class="nt">args</span><span class="p">:</span>
+      <span class="nt">tick_interval</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0</span>
+<span class="nt">handlers</span><span class="p">:</span>
+  <span class="nt">echo</span><span class="p">:</span>
+    <span class="nt">class_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">EchoHandler</span>
+    <span class="nt">args</span><span class="p">:</span>
+      <span class="nt">foo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bar</span>
+<span class="nt">models</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
+<span class="nt">dependencies</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
+<span class="nt">protocols</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">fetchai/default:1.0.0</span>
 </code></pre></div>
 <h2 id="error-skill">Error skill</h2>
 <p>All AEAs have a default <code>error</code> skill that contains error handling code for a number of scenarios:</p>

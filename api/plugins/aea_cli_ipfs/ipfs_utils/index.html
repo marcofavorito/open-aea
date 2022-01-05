@@ -1537,6 +1537,16 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#is_started_externally">
+    is_started_externally
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#is_started_internally">
+    is_started_internally
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#is_started">
     is_started
   </a>
@@ -1751,6 +1761,16 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#is_started_externally">
+    is_started_externally
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#is_started_internally">
+    is_started_internally
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#is_started">
     is_started
   </a>
@@ -1864,9 +1884,19 @@
 </ul>
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.__init__"></a></p>
 <h4 id="__init__"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">api_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:5001/api/v0/id"</span><span class="p">)</span>
 </code></pre></div>
 <p>Initialise IPFS daemon.</p>
+<p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.is_started_externally"></a></p>
+<h4 id="is_started_externally">is<code>_</code>started<code>_</code>externally</h4>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">is_started_externally</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
+</code></pre></div>
+<p>Check daemon was started externally.</p>
+<p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.is_started_internally"></a></p>
+<h4 id="is_started_internally">is<code>_</code>started<code>_</code>internally</h4>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">is_started_internally</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
+</code></pre></div>
+<p>Check daemon was started internally.</p>
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.is_started"></a></p>
 <h4 id="is_started">is<code>_</code>started</h4>
 <div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">is_started</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
@@ -1881,7 +1911,7 @@
 <h4 id="stop">stop</h4>
 <div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">stop</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
-<p>Terminate the ipfs daemon.</p>
+<p>Terminate the ipfs daemon if it was started internally.</p>
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.__enter__"></a></p>
 <h4 id="__enter__"><code>__</code>enter<code>__</code></h4>
 <div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__enter__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>

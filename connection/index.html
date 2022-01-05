@@ -1757,16 +1757,16 @@
 <p>Every connection must have a configuration file in <code>connection.yaml</code>, containing meta-information about the connection as well as all the required configuration details. For more details, have a look <a href="../config">here</a>.</p>
 <h3 id="configuration-options">Configuration options</h3>
 <p>The <code>connection.yaml</code> file contains a number of fields that must be edited by the developer of the connection:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">connections</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="w"></span>
-<span class="nt">protocols</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="w"></span>
-<span class="nt">class_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MyScaffoldConnection</span><span class="w"></span>
-<span class="nt">config</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">foo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bar</span><span class="w"></span>
-<span class="nt">excluded_protocols</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="w"></span>
-<span class="nt">restricted_to_protocols</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="w"></span>
-<span class="nt">dependencies</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w"></span>
-<span class="nt">is_abstract</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
-<span class="nt">cert_requests</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">connections</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+<span class="nt">protocols</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+<span class="nt">class_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">MyScaffoldConnection</span>
+<span class="nt">config</span><span class="p">:</span>
+  <span class="nt">foo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bar</span>
+<span class="nt">excluded_protocols</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+<span class="nt">restricted_to_protocols</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+<span class="nt">dependencies</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
+<span class="nt">is_abstract</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">cert_requests</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
 </code></pre></div>
 <ul>
 <li><code>connections</code> specifies the list of other connection this connection depends on</li>
