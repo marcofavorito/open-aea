@@ -2411,7 +2411,7 @@ via 'add_component_instance' and the private keys.</p>
 <p><a name="aea.aea_builder.AEABuilder.try_to_load_agent_configuration_file"></a></p>
 <h4 id="try_to_load_agent_configuration_file">try<code>_</code>to<code>_</code>load<code>_</code>agent<code>_</code>configuration<code>_</code>file</h4>
 <div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
- <span class="o">|</span> <span class="n">try_to_load_agent_configuration_file</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">aea_project_path</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">AgentConfig</span>
+ <span class="o">|</span> <span class="n">try_to_load_agent_configuration_file</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">aea_project_path</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">],</span> <span class="n">apply_environment_variables</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AgentConfig</span>
 </code></pre></div>
 <p>Try to load the agent configuration file..</p>
 <p><a name="aea.aea_builder.AEABuilder.set_from_configuration"></a></p>
@@ -2428,7 +2428,7 @@ via 'add_component_instance' and the private keys.</p>
 <p><a name="aea.aea_builder.AEABuilder.from_aea_project"></a></p>
 <h4 id="from_aea_project">from<code>_</code>aea<code>_</code>project</h4>
 <div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
- <span class="o">|</span> <span class="n">from_aea_project</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">aea_project_path</span><span class="p">:</span> <span class="n">PathLike</span><span class="p">,</span> <span class="n">skip_consistency_check</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"AEABuilder"</span>
+ <span class="o">|</span> <span class="n">from_aea_project</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">aea_project_path</span><span class="p">:</span> <span class="n">PathLike</span><span class="p">,</span> <span class="n">skip_consistency_check</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">apply_environment_variables</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"AEABuilder"</span>
 </code></pre></div>
 <p>Construct the builder from an AEA project.</p>
 <ul>
@@ -2443,6 +2443,7 @@ via 'add_component_instance' and the private keys.</p>
 <ul>
 <li><code>aea_project_path</code>: path to the AEA project.</li>
 <li><code>skip_consistency_check</code>: if True, the consistency check are skipped.</li>
+<li><code>apply_environment_variables</code>: if True, environment variables are loaded.</li>
 <li><code>password</code>: the password to encrypt/decrypt private keys.</li>
 </ul>
 <p><strong>Returns</strong>:</p>

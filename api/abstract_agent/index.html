@@ -1767,13 +1767,15 @@
 <p>This class provides an abstract base  interface for an agent.</p>
 <p><a name="aea.abstract_agent.AbstractAgent.name"></a></p>
 <h4 id="name">name</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@abstractproperty</span>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
+ <span class="o">|</span> <span class="nd">@abstractmethod</span>
  <span class="o">|</span> <span class="n">name</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Get agent's name.</p>
 <p><a name="aea.abstract_agent.AbstractAgent.storage_uri"></a></p>
 <h4 id="storage_uri">storage<code>_</code>uri</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@abstractproperty</span>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
+ <span class="o">|</span> <span class="nd">@abstractmethod</span>
  <span class="o">|</span> <span class="n">storage_uri</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
 </code></pre></div>
 <p>Return storage uri.</p>

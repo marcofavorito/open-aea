@@ -1595,6 +1595,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#rebuild_receipt">
+    rebuild_receipt
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#signedtransactiontranslator-objects">
     SignedTransactionTranslator Objects
   </a>
@@ -1814,6 +1819,21 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#is_valid_address">
     is_valid_address
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contract_method_call">
+    contract_method_call
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#build_transaction">
+    build_transaction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get_transaction_transfer_logs">
+    get_transaction_transfer_logs
   </a>
 </li>
 </ul>
@@ -1970,6 +1990,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#rebuild_receipt">
+    rebuild_receipt
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#signedtransactiontranslator-objects">
     SignedTransactionTranslator Objects
   </a>
@@ -2191,6 +2216,21 @@
     is_valid_address
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contract_method_call">
+    contract_method_call
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#build_transaction">
+    build_transaction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get_transaction_transfer_logs">
+    get_transaction_transfer_logs
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -2293,6 +2333,11 @@
 <div class="highlight"><pre><span></span><code><span class="n">get_gas_price_strategy</span><span class="p">(</span><span class="n">gas_price_strategy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">gas_price_api_key</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">Web3</span><span class="p">,</span> <span class="n">TxParams</span><span class="p">],</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Wei</span><span class="p">]]</span>
 </code></pre></div>
 <p>Get the gas price strategy.</p>
+<p><a name="plugins.aea-ledger-ethereum.aea_ledger_ethereum.ethereum.rebuild_receipt"></a></p>
+<h4 id="rebuild_receipt">rebuild<code>_</code>receipt</h4>
+<div class="highlight"><pre><span></span><code><span class="n">rebuild_receipt</span><span class="p">(</span><span class="n">tx_receipt</span><span class="p">:</span> <span class="n">JSONLike</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">JSONLike</span>
+</code></pre></div>
+<p>Convert all tx receipt's event topics to HexBytes</p>
 <p><a name="plugins.aea-ledger-ethereum.aea_ledger_ethereum.ethereum.SignedTransactionTranslator"></a></p>
 <h2 id="signedtransactiontranslator-objects">SignedTransactionTranslator Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">SignedTransactionTranslator</span><span class="p">()</span>
@@ -2719,6 +2764,47 @@
 </ul>
 <p><strong>Returns</strong>:</p>
 <p>whether the address is valid</p>
+<p><a name="plugins.aea-ledger-ethereum.aea_ledger_ethereum.ethereum.EthereumApi.contract_method_call"></a></p>
+<h4 id="contract_method_call">contract<code>_</code>method<code>_</code>call</h4>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
+ <span class="o">|</span> <span class="n">contract_method_call</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">contract_instance</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">method_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">method_args</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="p">,)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">JSONLike</span><span class="p">]</span>
+</code></pre></div>
+<p>Call a contract's method</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>contract_instance</code>: the contract to use</li>
+<li><code>method_name</code>: the contract methof to call</li>
+<li><code>method_args</code>: the contract call parameters</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>the call result</p>
+<p><a name="plugins.aea-ledger-ethereum.aea_ledger_ethereum.ethereum.EthereumApi.build_transaction"></a></p>
+<h4 id="build_transaction">build<code>_</code>transaction</h4>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">build_transaction</span><span class="p">(</span><span class="n">contract_instance</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">method_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">method_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">tx_args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">JSONLike</span><span class="p">]</span>
+</code></pre></div>
+<p>Prepare a transaction</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>contract_instance</code>: the contract to use</li>
+<li><code>method_name</code>: the contract methof to call</li>
+<li><code>method_args</code>: the contract parameters</li>
+<li><code>tx_args</code>: the transaction parameters</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>the transaction</p>
+<p><a name="plugins.aea-ledger-ethereum.aea_ledger_ethereum.ethereum.EthereumApi.get_transaction_transfer_logs"></a></p>
+<h4 id="get_transaction_transfer_logs">get<code>_</code>transaction<code>_</code>transfer<code>_</code>logs</h4>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_transaction_transfer_logs</span><span class="p">(</span><span class="n">contract_instance</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">tx_hash</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">target_address</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">JSONLike</span><span class="p">]</span>
+</code></pre></div>
+<p>Get all transfer events derived from a transaction.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>contract_instance</code>: the contract</li>
+<li><code>tx_hash</code>: the transaction hash</li>
+<li><code>target_address</code>: optional address to filter tranfer events to just those that affect it</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>the transfer logs</p>
 <p><a name="plugins.aea-ledger-ethereum.aea_ledger_ethereum.ethereum.EthereumFaucetApi"></a></p>
 <h2 id="ethereumfaucetapi-objects">EthereumFaucetApi Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">EthereumFaucetApi</span><span class="p">(</span><span class="n">FaucetApi</span><span class="p">)</span>
