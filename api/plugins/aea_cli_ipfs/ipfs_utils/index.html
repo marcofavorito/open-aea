@@ -1511,6 +1511,16 @@
 <label class="md-nav__title" for="__toc">Table of contents</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#resolve_addr">
+    resolve_addr
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#addr_to_url">
+    addr_to_url
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#ipfsdaemon-objects">
     IPFSDaemon Objects
   </a>
@@ -1593,6 +1603,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#__init___1">
     __init__
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#addr">
+    addr
   </a>
 </li>
 <li class="md-nav__item">
@@ -1735,6 +1750,16 @@
 <label class="md-nav__title" for="__toc">Table of contents</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#resolve_addr">
+    resolve_addr
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#addr_to_url">
+    addr_to_url
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#ipfsdaemon-objects">
     IPFSDaemon Objects
   </a>
@@ -1820,6 +1845,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#addr">
+    addr
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#add">
     add
   </a>
@@ -1858,6 +1888,22 @@
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils"></a></p>
 <h1 id="pluginsaea-cli-ipfsaea_cli_ipfsipfs_utils">plugins.aea-cli-ipfs.aea<code>_</code>cli<code>_</code>ipfs.ipfs<code>_</code>utils</h1>
 <p>Ipfs utils for <code>ipfs cli command</code>.</p>
+<p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.resolve_addr"></a></p>
+<h4 id="resolve_addr">resolve<code>_</code>addr</h4>
+<div class="highlight"><pre><span></span><code><span class="n">resolve_addr</span><span class="p">(</span><span class="n">addr</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
+</code></pre></div>
+<p>Multiaddr resolver.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>addr</code>: multiaddr string.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>http URL</p>
+<p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.addr_to_url"></a></p>
+<h4 id="addr_to_url">addr<code>_</code>to<code>_</code>url</h4>
+<div class="highlight"><pre><span></span><code><span class="n">addr_to_url</span><span class="p">(</span><span class="n">addr</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+</code></pre></div>
+<p>Convert address to url.</p>
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon"></a></p>
 <h2 id="ipfsdaemon-objects">IPFSDaemon Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">IPFSDaemon</span><span class="p">()</span>
@@ -1869,7 +1915,7 @@
 </ul>
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.__init__"></a></p>
 <h4 id="__init__"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">api_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:5001/api/v0/id"</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">api_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:5001"</span><span class="p">)</span>
 </code></pre></div>
 <p>Initialise IPFS daemon.</p>
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.is_started_externally"></a></p>
@@ -1939,14 +1985,20 @@
 <p>IPFS tool to add, publish, remove, download directories.</p>
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.__init__"></a></p>
 <h4 id="__init___1"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">client_options</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">addr</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>Init tool.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
-<li><code>client_options</code>: dict, options for ipfshttpclient instance.</li>
+<li><code>addr</code>: multiaddr string for IPFS client.</li>
 <li><code>offline</code>: ipfs mode.</li>
 </ul>
+<p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.addr"></a></p>
+<h4 id="addr">addr</h4>
+<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
+ <span class="o">|</span> <span class="n">addr</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+</code></pre></div>
+<p>Node address</p>
 <p><a name="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.add"></a></p>
 <h4 id="add">add</h4>
 <div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">add</span><span class="p">(</span><span class="n">dir_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">pin</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">]</span>
