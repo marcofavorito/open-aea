@@ -19,7 +19,7 @@
 <meta content="# matching documents" name="lang:search.result.other"/>
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1, mkdocs-material-4.6.3" name="generator"/>
+<meta content="mkdocs-1.2.3, mkdocs-material-4.6.3" name="generator"/>
 <title>AEA quick start - open-aea</title>
 <link href="../assets/stylesheets/application.adb8469c.css" rel="stylesheet"/>
 <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
@@ -229,13 +229,18 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../gym-example/" title="Gym example">
-      Gym example
+<a class="md-nav__link" href="../http-echo-demo/" title="HTTP Echo Demo">
+      HTTP Echo Demo
     </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../gym-skill/" title="Gym skill">
       Gym skill
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aev-echo-demo/" title="Configure with Environment Variables">
+      Configure with Environment Variables
     </a>
 </li>
 </ul>
@@ -294,6 +299,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#installation-of-open-aea">
     Installation of Open-AEA
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setup-open-aea-author">
+    Setup Open-AEA Author
   </a>
 </li>
 <li class="md-nav__item">
@@ -1777,6 +1787,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#setup-open-aea-author">
+    Setup Open-AEA Author
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#setup-open-aea-components">
     Setup Open-AEA Components
   </a>
@@ -1967,8 +1982,12 @@ you can follow the rest of the guide the same way as if not using docker.
 pip install <span class="s1">'open-aea-ledger-ethereum'</span>
 </code></pre></div></p>
 <p>If the installation steps fail, it might be a dependency issue. Make sure you have followed all the relevant system specific steps above under <code>System Requirements</code>.</p>
+<h2 id="setup-open-aea-author">Setup Open-AEA Author</h2>
+<p>To configure the aea with an author.</p>
+<div class="highlight"><pre><span></span><code>aea init --local
+</code></pre></div>
 <h2 id="setup-open-aea-components">Setup Open-AEA Components</h2>
-<p>AEAs are composed from components. AEAs and AEA components can be developed by anyone and pushed to an <a href="https://ipfs.io/" target="_blank">IPFS registry</a> for others to use.</p>
+<p>AEAs are composed of components. AEAs and AEA components can be developed by anyone and pushed to an <a href="https://ipfs.io/" target="_blank">IPFS registry</a> for others to use.</p>
 <p>To load Valory packages please use <a href="https://subversion.apache.org/packages.html" target="_blank">SVN</a> to checkout the specific folders;
 <div class="highlight"><pre><span></span><code>svn checkout https://github.com/valory-xyz/open-aea/trunk/packages packages
 </code></pre></div></p>
@@ -1997,7 +2016,7 @@ aea add-key ethereum
  / ___ <span class="se">\ </span><span class="p">|</span> <span class="p">|</span>___  / ___ <span class="se">\</span>
 /_/   <span class="se">\_\|</span>_____<span class="p">|</span>/_/   <span class="se">\_\</span>
 
-v1.4.0
+v1.5.0
 
 Starting AEA <span class="s1">'my_first_aea'</span> <span class="k">in</span> <span class="s1">'async'</span> mode ...
 info: Echo Handler: setup method called.
@@ -2122,7 +2141,7 @@ Then write the test:
         <span class="n">sent_envelope</span> <span class="o">=</span> <span class="n">Envelope</span><span class="p">(</span>
             <span class="n">to</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">agent_name</span><span class="p">,</span>
             <span class="n">sender</span><span class="o">=</span><span class="n">sender_aea</span><span class="p">,</span>
-            <span class="n">protocol_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">protocol_id</span><span class="p">,</span>
+            <span class="n">protocol_specification_id</span><span class="o">=</span><span class="n">message</span><span class="o">.</span><span class="n">protocol_specification_id</span><span class="p">,</span>
             <span class="n">message</span><span class="o">=</span><span class="n">DefaultSerializer</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">message</span><span class="p">),</span>
         <span class="p">)</span>
 
@@ -2133,7 +2152,7 @@ Then write the test:
 
         <span class="k">assert</span> <span class="n">sent_envelope</span><span class="o">.</span><span class="n">to</span> <span class="o">==</span> <span class="n">received_envelope</span><span class="o">.</span><span class="n">sender</span>
         <span class="k">assert</span> <span class="n">sent_envelope</span><span class="o">.</span><span class="n">sender</span> <span class="o">==</span> <span class="n">received_envelope</span><span class="o">.</span><span class="n">to</span>
-        <span class="k">assert</span> <span class="n">sent_envelope</span><span class="o">.</span><span class="n">protocol_id</span> <span class="o">==</span> <span class="n">received_envelope</span><span class="o">.</span><span class="n">protocol_id</span>
+        <span class="k">assert</span> <span class="n">sent_envelope</span><span class="o">.</span><span class="n">protocol_specification_id</span> <span class="o">==</span> <span class="n">received_envelope</span><span class="o">.</span><span class="n">protocol_specification_id</span>
         <span class="n">received_message</span> <span class="o">=</span> <span class="n">DefaultMessage</span><span class="o">.</span><span class="n">serializer</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">received_envelope</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
         <span class="k">assert</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span> <span class="o">==</span> <span class="n">received_message</span><span class="o">.</span><span class="n">content</span>
 
@@ -2157,7 +2176,7 @@ Place the above code into a file <code>test.py</code> in your AEA project direct
 
 To run, execute the following:
 
-<div class="highlight"><pre><span></span><code>pytest test.py
+<div class="highlight"><pre><span></span><code>pipenv run pytest test.py
 </code></pre></div>
 </details>
 <h3 id="delete-the-aea">Delete the AEA</h3>
@@ -2177,7 +2196,7 @@ To run, execute the following:
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../gym-skill/" rel="prev" title="Gym skill">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../aev-echo-demo/" rel="prev" title="Configure with Environment Variables">
 <div class="md-flex__cell md-flex__cell--shrink">
 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
 </div>
@@ -2186,7 +2205,7 @@ To run, execute the following:
 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Gym skill
+                Configure with Environment Variables
               </span>
 </div>
 </a>
@@ -2220,7 +2239,7 @@ To run, execute the following:
 </footer>
 </div>
 <script src="../assets/javascripts/application.c33a9706.js"></script>
-<script>app.initialize({version:"1.1",url:{base:".."}})</script>
+<script>app.initialize({version:"1.2.3",url:{base:".."}})</script>
 <script src="https://unpkg.com/mermaid@8.10.1/dist/mermaid.min.js"></script>
 </body>
 </html>

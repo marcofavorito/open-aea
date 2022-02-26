@@ -19,7 +19,7 @@
 <meta content="# matching documents" name="lang:search.result.other"/>
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1, mkdocs-material-4.6.3" name="generator"/>
+<meta content="mkdocs-1.2.3, mkdocs-material-4.6.3" name="generator"/>
 <title>Ledger &amp; Crypto APIs - open-aea</title>
 <link href="../assets/stylesheets/application.adb8469c.css" rel="stylesheet"/>
 <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
@@ -229,13 +229,18 @@
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../gym-example/" title="Gym example">
-      Gym example
+<a class="md-nav__link" href="../http-echo-demo/" title="HTTP Echo Demo">
+      HTTP Echo Demo
     </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../gym-skill/" title="Gym skill">
       Gym skill
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aev-echo-demo/" title="Configure with Environment Variables">
+      Configure with Environment Variables
     </a>
 </li>
 </ul>
@@ -414,8 +419,8 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#stargate-world-fetchai-testnet-for-agents">
-    Stargate World - Fetch.ai testnet for agents
+<a class="md-nav__link" href="#capricorn-fetchai-testnet-for-agents">
+    Capricorn - Fetch.ai testnet for agents
   </a>
 </li>
 <li class="md-nav__item">
@@ -1672,8 +1677,8 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#stargate-world-fetchai-testnet-for-agents">
-    Stargate World - Fetch.ai testnet for agents
+<a class="md-nav__link" href="#capricorn-fetchai-testnet-for-agents">
+    Capricorn - Fetch.ai testnet for agents
   </a>
 </li>
 <li class="md-nav__item">
@@ -1801,8 +1806,8 @@ and the importable package name is <code>aea_ledger_myledger</code>.</p>
 </code></pre></div>
 <p>The framework wraps all <code>LedgerApi</code> classes and exposes them in the <a href="../api/crypto/ledger_apis#aea.crypto.base.LedgerApis"><code>LedgerApis</code></a> classes. The framework also wraps the crypto APIs to create identities on both ledgers and exposes them in the <code>Wallet</code>.</p>
 <p>The separation between the <code>Crypto</code> and <code>LedgerApi</code> is fundamental to the framework design. In particular, the object which holds the private key is separated from the object which interacts with the ledger. This design pattern is repeated throughout the framework: the decision maker is the only entity with access to the AEA's <code>Wallet</code> whilst <code>LedgerApis</code> are accessible by all skills.</p>
-<h2 id="stargate-world-fetchai-testnet-for-agents">Stargate World - Fetch.ai testnet for agents</h2>
-<p>Stargate World is our stable, public testnet for the Fetch Ledger v2. As such, most developers will be interacting with this testnet. This is specifically designed and supported for AEA development.</p>
+<h2 id="capricorn-fetchai-testnet-for-agents">Capricorn - Fetch.ai testnet for agents</h2>
+<p>Capricorn is our stable, public testnet for the Fetch Ledger v2. As such, most developers will be interacting with this testnet. This is specifically designed and supported for AEA development.</p>
 <table>
 <thead>
 <tr>
@@ -1813,7 +1818,7 @@ and the importable package name is <code>aea_ledger_myledger</code>.</p>
 <tbody>
 <tr>
 <td>Chain ID</td>
-<td>stargateworld-3</td>
+<td>capricorn-1</td>
 </tr>
 <tr>
 <td>Denomination</td>
@@ -1829,15 +1834,15 @@ and the importable package name is <code>aea_ledger_myledger</code>.</p>
 </tr>
 <tr>
 <td>RPC Endpoint</td>
-<td>https://rpc-stargateworld.fetch.ai:443</td>
+<td>https://rpc-capricorn.fetch.ai:443</td>
 </tr>
 <tr>
 <td>REST Endpoint</td>
-<td>https://rest-stargateworld.fetch.ai:443</td>
+<td>https://rest-capricorn.fetch.ai:443</td>
 </tr>
 <tr>
 <td>Block Explorer</td>
-<td><a href="https://explore-stargateworld.fetch.ai" target="_blank">https://explore-stargateworld.fetch.ai</a></td>
+<td><a href="https://explore-capricorn.fetch.ai" target="_blank">https://explore-capricorn.fetch.ai</a></td>
 </tr>
 <tr>
 <td>Token Faucet</td>
@@ -1845,7 +1850,6 @@ and the importable package name is <code>aea_ledger_myledger</code>.</p>
 </tr>
 </tbody>
 </table>
-<p>You can access more details on <a href="https://github.com/fetchai/networks-stargateworld" target="_blank">GitHub</a>.</p>
 <p>The configurations can be specified for the <code>fetchai/ledger:0.19.0</code> connection.</p>
 <h2 id="cosmwasm-supporting-chains">CosmWasm supporting chains</h2>
 <p>The Fetch.ai networks use <a href="https://docs.cosmwasm.com" target="_blank">CosmWasm</a> for smart contract support.</p>
@@ -1899,7 +1903,7 @@ and the importable package name is <code>aea_ledger_myledger</code>.</p>
 </footer>
 </div>
 <script src="../assets/javascripts/application.c33a9706.js"></script>
-<script>app.initialize({version:"1.1",url:{base:".."}})</script>
+<script>app.initialize({version:"1.2.3",url:{base:".."}})</script>
 <script src="https://unpkg.com/mermaid@8.10.1/dist/mermaid.min.js"></script>
 </body>
 </html>
