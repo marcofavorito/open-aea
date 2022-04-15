@@ -5,139 +5,84 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
 <meta content="Everything you need to know about (open) AEAs." name="description"/>
-<link href="https://valory-xyz.github.io/open-aea/api/protocols/dialogue/base/" rel="canonical"/>
 <meta content="developer@fetch.ai,info@valory.xyz" name="author"/>
-<meta content="Copy to clipboard" name="lang:clipboard.copy"/>
-<meta content="Copied to clipboard" name="lang:clipboard.copied"/>
-<meta content="en" name="lang:search.language"/>
-<meta content="True" name="lang:search.pipeline.stopwords"/>
-<meta content="True" name="lang:search.pipeline.trimmer"/>
-<meta content="No matching documents" name="lang:search.result.none"/>
-<meta content="1 matching document" name="lang:search.result.one"/>
-<meta content="# matching documents" name="lang:search.result.other"/>
-<meta content="[\s\-]+" name="lang:search.tokenizer"/>
-<link href="../../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.2.3, mkdocs-material-4.6.3" name="generator"/>
+<link href="https://valory-xyz.github.io/open-aea/api/protocols/dialogue/base/" rel="canonical"/>
+<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.0, mkdocs-material-8.2.8" name="generator"/>
 <title>Base - open-aea</title>
-<link href="../../../../assets/stylesheets/application.adb8469c.css" rel="stylesheet"/>
-<script src="../../../../assets/javascripts/modernizr.86422ebf.js"></script>
+<link href="../../../../assets/stylesheets/main.644de097.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.e6a45f82.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
-<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-<link href="../../../../assets/fonts/material-icons.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
 <link href="../../../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </head>
-<body dir="ltr">
-<svg class="md-svg">
-<defs>
-<svg height="448" id="__github" viewbox="0 0 416 448" width="416" xmlns="http://www.w3.org/2000/svg"><path d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z" fill="currentColor"></path></svg>
-</defs>
-</svg>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#aeaprotocolsdialoguebase" tabindex="0">
-        Skip to content
-      </a>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#aeaprotocolsdialoguebase">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header" data-md-component="header">
-<nav class="md-header-nav md-grid">
-<div class="md-flex">
-<div class="md-flex__cell md-flex__cell--shrink">
-<a aria-label="open-aea" class="md-header-nav__button md-logo" href="https://valory-xyz.github.io/open-aea/" title="open-aea">
-<i class="md-icon">code</i>
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="open-aea" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="open-aea">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
 </a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            open-aea
+          </span>
 </div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-</div>
-<div class="md-flex__cell md-flex__cell--stretch">
-<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-<span class="md-header-nav__topic">
-              open-aea
-            </span>
-<span class="md-header-nav__topic">
-              
-                Base
-              
-            </span>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Base
+            
+          </span>
 </div>
 </div>
-<div class="md-flex__cell md-flex__cell--shrink">
 </div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<div class="md-header-nav__source">
-<a class="md-source" data-md-source="github" href="https://github.com/valory-xyz/open-aea/" title="Go to repository">
-<div class="md-source__icon">
-<svg height="24" viewbox="0 0 24 24" width="24">
-<use height="24" width="24" xlink:href="#__github"></use>
-</svg>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/valory-xyz/open-aea" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
 </div>
 <div class="md-source__repository">
     GitHub
   </div>
 </a>
 </div>
-</div>
-</div>
 </nav>
 </header>
-<div class="md-container">
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
-<div class="md-tabs__inner md-grid">
-<ul class="md-tabs__list">
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../..">
-        Introduction
-      </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../agent-oriented-development/">
-          Concepts
-        </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../demos/">
-          Demos
-        </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../quickstart/">
-          Development - Beginner
-        </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../step-one/">
-          Development - Intermediate
-        </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../generic-storage/">
-          Development - Advanced
-        </a>
-</li>
-</ul>
-</div>
-</nav>
-<main class="md-main" role="main">
-<div class="md-main__inner md-grid" data-md-component="container">
-<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
-<nav class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title md-nav__title--site" for="__drawer">
-<a class="md-nav__button md-logo" href="https://valory-xyz.github.io/open-aea/" title="open-aea">
-<i class="md-icon">code</i>
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="open-aea" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="open-aea">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
 </a>
     open-aea
   </label>
 <div class="md-nav__source">
-<a class="md-source" data-md-source="github" href="https://github.com/valory-xyz/open-aea/" title="Go to repository">
-<div class="md-source__icon">
-<svg height="24" viewbox="0 0 24 24" width="24">
-<use height="24" width="24" xlink:href="#__github"></use>
-</svg>
+<a class="md-source" data-md-component="source" href="https://github.com/valory-xyz/open-aea" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
 </div>
 <div class="md-source__repository">
     GitHub
@@ -146,1159 +91,1198 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../.." title="Introduction">
-      Introduction
-    </a>
+<a class="md-nav__link" href="../../../..">
+        Introduction
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../version/" title="Version">
-      Version
-    </a>
+<a class="md-nav__link" href="../../../../version/">
+        Version
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../upgrading/" title="Upgrading">
-      Upgrading
-    </a>
+<a class="md-nav__link" href="../../../../upgrading/">
+        Upgrading
+      </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-4">
-      Concepts
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-4">
-        Concepts
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          Concepts
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Concepts" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Concepts
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../agent-oriented-development/" title="Agent-oriented development">
-      Agent-oriented development
-    </a>
+<a class="md-nav__link" href="../../../../agent-oriented-development/">
+        Agent-oriented development
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../vision/" title="Vision">
-      Vision
-    </a>
+<a class="md-nav__link" href="../../../../vision/">
+        Vision
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../app-areas/" title="Application areas">
-      Application areas
-    </a>
+<a class="md-nav__link" href="../../../../app-areas/">
+        Application areas
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../identity/" title="Identity">
-      Identity
-    </a>
+<a class="md-nav__link" href="../../../../identity/">
+        Identity
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../trust/" title="Trust minimisation">
-      Trust minimisation
-    </a>
+<a class="md-nav__link" href="../../../../trust/">
+        Trust minimisation
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../language-agnostic-definition/" title="Language Agnostic Definition">
-      Language Agnostic Definition
-    </a>
+<a class="md-nav__link" href="../../../../language-agnostic-definition/">
+        Language Agnostic Definition
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../registry/" title="Agent &amp; component registry">
-      Agent &amp; component registry
-    </a>
+<a class="md-nav__link" href="../../../../registry/">
+        Agent &amp; component registry
+      </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" id="nav-5" type="checkbox"/>
-<label class="md-nav__link" for="nav-5">
-      Demos
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          Demos
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Demos" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Demos
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../demos/">
         Demos
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../demos/" title="Demos">
-      Demos
-    </a>
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../echo_demo/" title="Echo Demo">
-      Echo Demo
-    </a>
+<a class="md-nav__link" href="../../../../echo_demo/">
+        Echo Demo
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../http-echo-demo/" title="HTTP Echo Demo">
-      HTTP Echo Demo
-    </a>
+<a class="md-nav__link" href="../../../../http-echo-demo/">
+        HTTP Echo Demo
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../gym-skill/" title="Gym skill">
-      Gym skill
-    </a>
+<a class="md-nav__link" href="../../../../gym-skill/">
+        Gym skill
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../aev-echo-demo/" title="Configure with Environment Variables">
-      Configure with Environment Variables
-    </a>
+<a class="md-nav__link" href="../../../../aev-echo-demo/">
+        Configure with Environment Variables
+      </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" id="nav-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-6">
-      Development - Beginner
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-6">
-        Development - Beginner
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+          Development - Beginner
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Development - Beginner" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Development - Beginner
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../quickstart/" title="AEA quick start">
-      AEA quick start
-    </a>
+<a class="md-nav__link" href="../../../../quickstart/">
+        AEA quick start
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../core-components-1/" title="Core components - Part 1">
-      Core components - Part 1
-    </a>
+<a class="md-nav__link" href="../../../../core-components-1/">
+        Core components - Part 1
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../aea-vs-mvc/" title="AEA and web frameworks">
-      AEA and web frameworks
-    </a>
+<a class="md-nav__link" href="../../../../aea-vs-mvc/">
+        AEA and web frameworks
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../core-components-2/" title="Core components - Part 2">
-      Core components - Part 2
-    </a>
+<a class="md-nav__link" href="../../../../core-components-2/">
+        Core components - Part 2
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../interaction-protocol/" title="How AEAs talk to each other - interaction protocols">
-      How AEAs talk to each other - interaction protocols
-    </a>
+<a class="md-nav__link" href="../../../../interaction-protocol/">
+        How AEAs talk to each other - interaction protocols
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../development-setup/" title="Development setup">
-      Development setup
-    </a>
+<a class="md-nav__link" href="../../../../development-setup/">
+        Development setup
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../logging/" title="Logging">
-      Logging
-    </a>
+<a class="md-nav__link" href="../../../../logging/">
+        Logging
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../debug/" title="Debugging">
-      Debugging
-    </a>
+<a class="md-nav__link" href="../../../../debug/">
+        Debugging
+      </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" id="nav-7" type="checkbox"/>
-<label class="md-nav__link" for="nav-7">
-      Development - Intermediate
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-7">
-        Development - Intermediate
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
+          Development - Intermediate
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Development - Intermediate" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Development - Intermediate
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" id="nav-7-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-1">
-      Developing New Components
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-7-1">
-        Developing New Components
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" id="__nav_7_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_1">
+          Developing New Components
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Developing New Components" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_1">
+<span class="md-nav__icon md-icon"></span>
+          Developing New Components
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../step-one/" title="Ways to build an AEA">
-      Ways to build an AEA
-    </a>
+<a class="md-nav__link" href="../../../../step-one/">
+        Ways to build an AEA
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../build-aea-step-by-step/" title="Build an AEA with the CLI">
-      Build an AEA with the CLI
-    </a>
+<a class="md-nav__link" href="../../../../build-aea-step-by-step/">
+        Build an AEA with the CLI
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../scaffolding/" title="Scaffolding packages">
-      Scaffolding packages
-    </a>
+<a class="md-nav__link" href="../../../../scaffolding/">
+        Scaffolding packages
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../protocol-generator/" title="Generating protocols">
-      Generating protocols
-    </a>
+<a class="md-nav__link" href="../../../../protocol-generator/">
+        Generating protocols
+      </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" id="nav-7-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-2">
-      Architecture &amp; component deep-dives
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-7-2">
-        Architecture &amp; component deep-dives
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" id="__nav_7_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2">
+          Architecture &amp; component deep-dives
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Architecture &amp; component deep-dives" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+          Architecture &amp; component deep-dives
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../design-principles/" title="Design principles">
-      Design principles
-    </a>
+<a class="md-nav__link" href="../../../../design-principles/">
+        Design principles
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../diagram/" title="Architectural diagram">
-      Architectural diagram
-    </a>
+<a class="md-nav__link" href="../../../../diagram/">
+        Architectural diagram
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../connection/" title="Connections">
-      Connections
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../protocol/" title="Protocols">
-      Protocols
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../skill/" title="Skills">
-      Skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../contract/" title="Contracts">
-      Contracts
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../decision-maker/" title="Decision Maker">
-      Decision Maker
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../ledger-integration/" title="Ledger &amp; Crypto APIs">
-      Ledger &amp; Crypto APIs
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../message-routing/" title="Message routing">
-      Message routing
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../config/" title="Configurations">
-      Configurations
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../limits/" title="Limitations of v1">
-      Limitations of v1
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" id="nav-7-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-7-3">
-      Use Case
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-7-3">
-        Use Case
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../connect-a-frontend/" title="Front-end intergration">
-      Front-end intergration
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../http-connection-and-skill/" title="HTTP Connection">
-      HTTP Connection
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../raspberry-set-up/" title="Build an AEA on a Raspberry Pi">
-      Build an AEA on a Raspberry Pi
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-8" id="nav-8" type="checkbox"/>
-<label class="md-nav__link" for="nav-8">
-      Development - Advanced
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-<label class="md-nav__title" for="nav-8">
-        Development - Advanced
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-1" id="nav-8-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-1">
-      Topic Guides
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-8-1">
-        Topic Guides
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../generic-storage/" title="Generic Storage">
-      Generic Storage
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../multi-agent-manager/" title="Multi agent manager">
-      Multi agent manager
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../multiplexer-standalone/" title="Use multiplexer stand-alone">
-      Use multiplexer stand-alone
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../standalone-transaction/" title="Create stand-alone transaction">
-      Create stand-alone transaction
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../decision-maker-transaction/" title="Create decision-maker transaction">
-      Create decision-maker transaction
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../skill-testing/" title="Testing Skills">
-      Testing Skills
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../deployment/" title="Deployment">
-      Deployment
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../12-factor/" title="12-Factor app and AEAs">
-      12-Factor app and AEAs
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../known-limits/" title="Known limitations">
-      Known limitations
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../build-aea-programmatically/" title="Build an AEA programmatically">
-      Build an AEA programmatically
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../agent-vs-aea/" title="AEAs vs agents">
-      AEAs vs agents
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../modes/" title="Modes of running an AEA">
-      Modes of running an AEA
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../runtime-cost/" title="Profiling">
-      Profiling
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../por/" title="Proof of Representation">
-      Proof of Representation
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../security/" title="Security">
-      Security
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-2" id="nav-8-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-2">
-      Agent Communication
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-8-2">
-        Agent Communication
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../acn/" title="Agent Communication Network">
-      Agent Communication Network
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../acn-internals/" title="ACN Internals">
-      ACN Internals
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-3" id="nav-8-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-3">
-      Search &amp; Discovery
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-8-3">
-        Search &amp; Discovery
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../simple-oef/" title="Simple OEF">
-      Simple OEF
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../defining-data-models/" title="Defining Data Models">
-      Defining Data Models
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../query-language/" title="The Query Language">
-      The Query Language
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../simple-oef-usage/" title="SOEF Connection">
-      SOEF Connection
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-4" id="nav-8-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-4">
-      Developer Interfaces
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-8-4">
-        Developer Interfaces
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-4-1" id="nav-8-4-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-4-1">
-      CLI
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-4-1">
-        CLI
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../cli-how-to/" title="Installation">
-      Installation
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../cli-commands/" title="Commands">
-      Commands
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../package-imports/" title="File structure">
-      File structure
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../wealth/" title="Generating wealth">
-      Generating wealth
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-5" id="nav-8-5" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-5">
-      Benchmarks
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-8-5">
-        Benchmarks
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../performance-benchmark/" title="Performance benchmark">
-      Performance benchmark
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6" id="nav-8-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6">
-      API
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-8-6">
-        API
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../abstract_agent/" title="AbstractAgent">
-      AbstractAgent
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../aea/" title="AEA">
-      AEA
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../aea_builder/" title="AEA Builder">
-      AEA Builder
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../agent/" title="Agent">
-      Agent
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../agent_loop/" title="Agent Loop">
-      Agent Loop
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../common/" title="Common">
-      Common
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../exceptions/" title="Exceptions">
-      Exceptions
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../launcher/" title="Launcher">
-      Launcher
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../multiplexer/" title="Multiplexer">
-      Multiplexer
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../runner/" title="Runner">
-      Runner
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../runtime/" title="Runtime">
-      Runtime
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-12" id="nav-8-6-12" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-12">
-      Components
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-12">
-        Components
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../components/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../components/loader/" title="Loader">
-      Loader
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../components/utils/" title="Utils">
-      Utils
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-13" id="nav-8-6-13" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-13">
-      Configurations
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-13">
-        Configurations
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../configurations/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../configurations/constants/" title="Constants">
-      Constants
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../configurations/data_types/" title="Data Types">
-      Data Types
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../configurations/loader/" title="Loader">
-      Loader
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../configurations/manager/" title="Manager">
-      Manager
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../configurations/pypi/" title="Pypi">
-      Pypi
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../configurations/utils/" title="Utils">
-      Utils
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../configurations/validation/" title="Validation">
-      Validation
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-14" id="nav-8-6-14" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-14">
-      Connections
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-14">
+<a class="md-nav__link" href="../../../../connection/">
         Connections
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../connections/base/" title="Base">
-      Base
-    </a>
-</li>
-</ul>
-</nav>
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../context/base/" title="Context">
-      Context
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-16" id="nav-8-6-16" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-16">
-      Contracts
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-16">
-        Contracts
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../contracts/base/" title="Base">
-      Base
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-17" id="nav-8-6-17" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-17">
-      Crypto
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-17">
-        Crypto
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../crypto/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../crypto/helpers/" title="Helpers">
-      Helpers
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../crypto/ledger_apis/" title="LedgerApis">
-      LedgerApis
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../crypto/plugin/" title="Plugin">
-      Plugin
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../crypto/wallet/" title="Wallet">
-      Wallet
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-17-6" id="nav-8-6-17-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-17-6">
-      Registries
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-17-6">
-        Registries
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../crypto/registries/base/" title="Base">
-      Base
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-18" id="nav-8-6-18" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-18">
-      Decision Maker
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-18">
-        Decision Maker
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../decision_maker/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../decision_maker/default/" title="Default">
-      Default
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-19" id="nav-8-6-19" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-19">
-      Error Handler
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-19">
-        Error Handler
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../error_handler/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../error_handler/default/" title="Default">
-      Default
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20" id="nav-8-6-20" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20">
-      Helpers
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-20">
-        Helpers
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20-1" id="nav-8-6-20-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20-1">
-      ACN
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-20-1">
-        ACN
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/acn/agent_record/" title="Agent Record">
-      Agent Record
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/acn/uri/" title="URI">
-      URI
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/async_friendly_queue/" title="Async Friendly Queue">
-      Async Friendly Queue
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/async_utils/" title="Async Utils">
-      Async Utils
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/constants/" title="Constants">
-      Constants
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/env_vars/" title="Env Vars">
-      Env Vars
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/exception_policy/" title="Exception Policy">
-      Exception Policy
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/exec_timeout/" title="Exec Timeout">
-      Exec Timeout
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/file_io/" title="File IO">
-      File IO
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/file_lock/" title="File Lock">
-      File Lock
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/http_requests/" title="HttpRequests">
-      HttpRequests
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/install_dependency/" title="Install Dependency">
-      Install Dependency
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/io/" title="IO">
-      IO
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20-14" id="nav-8-6-20-14" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20-14">
-      IPFS
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-20-14">
-        IPFS
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/ipfs/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/ipfs/utils/" title="Utils">
-      Utils
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/logging/" title="Logging">
-      Logging
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20-16" id="nav-8-6-20-16" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20-16">
-      MultiAddress
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-20-16">
-        MultiAddress
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/multiaddr/base/" title="Base">
-      Base
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/multiple_executor/" title="MultipleExecutor">
-      MultipleExecutor
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/pipe/" title="Pipe">
-      Pipe
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20-19" id="nav-8-6-20-19" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20-19">
-      Preferences
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-20-19">
-        Preferences
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/preference_representations/base/" title="Base">
-      Base
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/profiling/" title="Profiling">
-      Profiling
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20-21" id="nav-8-6-20-21" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20-21">
-      Search
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-20-21">
-        Search
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/search/generic/" title="Generic">
-      Generic
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/search/models/" title="Models">
-      Models
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/serializers/" title="Serializers">
-      Serializers
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20-23" id="nav-8-6-20-23" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20-23">
-      Storage
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-20-23">
-        Storage
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/storage/generic_storage/" title="GenericStorage">
-      GenericStorage
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20-23-2" id="nav-8-6-20-23-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20-23-2">
-      Backends
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-8-6-20-23-2">
-        Backends
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/storage/backends/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/storage/backends/sqlite/" title="Sqlite">
-      Sqlite
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/sym_link/" title="Sym Link">
-      Sym Link
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-20-25" id="nav-8-6-20-25" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-20-25">
-      Transaction
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-20-25">
-        Transaction
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/transaction/base/" title="Base">
-      Base
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/win32/" title="Win32">
-      Win32
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../helpers/yaml_utils/" title="YamlUtils">
-      YamlUtils
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../identity/base/" title="Identity">
-      Identity
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../mail/base/" title="Mail">
-      Mail
-    </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-23" id="nav-8-6-23" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-23">
-      Manager
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-23">
-        Manager
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../manager/manager/" title="Manager">
-      Manager
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../manager/project/" title="Project">
-      Project
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../manager/utils/" title="Utils">
-      Utils
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-24" id="nav-8-6-24" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-24">
-      Protocols
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-24">
+<a class="md-nav__link" href="../../../../protocol/">
         Protocols
-      </label>
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../skill/">
+        Skills
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../contract/">
+        Contracts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../decision-maker/">
+        Decision Maker
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../ledger-integration/">
+        Ledger &amp; Crypto APIs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../message-routing/">
+        Message routing
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../config/">
+        Configurations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../limits/">
+        Limitations of v1
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" id="__nav_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_3">
+          Use Case
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Use Case" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+          Use Case
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../base/" title="Base">
-      Base
-    </a>
+<a class="md-nav__link" href="../../../../connect-a-frontend/">
+        Front-end intergration
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../http-connection-and-skill/">
+        HTTP Connection
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../raspberry-set-up/">
+        Build an AEA on a Raspberry Pi
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-24-2" id="nav-8-6-24-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-24-2">
-      Dialogue
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-24-2">
-        Dialogue
-      </label>
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8">
+          Development - Advanced
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Development - Advanced" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          Development - Advanced
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1" id="__nav_8_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_1">
+          Topic Guides
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Topic Guides" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_1">
+<span class="md-nav__icon md-icon"></span>
+          Topic Guides
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../generic-storage/">
+        Generic Storage
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../multi-agent-manager/">
+        Multi agent manager
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../multiplexer-standalone/">
+        Use multiplexer stand-alone
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../standalone-transaction/">
+        Create stand-alone transaction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../decision-maker-transaction/">
+        Create decision-maker transaction
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../skill-testing/">
+        Testing Skills
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../deployment/">
+        Deployment
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../12-factor/">
+        12-Factor app and AEAs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../known-limits/">
+        Known limitations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../build-aea-programmatically/">
+        Build an AEA programmatically
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../agent-vs-aea/">
+        AEAs vs agents
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../modes/">
+        Modes of running an AEA
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../runtime-cost/">
+        Profiling
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../por/">
+        Proof of Representation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../security/">
+        Security
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2" id="__nav_8_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_2">
+          Agent Communication
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Agent Communication" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_2">
+<span class="md-nav__icon md-icon"></span>
+          Agent Communication
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../acn/">
+        Agent Communication Network
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../acn-internals/">
+        ACN Internals
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3">
+          Developer Interfaces
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Developer Interfaces" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+          Developer Interfaces
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3_1" id="__nav_8_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3_1">
+          CLI
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="CLI" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_3_1">
+<span class="md-nav__icon md-icon"></span>
+          CLI
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cli-how-to/">
+        Installation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cli-commands/">
+        Commands
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../package-imports/">
+        File structure
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../wealth/">
+        Generating wealth
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_4" id="__nav_8_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_4">
+          Benchmarks
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Benchmarks" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_4">
+<span class="md-nav__icon md-icon"></span>
+          Benchmarks
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../performance-benchmark/">
+        Performance benchmark
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5" id="__nav_8_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5">
+          API
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="API" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_5">
+<span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../abstract_agent/">
+        AbstractAgent
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../aea/">
+        AEA
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../aea_builder/">
+        AEA Builder
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../agent/">
+        Agent
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../agent_loop/">
+        Agent Loop
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../common/">
+        Common
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../exceptions/">
+        Exceptions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../launcher/">
+        Launcher
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../multiplexer/">
+        Multiplexer
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../runner/">
+        Runner
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../runtime/">
+        Runtime
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_12" id="__nav_8_5_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_12">
+          Components
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Components" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_12">
+<span class="md-nav__icon md-icon"></span>
+          Components
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../components/base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../components/loader/">
+        Loader
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../components/utils/">
+        Utils
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_13" id="__nav_8_5_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_13">
+          Configurations
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Configurations" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_13">
+<span class="md-nav__icon md-icon"></span>
+          Configurations
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../configurations/base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../configurations/constants/">
+        Constants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../configurations/data_types/">
+        Data Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../configurations/loader/">
+        Loader
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../configurations/manager/">
+        Manager
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../configurations/pypi/">
+        Pypi
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../configurations/utils/">
+        Utils
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../configurations/validation/">
+        Validation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_14" id="__nav_8_5_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_14">
+          Connections
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Connections" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_14">
+<span class="md-nav__icon md-icon"></span>
+          Connections
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../connections/base/">
+        Base
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../context/base/">
+        Context
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_16" id="__nav_8_5_16" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_16">
+          Contracts
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Contracts" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_16">
+<span class="md-nav__icon md-icon"></span>
+          Contracts
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../contracts/base/">
+        Base
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_17" id="__nav_8_5_17" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_17">
+          Crypto
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Crypto" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_17">
+<span class="md-nav__icon md-icon"></span>
+          Crypto
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../crypto/base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../crypto/helpers/">
+        Helpers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../crypto/ledger_apis/">
+        LedgerApis
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../crypto/plugin/">
+        Plugin
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../crypto/wallet/">
+        Wallet
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_17_6" id="__nav_8_5_17_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_17_6">
+          Registries
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Registries" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_17_6">
+<span class="md-nav__icon md-icon"></span>
+          Registries
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../crypto/registries/base/">
+        Base
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_18" id="__nav_8_5_18" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_18">
+          Decision Maker
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Decision Maker" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_18">
+<span class="md-nav__icon md-icon"></span>
+          Decision Maker
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../decision_maker/base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../decision_maker/default/">
+        Default
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_19" id="__nav_8_5_19" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_19">
+          Error Handler
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Error Handler" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_19">
+<span class="md-nav__icon md-icon"></span>
+          Error Handler
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../error_handler/base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../error_handler/default/">
+        Default
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20" id="__nav_8_5_20" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20">
+          Helpers
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Helpers" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_20">
+<span class="md-nav__icon md-icon"></span>
+          Helpers
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_1" id="__nav_8_5_20_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20_1">
+          ACN
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="ACN" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_20_1">
+<span class="md-nav__icon md-icon"></span>
+          ACN
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/acn/agent_record/">
+        Agent Record
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/acn/uri/">
+        URI
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/async_friendly_queue/">
+        Async Friendly Queue
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/async_utils/">
+        Async Utils
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/constants/">
+        Constants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/env_vars/">
+        Env Vars
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/exception_policy/">
+        Exception Policy
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/exec_timeout/">
+        Exec Timeout
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/file_io/">
+        File IO
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/file_lock/">
+        File Lock
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/http_requests/">
+        HttpRequests
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/install_dependency/">
+        Install Dependency
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/io/">
+        IO
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_14" id="__nav_8_5_20_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20_14">
+          IPFS
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="IPFS" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_20_14">
+<span class="md-nav__icon md-icon"></span>
+          IPFS
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/ipfs/base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/ipfs/utils/">
+        Utils
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/logging/">
+        Logging
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_16" id="__nav_8_5_20_16" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20_16">
+          MultiAddress
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MultiAddress" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_20_16">
+<span class="md-nav__icon md-icon"></span>
+          MultiAddress
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/multiaddr/base/">
+        Base
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/multiple_executor/">
+        MultipleExecutor
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/pipe/">
+        Pipe
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_19" id="__nav_8_5_20_19" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20_19">
+          Preferences
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Preferences" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_20_19">
+<span class="md-nav__icon md-icon"></span>
+          Preferences
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/preference_representations/base/">
+        Base
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/profiling/">
+        Profiling
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_21" id="__nav_8_5_20_21" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20_21">
+          Search
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Search" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_20_21">
+<span class="md-nav__icon md-icon"></span>
+          Search
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/search/generic/">
+        Generic
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/search/models/">
+        Models
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/serializers/">
+        Serializers
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_23" id="__nav_8_5_20_23" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20_23">
+          Storage
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Storage" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_20_23">
+<span class="md-nav__icon md-icon"></span>
+          Storage
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/storage/generic_storage/">
+        GenericStorage
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_23_2" id="__nav_8_5_20_23_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20_23_2">
+          Backends
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Backends" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_8_5_20_23_2">
+<span class="md-nav__icon md-icon"></span>
+          Backends
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/storage/backends/base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/storage/backends/sqlite/">
+        Sqlite
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/sym_link/">
+        Sym Link
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_25" id="__nav_8_5_20_25" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_20_25">
+          Transaction
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Transaction" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_20_25">
+<span class="md-nav__icon md-icon"></span>
+          Transaction
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/transaction/base/">
+        Base
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/win32/">
+        Win32
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../helpers/yaml_utils/">
+        YamlUtils
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../identity/base/">
+        Identity
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mail/base/">
+        Mail
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_23" id="__nav_8_5_23" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_23">
+          Manager
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Manager" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_23">
+<span class="md-nav__icon md-icon"></span>
+          Manager
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../manager/manager/">
+        Manager
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../manager/project/">
+        Project
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../manager/utils/">
+        Utils
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_24" id="__nav_8_5_24" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_24">
+          Protocols
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Protocols" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_24">
+<span class="md-nav__icon md-icon"></span>
+          Protocols
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../base/">
+        Base
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_24_2" id="__nav_8_5_24_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_24_2">
+          Dialogue
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Dialogue" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_24_2">
+<span class="md-nav__icon md-icon"></span>
+          Dialogue
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
+          Base
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Base
-      </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Base">
-      Base
-    </a>
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table of contents</label>
-<ul class="md-nav__list" data-md-scrollfix="">
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#invaliddialoguemessage-objects">
     InvalidDialogueMessage Objects
@@ -1308,7 +1292,7 @@
 <a class="md-nav__link" href="#dialoguelabel-objects">
     DialogueLabel Objects
   </a>
-<nav class="md-nav">
+<nav aria-label="DialogueLabel Objects" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#__init__">
@@ -1361,6 +1345,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#is_complete">
+    is_complete
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#get_incomplete_version">
     get_incomplete_version
   </a>
@@ -1382,7 +1371,7 @@
 <a class="md-nav__link" href="#_dialoguemeta-objects">
     _DialogueMeta Objects
   </a>
-<nav class="md-nav">
+<nav aria-label="_DialogueMeta Objects" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#__new__">
@@ -1397,442 +1386,78 @@
     Dialogue Objects
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rules-objects">
-    Rules Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___1">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#initial_performatives">
-    initial_performatives
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#terminal_performatives">
-    terminal_performatives
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#valid_replies">
-    valid_replies
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_valid_replies">
-    get_valid_replies
-  </a>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_24_3" id="__nav_8_5_24_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_24_3">
+          Generator
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Generator" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_24_3">
+<span class="md-nav__icon md-icon"></span>
+          Generator
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#role-objects">
-    Role Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
+<a class="md-nav__link" href="../../generator/base/">
+        Base
+      </a>
+</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#__str___1">
-    __str__
-  </a>
+<a class="md-nav__link" href="../../generator/common/">
+        Common
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../generator/extract_specification/">
+        Extract Specification
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../generator/validate/">
+        Validate
+      </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#endstate-objects">
-    EndState Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__str___2">
-    __str__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___2">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add_terminal_state_callback">
-    add_terminal_state_callback
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__eq___1">
-    __eq__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#json_1">
-    json
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#from_json_1">
-    from_json
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_label">
-    dialogue_label
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#incomplete_dialogue_label">
-    incomplete_dialogue_label
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_labels">
-    dialogue_labels
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#self_address">
-    self_address
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#role">
-    role
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rules">
-    rules
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#message_class">
-    message_class
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_self_initiated">
-    is_self_initiated
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#last_incoming_message">
-    last_incoming_message
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#last_outgoing_message">
-    last_outgoing_message
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#last_message">
-    last_message
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_empty">
-    is_empty
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#reply">
-    reply
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_message_by_id">
-    get_message_by_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_outgoing_next_message_id">
-    get_outgoing_next_message_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_incoming_next_message_id">
-    get_incoming_next_message_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__str___3">
-    __str__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialoguestats-objects">
-    DialogueStats Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___3">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#self_initiated">
-    self_initiated
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#other_initiated">
-    other_initiated
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add_dialogue_endstate">
-    add_dialogue_endstate
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#find_caller_object">
-    find_caller_object
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#basicdialoguesstorage-objects">
-    BasicDialoguesStorage Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___4">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogues_in_terminal_state">
-    dialogues_in_terminal_state
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogues_in_active_state">
-    dialogues_in_active_state
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_terminal_dialogues_kept">
-    is_terminal_dialogues_kept
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_terminal_state_callback">
-    dialogue_terminal_state_callback
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#setup">
-    setup
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#teardown">
-    teardown
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add">
-    add
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#remove">
-    remove
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get">
-    get
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogues_with_counterparty">
-    get_dialogues_with_counterparty
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_in_incomplete">
-    is_in_incomplete
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set_incomplete_dialogue">
-    set_incomplete_dialogue
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_dialogue_present">
-    is_dialogue_present
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_latest_label">
-    get_latest_label
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#persistdialoguesstorage-objects">
-    PersistDialoguesStorage Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___5">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_skill_component">
-    get_skill_component
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#setup_1">
-    setup
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#teardown_1">
-    teardown
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#remove_1">
-    remove
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#persistdialoguesstoragewithoffloading-objects">
-    PersistDialoguesStorageWithOffloading Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_terminal_state_callback_1">
-    dialogue_terminal_state_callback
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_1">
-    get
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogues_with_counterparty_1">
-    get_dialogues_with_counterparty
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogues_in_terminal_state_1">
-    dialogues_in_terminal_state
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogues-objects">
-    Dialogues Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___6">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_keep_dialogues_in_terminal_state">
-    is_keep_dialogues_in_terminal_state
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#self_address_1">
-    self_address
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_stats">
-    dialogue_stats
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#message_class_1">
-    message_class
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_class">
-    dialogue_class
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogues_with_counterparty_2">
-    get_dialogues_with_counterparty
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#new_self_initiated_dialogue_reference">
-    new_self_initiated_dialogue_reference
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create">
-    create
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create_with_message">
-    create_with_message
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update">
-    update
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogue">
-    get_dialogue
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogue_from_label">
-    get_dialogue_from_label
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#setup_2">
-    setup
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#teardown_2">
-    teardown
-  </a>
-</li>
-</ul>
-</nav>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_24_4" id="__nav_8_5_24_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_24_4">
+          Signing Protocol
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Signing Protocol" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_24_4">
+<span class="md-nav__icon md-icon"></span>
+          Signing Protocol
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../signing/custom_types/">
+        Custom Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../signing/dialogues/">
+        Dialogues
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../signing/message/">
+        Message
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../signing/serialization/">
+        Serialization
+      </a>
 </li>
 </ul>
 </nav>
@@ -1841,217 +1466,160 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-24-3" id="nav-8-6-24-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-24-3">
-      Generator
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-24-3">
-        Generator
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_25" id="__nav_8_5_25" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_25">
+          Registries
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Registries" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_25">
+<span class="md-nav__icon md-icon"></span>
+          Registries
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../generator/base/" title="Base">
-      Base
-    </a>
+<a class="md-nav__link" href="../../../registries/base/">
+        Base
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../generator/common/" title="Common">
-      Common
-    </a>
+<a class="md-nav__link" href="../../../registries/filter/">
+        Filter
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../generator/extract_specification/" title="Extract Specification">
-      Extract Specification
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../generator/validate/" title="Validate">
-      Validate
-    </a>
+<a class="md-nav__link" href="../../../registries/resources/">
+        Resources
+      </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-24-4" id="nav-8-6-24-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-24-4">
-      Signing Protocol
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-24-4">
-        Signing Protocol
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_26" id="__nav_8_5_26" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_26">
+          Skills
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Skills" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_26">
+<span class="md-nav__icon md-icon"></span>
+          Skills
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../signing/custom_types/" title="Custom Types">
-      Custom Types
-    </a>
+<a class="md-nav__link" href="../../../skills/base/">
+        Base
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../signing/dialogues/" title="Dialogues">
-      Dialogues
-    </a>
+<a class="md-nav__link" href="../../../skills/behaviours/">
+        Behaviors
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../signing/message/" title="Message">
-      Message
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../signing/serialization/" title="Serialization">
-      Serialization
-    </a>
-</li>
-</ul>
-</nav>
+<a class="md-nav__link" href="../../../skills/tasks/">
+        Task
+      </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-25" id="nav-8-6-25" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-25">
-      Registries
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-25">
-        Registries
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_27" id="__nav_8_5_27" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_27">
+          Test Tools
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Test Tools" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_27">
+<span class="md-nav__icon md-icon"></span>
+          Test Tools
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../registries/base/" title="Base">
-      Base
-    </a>
+<a class="md-nav__link" href="../../../test_tools/constants/">
+        Constants
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../registries/filter/" title="Filter">
-      Filter
-    </a>
+<a class="md-nav__link" href="../../../test_tools/exceptions/">
+        Exceptions
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../registries/resources/" title="Resources">
-      Resources
-    </a>
+<a class="md-nav__link" href="../../../test_tools/generic/">
+        Generic
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../test_tools/test_cases/">
+        Test Cases
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../test_tools/test_contract/">
+        Test Contract
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../test_tools/test_skill/">
+        Test Skill
+      </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-26" id="nav-8-6-26" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-26">
-      Skills
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-26">
-        Skills
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../skills/base/" title="Base">
-      Base
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../skills/behaviours/" title="Behaviors">
-      Behaviors
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../skills/tasks/" title="Task">
-      Task
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-27" id="nav-8-6-27" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-27">
-      Test Tools
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-27">
-        Test Tools
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../test_tools/constants/" title="Constants">
-      Constants
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../test_tools/exceptions/" title="Exceptions">
-      Exceptions
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../test_tools/generic/" title="Generic">
-      Generic
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../test_tools/test_cases/" title="Test Cases">
-      Test Cases
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../test_tools/test_contract/" title="Test Contract">
-      Test Contract
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../test_tools/test_skill/" title="Test Skill">
-      Test Skill
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-28" id="nav-8-6-28" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-28">
-      Plugins
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-<label class="md-nav__title" for="nav-8-6-28">
-        Plugins
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_28" id="__nav_8_5_28" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_28">
+          Plugins
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Plugins" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_8_5_28">
+<span class="md-nav__icon md-icon"></span>
+          Plugins
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-28-1" id="nav-8-6-28-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-28-1">
-      CLI
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-28-1">
-        CLI
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_28_1" id="__nav_8_5_28_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_28_1">
+          CLI
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="CLI" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_28_1">
+<span class="md-nav__icon md-icon"></span>
+          CLI
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-28-1-1" id="nav-8-6-28-1-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-28-1-1">
-      IPFS
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-8-6-28-1-1">
-        IPFS
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_28_1_1" id="__nav_8_5_28_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_28_1_1">
+          IPFS
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="IPFS" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_8_5_28_1_1">
+<span class="md-nav__icon md-icon"></span>
+          IPFS
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../plugins/aea_cli_ipfs/core/" title="API">
-      API
-    </a>
+<a class="md-nav__link" href="../../../plugins/aea_cli_ipfs/core/">
+        API
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../plugins/aea_cli_ipfs/registry/" title="Registry">
-      Registry
-    </a>
+<a class="md-nav__link" href="../../../plugins/aea_cli_ipfs/registry/">
+        Registry
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../plugins/aea_cli_ipfs/ipfs_utils/" title="Utils">
-      Utils
-    </a>
+<a class="md-nav__link" href="../../../plugins/aea_cli_ipfs/ipfs_utils/">
+        Utils
+      </a>
 </li>
 </ul>
 </nav>
@@ -2060,70 +1628,78 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-28-2" id="nav-8-6-28-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-28-2">
-      Ledger
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-<label class="md-nav__title" for="nav-8-6-28-2">
-        Ledger
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_28_2" id="__nav_8_5_28_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_28_2">
+          Ledger
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Ledger" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_8_5_28_2">
+<span class="md-nav__icon md-icon"></span>
+          Ledger
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-28-2-1" id="nav-8-6-28-2-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-28-2-1">
-      Cosmos
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-8-6-28-2-1">
-        Cosmos
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_28_2_1" id="__nav_8_5_28_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_28_2_1">
+          Cosmos
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Cosmos" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_8_5_28_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Cosmos
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../plugins/aea_ledger_cosmos/cosmos/" title="API">
-      API
-    </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-28-2-2" id="nav-8-6-28-2-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-28-2-2">
-      Ethereum
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-8-6-28-2-2">
-        Ethereum
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../plugins/aea_ledger_ethereum/ethereum/" title="API">
-      API
-    </a>
+<a class="md-nav__link" href="../../../plugins/aea_ledger_cosmos/cosmos/">
+        API
+      </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-6-28-2-3" id="nav-8-6-28-2-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-8-6-28-2-3">
-      Fetchai
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="5">
-<label class="md-nav__title" for="nav-8-6-28-2-3">
-        Fetchai
-      </label>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_28_2_2" id="__nav_8_5_28_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_28_2_2">
+          Ethereum
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Ethereum" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_8_5_28_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Ethereum
+        </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../plugins/aea_ledger_fetchai/fetchai/" title="API">
-      API
-    </a>
+<a class="md-nav__link" href="../../../plugins/aea_ledger_ethereum/ethereum/">
+        API
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_28_2_3" id="__nav_8_5_28_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5_28_2_3">
+          Fetchai
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Fetchai" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_8_5_28_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Fetchai
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../plugins/aea_ledger_fetchai/fetchai/">
+        API
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../plugins/aea_ledger_fetchai/_cosmos/" title="Helper">
-      Helper
-    </a>
+<a class="md-nav__link" href="../../../plugins/aea_ledger_fetchai/_cosmos/">
+        Helper
+      </a>
 </li>
 </ul>
 </nav>
@@ -2141,26 +1717,29 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../glossary/" title="Glossary">
-      Glossary
-    </a>
+<a class="md-nav__link" href="../../../../glossary/">
+        Glossary
+      </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../questions-and-answers/" title="Q&amp;A">
-      Q&amp;A
-    </a>
+<a class="md-nav__link" href="../../../../questions-and-answers/">
+        Q&amp;A
+      </a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table of contents</label>
-<ul class="md-nav__list" data-md-scrollfix="">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#invaliddialoguemessage-objects">
     InvalidDialogueMessage Objects
@@ -2170,7 +1749,7 @@
 <a class="md-nav__link" href="#dialoguelabel-objects">
     DialogueLabel Objects
   </a>
-<nav class="md-nav">
+<nav aria-label="DialogueLabel Objects" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#__init__">
@@ -2223,6 +1802,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#is_complete">
+    is_complete
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#get_incomplete_version">
     get_incomplete_version
   </a>
@@ -2244,7 +1828,7 @@
 <a class="md-nav__link" href="#_dialoguemeta-objects">
     _DialogueMeta Objects
   </a>
-<nav class="md-nav">
+<nav aria-label="_DialogueMeta Objects" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#__new__">
@@ -2259,452 +1843,17 @@
     Dialogue Objects
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rules-objects">
-    Rules Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___1">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#initial_performatives">
-    initial_performatives
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#terminal_performatives">
-    terminal_performatives
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#valid_replies">
-    valid_replies
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_valid_replies">
-    get_valid_replies
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#role-objects">
-    Role Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__str___1">
-    __str__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#endstate-objects">
-    EndState Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__str___2">
-    __str__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___2">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add_terminal_state_callback">
-    add_terminal_state_callback
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__eq___1">
-    __eq__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#json_1">
-    json
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#from_json_1">
-    from_json
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_label">
-    dialogue_label
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#incomplete_dialogue_label">
-    incomplete_dialogue_label
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_labels">
-    dialogue_labels
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#self_address">
-    self_address
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#role">
-    role
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rules">
-    rules
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#message_class">
-    message_class
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_self_initiated">
-    is_self_initiated
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#last_incoming_message">
-    last_incoming_message
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#last_outgoing_message">
-    last_outgoing_message
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#last_message">
-    last_message
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_empty">
-    is_empty
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#reply">
-    reply
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_message_by_id">
-    get_message_by_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_outgoing_next_message_id">
-    get_outgoing_next_message_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_incoming_next_message_id">
-    get_incoming_next_message_id
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__str___3">
-    __str__
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialoguestats-objects">
-    DialogueStats Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___3">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#self_initiated">
-    self_initiated
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#other_initiated">
-    other_initiated
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add_dialogue_endstate">
-    add_dialogue_endstate
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#find_caller_object">
-    find_caller_object
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#basicdialoguesstorage-objects">
-    BasicDialoguesStorage Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___4">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogues_in_terminal_state">
-    dialogues_in_terminal_state
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogues_in_active_state">
-    dialogues_in_active_state
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_terminal_dialogues_kept">
-    is_terminal_dialogues_kept
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_terminal_state_callback">
-    dialogue_terminal_state_callback
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#setup">
-    setup
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#teardown">
-    teardown
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#add">
-    add
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#remove">
-    remove
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get">
-    get
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogues_with_counterparty">
-    get_dialogues_with_counterparty
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_in_incomplete">
-    is_in_incomplete
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set_incomplete_dialogue">
-    set_incomplete_dialogue
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_dialogue_present">
-    is_dialogue_present
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_latest_label">
-    get_latest_label
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#persistdialoguesstorage-objects">
-    PersistDialoguesStorage Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___5">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_skill_component">
-    get_skill_component
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#setup_1">
-    setup
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#teardown_1">
-    teardown
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#remove_1">
-    remove
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#persistdialoguesstoragewithoffloading-objects">
-    PersistDialoguesStorageWithOffloading Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_terminal_state_callback_1">
-    dialogue_terminal_state_callback
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_1">
-    get
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogues_with_counterparty_1">
-    get_dialogues_with_counterparty
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogues_in_terminal_state_1">
-    dialogues_in_terminal_state
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogues-objects">
-    Dialogues Objects
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#__init___6">
-    __init__
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#is_keep_dialogues_in_terminal_state">
-    is_keep_dialogues_in_terminal_state
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#self_address_1">
-    self_address
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_stats">
-    dialogue_stats
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#message_class_1">
-    message_class
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dialogue_class">
-    dialogue_class
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogues_with_counterparty_2">
-    get_dialogues_with_counterparty
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#new_self_initiated_dialogue_reference">
-    new_self_initiated_dialogue_reference
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create">
-    create
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create_with_message">
-    create_with_message
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update">
-    update
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogue">
-    get_dialogue
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#get_dialogue_from_label">
-    get_dialogue_from_label
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#setup_2">
-    setup
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#teardown_2">
-    teardown
-  </a>
-</li>
-</ul>
-</nav>
-</li>
 </ul>
 </nav>
 </div>
 </div>
 </div>
-<div class="md-content">
+<div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-icon md-content__icon" href="https://github.com/valory-xyz/open-aea/edit/master/docs/api/protocols/dialogue/base.md" title="Edit this page"></a>
-<p><a name="aea.protocols.dialogue.base"></a></p>
+<a class="md-content__button md-icon" href="https://github.com/valory-xyz/open-aea/edit/master/docs/api/protocols/dialogue/base.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<p><a id="aea.protocols.dialogue.base"></a></p>
 <h1 id="aeaprotocolsdialoguebase">aea.protocols.dialogue.base</h1>
 <p>This module contains the classes required for dialogue management.</p>
 <ul>
@@ -2712,19 +1861,21 @@
 <li>Dialogue: The dialogue class maintains state of a dialogue and manages it.</li>
 <li>Dialogues: The dialogues class keeps track of all dialogues.</li>
 </ul>
-<p><a name="aea.protocols.dialogue.base.InvalidDialogueMessage"></a></p>
+<p><a id="aea.protocols.dialogue.base.InvalidDialogueMessage"></a></p>
 <h2 id="invaliddialoguemessage-objects">InvalidDialogueMessage Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">InvalidDialogueMessage</span><span class="p">(</span><span class="ne">Exception</span><span class="p">)</span>
 </code></pre></div>
 <p>Exception for adding invalid message to a dialogue.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel"></a></p>
 <h2 id="dialoguelabel-objects">DialogueLabel Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">DialogueLabel</span><span class="p">()</span>
 </code></pre></div>
 <p>The dialogue label class acts as an identifier for dialogues.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.__init__"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.__init__"></a></p>
 <h4 id="__init__"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">dialogue_reference</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span> <span class="n">dialogue_opponent_addr</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="n">dialogue_starter_addr</span><span class="p">:</span> <span class="n">Address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">dialogue_reference</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span>
+                                       <span class="nb">str</span><span class="p">],</span> <span class="n">dialogue_opponent_addr</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span>
+             <span class="n">dialogue_starter_addr</span><span class="p">:</span> <span class="n">Address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
 <p>Initialize a dialogue label.</p>
 <p><strong>Arguments</strong>:</p>
@@ -2733,742 +1884,144 @@
 <li><code>dialogue_opponent_addr</code>: the addr of the agent with which the dialogue is kept.</li>
 <li><code>dialogue_starter_addr</code>: the addr of the agent which started the dialogue.</li>
 </ul>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.dialogue_reference"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.dialogue_reference"></a></p>
 <h4 id="dialogue_reference">dialogue<code>_</code>reference</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_reference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">dialogue_reference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span>
 </code></pre></div>
 <p>Get the dialogue reference.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.dialogue_starter_reference"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.dialogue_starter_reference"></a></p>
 <h4 id="dialogue_starter_reference">dialogue<code>_</code>starter<code>_</code>reference</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_starter_reference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">dialogue_starter_reference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Get the dialogue starter reference.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.dialogue_responder_reference"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.dialogue_responder_reference"></a></p>
 <h4 id="dialogue_responder_reference">dialogue<code>_</code>responder<code>_</code>reference</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_responder_reference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">dialogue_responder_reference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Get the dialogue responder reference.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.dialogue_opponent_addr"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.dialogue_opponent_addr"></a></p>
 <h4 id="dialogue_opponent_addr">dialogue<code>_</code>opponent<code>_</code>addr</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_opponent_addr</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">dialogue_opponent_addr</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Get the address of the dialogue opponent.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.dialogue_starter_addr"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.dialogue_starter_addr"></a></p>
 <h4 id="dialogue_starter_addr">dialogue<code>_</code>starter<code>_</code>addr</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_starter_addr</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">dialogue_starter_addr</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Get the address of the dialogue starter.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.__eq__"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.__eq__"></a></p>
 <h4 id="__eq__"><code>__</code>eq<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__eq__</span><span class="p">(</span><span class="n">other</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="n">other</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
 </code></pre></div>
 <p>Check for equality between two DialogueLabel objects.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.__hash__"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.__hash__"></a></p>
 <h4 id="__hash__"><code>__</code>hash<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__hash__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__hash__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span>
 </code></pre></div>
 <p>Turn object into hash.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.json"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.json"></a></p>
 <h4 id="json">json</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">json</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Dict</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">json</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Dict</span>
 </code></pre></div>
 <p>Return the JSON representation.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.from_json"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.from_json"></a></p>
 <h4 id="from_json">from<code>_</code>json</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
- <span class="o">|</span> <span class="n">from_json</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="s2">"DialogueLabel"</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">from_json</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="s2">"DialogueLabel"</span>
 </code></pre></div>
 <p>Get dialogue label from json.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.get_incomplete_version"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.is_complete"></a></p>
+<h4 id="is_complete">is<code>_</code>complete</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">is_complete</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
+</code></pre></div>
+<p>Check if the dialogue label is complete.</p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.get_incomplete_version"></a></p>
 <h4 id="get_incomplete_version">get<code>_</code>incomplete<code>_</code>version</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_incomplete_version</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"DialogueLabel"</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_incomplete_version</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"DialogueLabel"</span>
 </code></pre></div>
 <p>Get the incomplete version of the label.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.__str__"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.__str__"></a></p>
 <h4 id="__str__"><code>__</code>str<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__str__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__str__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Get the string representation.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueLabel.from_str"></a></p>
+<p><a id="aea.protocols.dialogue.base.DialogueLabel.from_str"></a></p>
 <h4 id="from_str">from<code>_</code>str</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
- <span class="o">|</span> <span class="n">from_str</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"DialogueLabel"</span>
+<div class="highlight"><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">from_str</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"DialogueLabel"</span>
 </code></pre></div>
 <p>Get the dialogue label from string representation.</p>
-<p><a name="aea.protocols.dialogue.base._DialogueMeta"></a></p>
+<p><a id="aea.protocols.dialogue.base._DialogueMeta"></a></p>
 <h2 id="_dialoguemeta-objects"><code>_</code>DialogueMeta Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">_DialogueMeta</span><span class="p">(</span><span class="nb">type</span><span class="p">)</span>
 </code></pre></div>
 <p>Metaclass for Dialogue.</p>
 <p>Creates class level Rules instance to share among instances</p>
-<p><a name="aea.protocols.dialogue.base._DialogueMeta.__new__"></a></p>
+<p><a id="aea.protocols.dialogue.base._DialogueMeta.__new__"></a></p>
 <h4 id="__new__"><code>__</code>new<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">bases</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Type</span><span class="p">],</span> <span class="n">dct</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"_DialogueMeta"</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">bases</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Type</span><span class="p">],</span> <span class="n">dct</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"_DialogueMeta"</span>
 </code></pre></div>
 <p>Construct a new type.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue"></a></p>
+<p><a id="aea.protocols.dialogue.base.Dialogue"></a></p>
 <h2 id="dialogue-objects">Dialogue Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Dialogue</span><span class="p">(,</span> <span class="n">metaclass</span><span class="o">=</span><span class="n">_DialogueMeta</span><span class="p">)</span>
-</code></pre></div>
-<p>The dialogue class maintains state of a dialogue and manages it.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.Rules"></a></p>
-<h2 id="rules-objects">Rules Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Rules</span><span class="p">()</span>
-</code></pre></div>
-<p>This class defines the rules for the dialogue.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.Rules.__init__"></a></p>
-<h4 id="__init___1"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">initial_performatives</span><span class="p">:</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">],</span> <span class="n">terminal_performatives</span><span class="p">:</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">],</span> <span class="n">valid_replies</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">,</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize a dialogue.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>initial_performatives</code>: the set of all initial performatives.</li>
-<li><code>terminal_performatives</code>: the set of all terminal performatives.</li>
-<li><code>valid_replies</code>: the reply structure of speech-acts.</li>
-</ul>
-<p><a name="aea.protocols.dialogue.base.Dialogue.Rules.initial_performatives"></a></p>
-<h4 id="initial_performatives">initial<code>_</code>performatives</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">initial_performatives</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the performatives one of which the terminal message in the dialogue must have.</p>
-<p><strong>Returns</strong>:</p>
-<p>the valid performatives of an terminal message</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.Rules.terminal_performatives"></a></p>
-<h4 id="terminal_performatives">terminal<code>_</code>performatives</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">terminal_performatives</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the performatives one of which the terminal message in the dialogue must have.</p>
-<p><strong>Returns</strong>:</p>
-<p>the valid performatives of an terminal message</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.Rules.valid_replies"></a></p>
-<h4 id="valid_replies">valid<code>_</code>replies</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">valid_replies</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">,</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">]]</span>
-</code></pre></div>
-<p>Get all the valid performatives which are a valid replies to performatives.</p>
-<p><strong>Returns</strong>:</p>
-<p>the full valid reply structure.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.Rules.get_valid_replies"></a></p>
-<h4 id="get_valid_replies">get<code>_</code>valid<code>_</code>replies</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_valid_replies</span><span class="p">(</span><span class="n">performative</span><span class="p">:</span> <span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">]</span>
-</code></pre></div>
-<p>Given a <code>performative</code>, return the list of performatives which are its valid replies in a dialogue.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>performative</code>: the performative in a message</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>list of valid performative replies</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.Role"></a></p>
-<h2 id="role-objects">Role Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Role</span><span class="p">(</span><span class="n">Enum</span><span class="p">)</span>
-</code></pre></div>
-<p>This class defines the agent's role in a dialogue.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.Role.__str__"></a></p>
-<h4 id="__str___1"><code>__</code>str<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__str__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</code></pre></div>
-<p>Get the string representation.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.EndState"></a></p>
-<h2 id="endstate-objects">EndState Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">EndState</span><span class="p">(</span><span class="n">Enum</span><span class="p">)</span>
-</code></pre></div>
-<p>This class defines the end states of a dialogue.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.EndState.__str__"></a></p>
-<h4 id="__str___2"><code>__</code>str<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__str__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</code></pre></div>
-<p>Get the string representation.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.__init__"></a></p>
-<h4 id="__init___2"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">,</span> <span class="n">message_class</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">Message</span><span class="p">],</span> <span class="n">self_address</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="n">role</span><span class="p">:</span> <span class="n">Role</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize a dialogue.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>dialogue_label</code>: the identifier of the dialogue</li>
-<li><code>message_class</code>: the message class used</li>
-<li><code>self_address</code>: the address of the entity for whom this dialogue is maintained</li>
-<li><code>role</code>: the role of the agent this dialogue is maintained for</li>
-</ul>
-<p><a name="aea.protocols.dialogue.base.Dialogue.add_terminal_state_callback"></a></p>
-<h4 id="add_terminal_state_callback">add<code>_</code>terminal<code>_</code>state<code>_</code>callback</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">add_terminal_state_callback</span><span class="p">(</span><span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="s2">"Dialogue"</span><span class="p">],</span> <span class="kc">None</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Add callback to be called on dialogue reach terminal state.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>fn</code>: callable to be called with one argument: Dialogue</li>
-</ul>
-<p><a name="aea.protocols.dialogue.base.Dialogue.__eq__"></a></p>
-<h4 id="__eq___1"><code>__</code>eq<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__eq__</span><span class="p">(</span><span class="n">other</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Compare two dialogues.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.json"></a></p>
-<h4 id="json_1">json</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">json</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">dict</span>
-</code></pre></div>
-<p>Get json representation of the dialogue.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.from_json"></a></p>
-<h4 id="from_json_1">from<code>_</code>json</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
- <span class="o">|</span> <span class="n">from_json</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">message_class</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">Message</span><span class="p">],</span> <span class="n">data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"Dialogue"</span>
-</code></pre></div>
-<p>Create a dialogue instance with all messages from json data.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>message_class</code>: type of message used with this dialogue</li>
-<li><code>data</code>: dict with data exported with Dialogue.to_json() method</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>Dialogue instance</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.dialogue_label"></a></p>
-<h4 id="dialogue_label">dialogue<code>_</code>label</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_label</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DialogueLabel</span>
-</code></pre></div>
-<p>Get the dialogue label.</p>
-<p><strong>Returns</strong>:</p>
-<p>The dialogue label</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.incomplete_dialogue_label"></a></p>
-<h4 id="incomplete_dialogue_label">incomplete<code>_</code>dialogue<code>_</code>label</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">incomplete_dialogue_label</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DialogueLabel</span>
-</code></pre></div>
-<p>Get the dialogue label.</p>
-<p><strong>Returns</strong>:</p>
-<p>The incomplete dialogue label</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.dialogue_labels"></a></p>
-<h4 id="dialogue_labels">dialogue<code>_</code>labels</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_labels</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Set</span><span class="p">[</span><span class="n">DialogueLabel</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the dialogue labels (incomplete and complete, if it exists).</p>
-<p><strong>Returns</strong>:</p>
-<p>the dialogue labels</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.self_address"></a></p>
-<h4 id="self_address">self<code>_</code>address</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">self_address</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Address</span>
-</code></pre></div>
-<p>Get the address of the entity for whom this dialogues is maintained.</p>
-<p><strong>Returns</strong>:</p>
-<p>the address of this entity</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.role"></a></p>
-<h4 id="role">role</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">role</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"Role"</span>
-</code></pre></div>
-<p>Get the agent's role in the dialogue.</p>
-<p><strong>Returns</strong>:</p>
-<p>the agent's role</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.rules"></a></p>
-<h4 id="rules">rules</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">rules</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"Rules"</span>
-</code></pre></div>
-<p>Get the dialogue rules.</p>
-<p><strong>Returns</strong>:</p>
-<p>the rules</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.message_class"></a></p>
-<h4 id="message_class">message<code>_</code>class</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">message_class</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Type</span><span class="p">[</span><span class="n">Message</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the message class.</p>
-<p><strong>Returns</strong>:</p>
-<p>the message class</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.is_self_initiated"></a></p>
-<h4 id="is_self_initiated">is<code>_</code>self<code>_</code>initiated</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">is_self_initiated</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Check whether the agent initiated the dialogue.</p>
-<p><strong>Returns</strong>:</p>
-<p>True if the agent initiated the dialogue, False otherwise</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.last_incoming_message"></a></p>
-<h4 id="last_incoming_message">last<code>_</code>incoming<code>_</code>message</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">last_incoming_message</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Message</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the last incoming message.</p>
-<p><strong>Returns</strong>:</p>
-<p>the last incoming message if it exists, None otherwise</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.last_outgoing_message"></a></p>
-<h4 id="last_outgoing_message">last<code>_</code>outgoing<code>_</code>message</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">last_outgoing_message</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Message</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the last outgoing message.</p>
-<p><strong>Returns</strong>:</p>
-<p>the last outgoing message if it exists, None otherwise</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.last_message"></a></p>
-<h4 id="last_message">last<code>_</code>message</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">last_message</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Message</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the last message.</p>
-<p><strong>Returns</strong>:</p>
-<p>the last message if it exists, None otherwise</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.is_empty"></a></p>
-<h4 id="is_empty">is<code>_</code>empty</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">is_empty</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Check whether the dialogue is empty.</p>
-<p><strong>Returns</strong>:</p>
-<p>True if empty, False otherwise</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.reply"></a></p>
-<h4 id="reply">reply</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">reply</span><span class="p">(</span><span class="n">performative</span><span class="p">:</span> <span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">,</span> <span class="n">target_message</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Message</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="p">,)</span> <span class="o">-&gt;</span> <span class="n">Message</span>
-</code></pre></div>
-<p>Reply to the 'target_message' in this dialogue with a message with 'performative', and contents from kwargs.</p>
-<p>Note if no target_message is provided, the last message in the dialogue will be replied to.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>target_message</code>: the message to reply to.</li>
-<li><code>target</code>: the id of the message to reply to.</li>
-<li><code>performative</code>: the performative of the reply message.</li>
-<li><code>kwargs</code>: the content of the reply message.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the reply message if it was successfully added as a reply, None otherwise.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.get_message_by_id"></a></p>
-<h4 id="get_message_by_id">get<code>_</code>message<code>_</code>by<code>_</code>id</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_message_by_id</span><span class="p">(</span><span class="n">message_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Message</span><span class="p">]</span>
-</code></pre></div>
-<p>Get message by id, if not presents return None.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.get_outgoing_next_message_id"></a></p>
-<h4 id="get_outgoing_next_message_id">get<code>_</code>outgoing<code>_</code>next<code>_</code>message<code>_</code>id</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_outgoing_next_message_id</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span>
-</code></pre></div>
-<p>Get next outgoing message id.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.get_incoming_next_message_id"></a></p>
-<h4 id="get_incoming_next_message_id">get<code>_</code>incoming<code>_</code>next<code>_</code>message<code>_</code>id</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_incoming_next_message_id</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span>
-</code></pre></div>
-<p>Get next incoming message id.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogue.__str__"></a></p>
-<h4 id="__str___3"><code>__</code>str<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__str__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</code></pre></div>
-<p>Get the string representation.</p>
-<p><strong>Returns</strong>:</p>
-<p>The string representation of the dialogue</p>
-<p><a name="aea.protocols.dialogue.base.DialogueStats"></a></p>
-<h2 id="dialoguestats-objects">DialogueStats Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">DialogueStats</span><span class="p">()</span>
-</code></pre></div>
-<p>Class to handle statistics on default dialogues.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueStats.__init__"></a></p>
-<h4 id="__init___3"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">end_states</span><span class="p">:</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Dialogue</span><span class="o">.</span><span class="n">EndState</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize a StatsManager.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>end_states</code>: the list of dialogue endstates</li>
-</ul>
-<p><a name="aea.protocols.dialogue.base.DialogueStats.self_initiated"></a></p>
-<h4 id="self_initiated">self<code>_</code>initiated</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">self_initiated</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Dialogue</span><span class="o">.</span><span class="n">EndState</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the stats dictionary on self initiated dialogues.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueStats.other_initiated"></a></p>
-<h4 id="other_initiated">other<code>_</code>initiated</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">other_initiated</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Dialogue</span><span class="o">.</span><span class="n">EndState</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the stats dictionary on other initiated dialogues.</p>
-<p><a name="aea.protocols.dialogue.base.DialogueStats.add_dialogue_endstate"></a></p>
-<h4 id="add_dialogue_endstate">add<code>_</code>dialogue<code>_</code>endstate</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">add_dialogue_endstate</span><span class="p">(</span><span class="n">end_state</span><span class="p">:</span> <span class="n">Dialogue</span><span class="o">.</span><span class="n">EndState</span><span class="p">,</span> <span class="n">is_self_initiated</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Add dialogue endstate stats.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>end_state</code>: the end state of the dialogue</li>
-<li><code>is_self_initiated</code>: whether the dialogue is initiated by the agent or the opponent</li>
-</ul>
-<p><a name="aea.protocols.dialogue.base.find_caller_object"></a></p>
-<h4 id="find_caller_object">find<code>_</code>caller<code>_</code>object</h4>
-<div class="highlight"><pre><span></span><code><span class="n">find_caller_object</span><span class="p">(</span><span class="n">object_type</span><span class="p">:</span> <span class="n">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span>
-</code></pre></div>
-<p>Find caller object of certain type in the call stack.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage"></a></p>
-<h2 id="basicdialoguesstorage-objects">BasicDialoguesStorage Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BasicDialoguesStorage</span><span class="p">()</span>
-</code></pre></div>
-<p>Dialogues state storage.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.__init__"></a></p>
-<h4 id="__init___4"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">dialogues</span><span class="p">:</span> <span class="s2">"Dialogues"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Init dialogues storage.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.dialogues_in_terminal_state"></a></p>
-<h4 id="dialogues_in_terminal_state">dialogues<code>_</code>in<code>_</code>terminal<code>_</code>state</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogues_in_terminal_state</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="s2">"Dialogue"</span><span class="p">]</span>
-</code></pre></div>
-<p>Get all dialogues in terminal state.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.dialogues_in_active_state"></a></p>
-<h4 id="dialogues_in_active_state">dialogues<code>_</code>in<code>_</code>active<code>_</code>state</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogues_in_active_state</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="s2">"Dialogue"</span><span class="p">]</span>
-</code></pre></div>
-<p>Get all dialogues in active state.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.is_terminal_dialogues_kept"></a></p>
-<h4 id="is_terminal_dialogues_kept">is<code>_</code>terminal<code>_</code>dialogues<code>_</code>kept</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">is_terminal_dialogues_kept</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Return True if dialogues should stay after terminal state.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.dialogue_terminal_state_callback"></a></p>
-<h4 id="dialogue_terminal_state_callback">dialogue<code>_</code>terminal<code>_</code>state<code>_</code>callback</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">dialogue_terminal_state_callback</span><span class="p">(</span><span class="n">dialogue</span><span class="p">:</span> <span class="s2">"Dialogue"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Method to be called on dialogue terminal state reached.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.setup"></a></p>
-<h4 id="setup">setup</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">setup</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Set up dialogue storage.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.teardown"></a></p>
-<h4 id="teardown">teardown</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">teardown</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Tear down dialogue storage.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.add"></a></p>
-<h4 id="add">add</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">add</span><span class="p">(</span><span class="n">dialogue</span><span class="p">:</span> <span class="n">Dialogue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Add dialogue to storage.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>dialogue</code>: dialogue to add.</li>
-</ul>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.remove"></a></p>
-<h4 id="remove">remove</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">remove</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Remove dialogue from storage by it's label.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>dialogue_label</code>: label of the dialogue to remove</li>
-</ul>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.get"></a></p>
-<h4 id="get">get</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Get dialogue stored by it's label.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>dialogue_label</code>: label of the dialogue</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>dialogue if presents or None</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.get_dialogues_with_counterparty"></a></p>
-<h4 id="get_dialogues_with_counterparty">get<code>_</code>dialogues<code>_</code>with<code>_</code>counterparty</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_dialogues_with_counterparty</span><span class="p">(</span><span class="n">counterparty</span><span class="p">:</span> <span class="n">Address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the dialogues by address.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>counterparty</code>: the counterparty</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>The dialogues with the counterparty.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.is_in_incomplete"></a></p>
-<h4 id="is_in_incomplete">is<code>_</code>in<code>_</code>incomplete</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">is_in_incomplete</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Check dialogue label presents in list of incomplete.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.set_incomplete_dialogue"></a></p>
-<h4 id="set_incomplete_dialogue">set<code>_</code>incomplete<code>_</code>dialogue</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">set_incomplete_dialogue</span><span class="p">(</span><span class="n">incomplete_dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">,</span> <span class="n">complete_dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Set incomplete dialogue label.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.is_dialogue_present"></a></p>
-<h4 id="is_dialogue_present">is<code>_</code>dialogue<code>_</code>present</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">is_dialogue_present</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Check dialogue with label specified presents in storage.</p>
-<p><a name="aea.protocols.dialogue.base.BasicDialoguesStorage.get_latest_label"></a></p>
-<h4 id="get_latest_label">get<code>_</code>latest<code>_</code>label</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_latest_label</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DialogueLabel</span>
-</code></pre></div>
-<p>Get latest label for dialogue.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorage"></a></p>
-<h2 id="persistdialoguesstorage-objects">PersistDialoguesStorage Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PersistDialoguesStorage</span><span class="p">(</span><span class="n">BasicDialoguesStorage</span><span class="p">)</span>
-</code></pre></div>
-<p>Persist dialogues storage.</p>
-<p>Uses generic storage to load/save dialogues data on setup/teardown.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorage.__init__"></a></p>
-<h4 id="__init___5"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">dialogues</span><span class="p">:</span> <span class="s2">"Dialogues"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Init dialogues storage.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorage.get_skill_component"></a></p>
-<h4 id="get_skill_component">get<code>_</code>skill<code>_</code>component</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@staticmethod</span>
- <span class="o">|</span> <span class="n">get_skill_component</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">SkillComponent</span><span class="p">]</span>
-</code></pre></div>
-<p>Get skill component dialogues storage constructed for.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorage.setup"></a></p>
-<h4 id="setup_1">setup</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">setup</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Set up dialogue storage.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorage.teardown"></a></p>
-<h4 id="teardown_1">teardown</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">teardown</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Tear down dialogue storage.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorage.remove"></a></p>
-<h4 id="remove_1">remove</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">remove</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Remove dialogue from memory and persistent storage.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorageWithOffloading"></a></p>
-<h2 id="persistdialoguesstoragewithoffloading-objects">PersistDialoguesStorageWithOffloading Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PersistDialoguesStorageWithOffloading</span><span class="p">(</span><span class="n">PersistDialoguesStorage</span><span class="p">)</span>
-</code></pre></div>
-<p>Dialogue Storage with dialogues offloading.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorageWithOffloading.dialogue_terminal_state_callback"></a></p>
-<h4 id="dialogue_terminal_state_callback_1">dialogue<code>_</code>terminal<code>_</code>state<code>_</code>callback</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">dialogue_terminal_state_callback</span><span class="p">(</span><span class="n">dialogue</span><span class="p">:</span> <span class="s2">"Dialogue"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Call on dialogue reaches terminal state.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorageWithOffloading.get"></a></p>
-<h4 id="get_1">get</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Try to get dialogue by label from memory or persists storage.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorageWithOffloading.get_dialogues_with_counterparty"></a></p>
-<h4 id="get_dialogues_with_counterparty_1">get<code>_</code>dialogues<code>_</code>with<code>_</code>counterparty</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_dialogues_with_counterparty</span><span class="p">(</span><span class="n">counterparty</span><span class="p">:</span> <span class="n">Address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the dialogues by address.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>counterparty</code>: the counterparty</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>The dialogues with the counterparty.</p>
-<p><a name="aea.protocols.dialogue.base.PersistDialoguesStorageWithOffloading.dialogues_in_terminal_state"></a></p>
-<h4 id="dialogues_in_terminal_state_1">dialogues<code>_</code>in<code>_</code>terminal<code>_</code>state</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogues_in_terminal_state</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="s2">"Dialogue"</span><span class="p">]</span>
-</code></pre></div>
-<p>Get all dialogues in terminal state.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues"></a></p>
-<h2 id="dialogues-objects">Dialogues Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Dialogues</span><span class="p">()</span>
-</code></pre></div>
-<p>The dialogues class keeps track of all dialogues for an agent.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.__init__"></a></p>
-<h4 id="__init___6"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">self_address</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="n">end_states</span><span class="p">:</span> <span class="n">FrozenSet</span><span class="p">[</span><span class="n">Dialogue</span><span class="o">.</span><span class="n">EndState</span><span class="p">],</span> <span class="n">message_class</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">Message</span><span class="p">],</span> <span class="n">dialogue_class</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">],</span> <span class="n">role_from_first_message</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">Message</span><span class="p">,</span> <span class="n">Address</span><span class="p">],</span> <span class="n">Dialogue</span><span class="o">.</span><span class="n">Role</span><span class="p">],</span> <span class="n">keep_terminal_state_dialogues</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Initialize dialogues.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>self_address</code>: the address of the entity for whom dialogues are maintained</li>
-<li><code>end_states</code>: the list of dialogue endstates</li>
-<li><code>message_class</code>: the message class used</li>
-<li><code>dialogue_class</code>: the dialogue class used</li>
-<li><code>role_from_first_message</code>: the callable determining role from first message</li>
-<li><code>keep_terminal_state_dialogues</code>: specify do dialogues in terminal state should stay or not</li>
-</ul>
-<p><a name="aea.protocols.dialogue.base.Dialogues.is_keep_dialogues_in_terminal_state"></a></p>
-<h4 id="is_keep_dialogues_in_terminal_state">is<code>_</code>keep<code>_</code>dialogues<code>_</code>in<code>_</code>terminal<code>_</code>state</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">is_keep_dialogues_in_terminal_state</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
-</code></pre></div>
-<p>Is required to keep dialogues in terminal state.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.self_address"></a></p>
-<h4 id="self_address_1">self<code>_</code>address</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">self_address</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Address</span>
-</code></pre></div>
-<p>Get the address of the agent for whom dialogues are maintained.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.dialogue_stats"></a></p>
-<h4 id="dialogue_stats">dialogue<code>_</code>stats</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_stats</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DialogueStats</span>
-</code></pre></div>
-<p>Get the dialogue statistics.</p>
-<p><strong>Returns</strong>:</p>
-<p>dialogue stats object</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.message_class"></a></p>
-<h4 id="message_class_1">message<code>_</code>class</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">message_class</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Type</span><span class="p">[</span><span class="n">Message</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the message class.</p>
-<p><strong>Returns</strong>:</p>
-<p>the message class</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.dialogue_class"></a></p>
-<h4 id="dialogue_class">dialogue<code>_</code>class</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@property</span>
- <span class="o">|</span> <span class="n">dialogue_class</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Type</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the dialogue class.</p>
-<p><strong>Returns</strong>:</p>
-<p>the dialogue class</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.get_dialogues_with_counterparty"></a></p>
-<h4 id="get_dialogues_with_counterparty_2">get<code>_</code>dialogues<code>_</code>with<code>_</code>counterparty</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_dialogues_with_counterparty</span><span class="p">(</span><span class="n">counterparty</span><span class="p">:</span> <span class="n">Address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Get the dialogues by address.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>counterparty</code>: the counterparty</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>The dialogues with the counterparty.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.new_self_initiated_dialogue_reference"></a></p>
-<h4 id="new_self_initiated_dialogue_reference">new<code>_</code>self<code>_</code>initiated<code>_</code>dialogue<code>_</code>reference</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="nd">@classmethod</span>
- <span class="o">|</span> <span class="n">new_self_initiated_dialogue_reference</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span>
-</code></pre></div>
-<p>Return a dialogue label for a new self initiated dialogue.</p>
-<p><strong>Returns</strong>:</p>
-<p>the next nonce</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.create"></a></p>
-<h4 id="create">create</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">create</span><span class="p">(</span><span class="n">counterparty</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="n">performative</span><span class="p">:</span> <span class="n">Message</span><span class="o">.</span><span class="n">Performative</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="p">,)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Message</span><span class="p">,</span> <span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Create a dialogue with 'counterparty', with an initial message whose performative is 'performative' and contents are from 'kwargs'.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>counterparty</code>: the counterparty of the dialogue.</li>
-<li><code>performative</code>: the performative of the initial message.</li>
-<li><code>kwargs</code>: the content of the initial message.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the initial message and the dialogue.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.create_with_message"></a></p>
-<h4 id="create_with_message">create<code>_</code>with<code>_</code>message</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">create_with_message</span><span class="p">(</span><span class="n">counterparty</span><span class="p">:</span> <span class="n">Address</span><span class="p">,</span> <span class="n">initial_message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dialogue</span>
-</code></pre></div>
-<p>Create a dialogue with 'counterparty', with an initial message provided.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>counterparty</code>: the counterparty of the dialogue.</li>
-<li><code>initial_message</code>: the initial_message.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the initial message and the dialogue.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.update"></a></p>
-<h4 id="update">update</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">update</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Update the state of dialogues with a new incoming message.</p>
-<p>If the message is for a new dialogue, a new dialogue is created with 'message' as its first message, and returned.
-If the message is addressed to an existing dialogue, the dialogue is retrieved, extended with this message and returned.
-If there are any errors, e.g. the message dialogue reference does not exists or the message is invalid w.r.t. the dialogue, return None.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>message</code>: a new incoming message</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the new or existing dialogue the message is intended for, or None in case of any errors.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.get_dialogue"></a></p>
-<h4 id="get_dialogue">get<code>_</code>dialogue</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_dialogue</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Retrieve the dialogue 'message' belongs to.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>message</code>: a message</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the dialogue, or None in case such a dialogue does not exist</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.get_dialogue_from_label"></a></p>
-<h4 id="get_dialogue_from_label">get<code>_</code>dialogue<code>_</code>from<code>_</code>label</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">get_dialogue_from_label</span><span class="p">(</span><span class="n">dialogue_label</span><span class="p">:</span> <span class="n">DialogueLabel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dialogue</span><span class="p">]</span>
-</code></pre></div>
-<p>Retrieve a dialogue based on its label.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>dialogue_label</code>: the dialogue label</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<p>the dialogue if present</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.setup"></a></p>
-<h4 id="setup_2">setup</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">setup</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Set  up.</p>
-<p><a name="aea.protocols.dialogue.base.Dialogues.teardown"></a></p>
-<h4 id="teardown_2">teardown</h4>
-<div class="highlight"><pre><span></span><code> <span class="o">|</span> <span class="n">teardown</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</code></pre></div>
-<p>Tear down.</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
-<div class="md-footer-nav">
-<nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../../base/" rel="prev" title="Base">
-<div class="md-flex__cell md-flex__cell--shrink">
-<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Base" class="md-footer__link md-footer__link--prev" href="../../base/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
-<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-<span class="md-flex__ellipsis">
-<span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Base
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
               </span>
+              Base
+            </div>
 </div>
 </a>
-<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../../generator/base/" rel="next" title="Base">
-<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-<span class="md-flex__ellipsis">
-<span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Base
+<a aria-label="Next: Base" class="md-footer__link md-footer__link--next" href="../../generator/base/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
               </span>
+              Base
+            </div>
 </div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
 </div>
 </a>
 </nav>
-</div>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
-<div class="md-footer-copyright">
-        
-        powered by
-        <a href="https://www.mkdocs.org" rel="noopener" target="_blank">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
-          Material for MkDocs</a>
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
 </div>
 </div>
 </div>
 </footer>
 </div>
-<script src="../../../../assets/javascripts/application.c33a9706.js"></script>
-<script>app.initialize({version:"1.2.3",url:{base:"../../../.."}})</script>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../../assets/javascripts/bundle.c44cc438.min.js"></script>
 <script src="https://unpkg.com/mermaid@8.10.1/dist/mermaid.min.js"></script>
 </body>
 </html>
