@@ -2,837 +2,847 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://valory-xyz.github.io/open-aea/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/12-factor/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/acn-internals/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/acn/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/aea-vs-mvc/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/aev-echo-demo/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/agent-oriented-development/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/agent-vs-aea/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/app-areas/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/build-aea-programmatically/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/build-aea-step-by-step/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/cli-commands/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/cli-how-to/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/config/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/connect-a-frontend/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/connection/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/contract/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/core-components-1/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/core-components-2/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/debug/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/decision-maker-transaction/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/decision-maker/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/demos/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/deployment/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/design-principles/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/development-setup/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/diagram/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/echo_demo/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/generic-storage/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/glossary/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/gym-skill/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/http-connection-and-skill/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/http-echo-demo/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/identity/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/interaction-protocol/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/known-limits/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/language-agnostic-definition/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/ledger-integration/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/limits/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/logging/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/message-routing/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/modes/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/multi-agent-manager/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/multiplexer-standalone/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/p2p-connection/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/package-imports/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/performance-benchmark/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/por/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/protocol-generator/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/protocol/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/questions-and-answers/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/quickstart/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/raspberry-set-up/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/registry/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/runtime-cost/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/scaffolding/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/security/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/skill-testing/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/skill/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/standalone-transaction/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/step-one/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/trust/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/upgrading/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/version/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/vision/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/wealth/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/abstract_agent/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/aea/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/aea_builder/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/agent/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/agent_loop/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/common/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/exceptions/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/launcher/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/multiplexer/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/runner/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/runtime/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/components/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/components/loader/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/components/utils/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/configurations/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/configurations/constants/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/configurations/data_types/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/configurations/loader/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/configurations/manager/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/configurations/pypi/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/configurations/utils/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/configurations/validation/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/connections/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/context/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/contracts/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/crypto/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/crypto/helpers/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/crypto/ledger_apis/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/crypto/plugin/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/crypto/wallet/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/crypto/registries/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/decision_maker/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/decision_maker/default/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/error_handler/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/error_handler/default/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/async_friendly_queue/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/async_utils/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/constants/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://valory-xyz.github.io/open-aea/api/helpers/dependency_tree/</loc>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/env_vars/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/exception_policy/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/exec_timeout/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/file_io/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/file_lock/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/http_requests/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/install_dependency/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/io/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/logging/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/multiple_executor/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/pipe/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/profiling/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/serializers/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/sym_link/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/win32/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/yaml_utils/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/acn/agent_record/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/acn/uri/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/ipfs/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/ipfs/utils/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/multiaddr/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/preference_representations/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/search/generic/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/search/models/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/storage/generic_storage/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/storage/backends/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/storage/backends/sqlite/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/helpers/transaction/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/identity/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/mail/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/manager/manager/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/manager/project/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/manager/utils/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_cli_ipfs/core/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_cli_ipfs/exceptions/</loc>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_cli_ipfs/ipfs_utils/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_cli_ipfs/registry/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_ledger_cosmos/cosmos/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_ledger_ethereum/ethereum/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_ledger_fetchai/_cosmos/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/plugins/aea_ledger_fetchai/fetchai/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/dialogue/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/generator/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/generator/common/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/generator/extract_specification/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/generator/validate/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/signing/custom_types/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/signing/dialogues/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/signing/message/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/protocols/signing/serialization/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/registries/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/registries/filter/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/registries/resources/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/skills/base/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/skills/behaviours/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/skills/tasks/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/test_tools/constants/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/test_tools/exceptions/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/test_tools/generic/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/test_tools/test_cases/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/test_tools/test_contract/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://valory-xyz.github.io/open-aea/api/test_tools/test_skill/</loc>
-         <lastmod>2022-04-15</lastmod>
+         <lastmod>2022-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

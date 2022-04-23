@@ -520,6 +520,11 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../../p2p-connection/">
+        ACN Connections
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../../acn-internals/">
         ACN Internals
       </a>
@@ -864,13 +869,18 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#to_any">
-    to_any
+<a class="md-nav__link" href="#hash">
+    hash
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#same_prefix">
     same_prefix
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#to_any">
+    to_any
   </a>
 </li>
 <li class="md-nav__item">
@@ -919,11 +929,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#__str___3">
-    __str__
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#__repr__">
     __repr__
   </a>
@@ -936,6 +941,16 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#__lt___1">
     __lt__
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#without_hash">
+    without_hash
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#__str___3">
+    __str__
   </a>
 </li>
 </ul>
@@ -978,6 +993,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#package_hash">
+    package_hash
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#package_prefix">
     package_prefix
   </a>
@@ -990,6 +1010,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#to_uri_path_1">
     to_uri_path
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#without_hash_1">
+    without_hash
   </a>
 </li>
 <li class="md-nav__item">
@@ -1059,6 +1084,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#from_json_2">
     from_json
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#without_hash_2">
+    without_hash
   </a>
 </li>
 </ul>
@@ -2226,13 +2256,18 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#to_any">
-    to_any
+<a class="md-nav__link" href="#hash">
+    hash
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#same_prefix">
     same_prefix
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#to_any">
+    to_any
   </a>
 </li>
 <li class="md-nav__item">
@@ -2281,11 +2316,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#__str___3">
-    __str__
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#__repr__">
     __repr__
   </a>
@@ -2298,6 +2328,16 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#__lt___1">
     __lt__
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#without_hash">
+    without_hash
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#__str___3">
+    __str__
   </a>
 </li>
 </ul>
@@ -2340,6 +2380,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#package_hash">
+    package_hash
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#package_prefix">
     package_prefix
   </a>
@@ -2352,6 +2397,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#to_uri_path_1">
     to_uri_path
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#without_hash_1">
+    without_hash
   </a>
 </li>
 <li class="md-nav__item">
@@ -2421,6 +2471,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#from_json_2">
     from_json
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#without_hash_2">
+    without_hash
   </a>
 </li>
 </ul>
@@ -2735,7 +2790,8 @@ True</author></p>
 <h4 id="__init___1"><code>__</code>init<code>__</code></h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">author</span><span class="p">:</span> <span class="n">SimpleIdOrStr</span><span class="p">,</span>
              <span class="n">name</span><span class="p">:</span> <span class="n">SimpleIdOrStr</span><span class="p">,</span>
-             <span class="n">version</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">PackageVersionLike</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+             <span class="n">version</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">PackageVersionLike</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+             <span class="n">package_hash</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">IPFSHashOrStr</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
 <p>Initialize the public identifier.</p>
 <p><a id="aea.configurations.data_types.PublicId.author"></a></p>
@@ -2762,16 +2818,22 @@ True</author></p>
 <span class="k">def</span> <span class="nf">package_version</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">PackageVersion</span>
 </code></pre></div>
 <p>Get the package version object.</p>
-<p><a id="aea.configurations.data_types.PublicId.to_any"></a></p>
-<h4 id="to_any">to<code>_</code>any</h4>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">to_any</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"PublicId"</span>
+<p><a id="aea.configurations.data_types.PublicId.hash"></a></p>
+<h4 id="hash">hash</h4>
+<div class="highlight"><pre><span></span><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">hash</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
-<p>Return the same public id, but with any version.</p>
+<p>Returns the hash for the package.</p>
 <p><a id="aea.configurations.data_types.PublicId.same_prefix"></a></p>
 <h4 id="same_prefix">same<code>_</code>prefix</h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">same_prefix</span><span class="p">(</span><span class="n">other</span><span class="p">:</span> <span class="s2">"PublicId"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
 </code></pre></div>
 <p>Check if the other public id has the same author and name of this.</p>
+<p><a id="aea.configurations.data_types.PublicId.to_any"></a></p>
+<h4 id="to_any">to<code>_</code>any</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">to_any</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"PublicId"</span>
+</code></pre></div>
+<p>Return the same public id, but with any version.</p>
 <p><a id="aea.configurations.data_types.PublicId.to_latest"></a></p>
 <h4 id="to_latest">to<code>_</code>latest</h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">to_latest</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"PublicId"</span>
@@ -2800,6 +2862,8 @@ True</author></p>
 <blockquote>
 <p>str(PublicId.from_str("author/package_name:0.1.0"))
 'author/package_name:0.1.0'</p>
+<p>str(PublicId.from_str("author/package_name:0.1.0:QmYAXgX8ARiriupMQsbGXtKdDyGzWry1YV3sycKw1qqmgH"))
+'author/package_name:0.1.0:QmYAXgX8ARiriupMQsbGXtKdDyGzWry1YV3sycKw1qqmgH'</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -2811,6 +2875,10 @@ True</author></p>
 Traceback (most recent call last):
 ...
 ValueError: Input 'bad/formatted:input' is not well formatted.</p>
+<p>PublicId.from_str("bad/formatted:0.1.0:Qmbadhash")
+Traceback (most recent call last):
+...
+ValueError: Input 'bad/formatted:0.1.0:Qmbadhash' is not well formatted.</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -2896,11 +2964,6 @@ ValueError: Input 'bad/formatted:input' is not well formatted.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__hash__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span>
 </code></pre></div>
 <p>Get the hash.</p>
-<p><a id="aea.configurations.data_types.PublicId.__str__"></a></p>
-<h4 id="__str___3"><code>__</code>str<code>__</code></h4>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__str__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
-</code></pre></div>
-<p>Get the string representation.</p>
 <p><a id="aea.configurations.data_types.PublicId.__repr__"></a></p>
 <h4 id="__repr__"><code>__</code>repr<code>__</code></h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__repr__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
@@ -2943,6 +3006,16 @@ ValueError: The public IDs author_1/name_1:0.1.0 and author_1/name_2:0.1.0 canno
 </ul>
 <p><strong>Returns</strong>:</p>
 <p>whether or not the inequality is satisfied</p>
+<p><a id="aea.configurations.data_types.PublicId.without_hash"></a></p>
+<h4 id="without_hash">without<code>_</code>hash</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">without_hash</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"PublicId"</span>
+</code></pre></div>
+<p>Returns a <code>PublicId</code> object with same parameters.</p>
+<p><a id="aea.configurations.data_types.PublicId.__str__"></a></p>
+<h4 id="__str___3"><code>__</code>str<code>__</code></h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__str__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+</code></pre></div>
+<p>Get the string representation.</p>
 <p><a id="aea.configurations.data_types.PackageId"></a></p>
 <h2 id="packageid-objects">PackageId Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PackageId</span><span class="p">()</span>
@@ -2987,6 +3060,12 @@ ValueError: The public IDs author_1/name_1:0.1.0 and author_1/name_2:0.1.0 canno
 <h4 id="version_1">version</h4>
 <div class="highlight"><pre><span></span><code><span class="nd">@property</span>
 <span class="k">def</span> <span class="nf">version</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
+</code></pre></div>
+<p>Get the version of the package.</p>
+<p><a id="aea.configurations.data_types.PackageId.package_hash"></a></p>
+<h4 id="package_hash">package<code>_</code>hash</h4>
+<div class="highlight"><pre><span></span><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">package_hash</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Get the version of the package.</p>
 <p><a id="aea.configurations.data_types.PackageId.package_prefix"></a></p>
@@ -3038,6 +3117,11 @@ ValueError: Input 'very/bad/formatted:input' is not well formatted.</p>
 <p>Turn the package id into a uri path string.</p>
 <p><strong>Returns</strong>:</p>
 <p>uri path string</p>
+<p><a id="aea.configurations.data_types.PackageId.without_hash"></a></p>
+<h4 id="without_hash_1">without<code>_</code>hash</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">without_hash</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"PackageId"</span>
+</code></pre></div>
+<p>Returns PackageId object without hash</p>
 <p><a id="aea.configurations.data_types.PackageId.__hash__"></a></p>
 <h4 id="__hash___1"><code>__</code>hash<code>__</code></h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__hash__</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span>
@@ -3128,6 +3212,11 @@ False</p>
 <span class="k">def</span> <span class="nf">from_json</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">json_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"ComponentId"</span>
 </code></pre></div>
 <p>Create  component id from json data.</p>
+<p><a id="aea.configurations.data_types.ComponentId.without_hash"></a></p>
+<h4 id="without_hash_2">without<code>_</code>hash</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">without_hash</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">"ComponentId"</span>
+</code></pre></div>
+<p>Returns PackageId object without hash</p>
 <p><a id="aea.configurations.data_types.PyPIPackageName"></a></p>
 <h2 id="pypipackagename-objects">PyPIPackageName Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PyPIPackageName</span><span class="p">(</span><span class="n">RegexConstrainedString</span><span class="p">)</span>

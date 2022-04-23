@@ -520,6 +520,11 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../../../p2p-connection/">
+        ACN Connections
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../../../acn-internals/">
         ACN Internals
       </a>
@@ -1575,31 +1580,6 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#baseipfstoolexception-objects">
-    BaseIPFSToolException Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#removeerror-objects">
-    RemoveError Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#publisherror-objects">
-    PublishError Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nodeerror-objects">
-    NodeError Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#downloaderror-objects">
-    DownloadError Objects
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#ipfstool-objects">
     IPFSTool Objects
   </a>
@@ -1616,13 +1596,33 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#is_a_package">
+    is_a_package
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all_pins">
+    all_pins
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#add">
     add
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#pin">
+    pin
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#remove">
     remove
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#remove_unpinned_files">
+    remove_unpinned_files
   </a>
 </li>
 <li class="md-nav__item">
@@ -1825,31 +1825,6 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#baseipfstoolexception-objects">
-    BaseIPFSToolException Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#removeerror-objects">
-    RemoveError Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#publisherror-objects">
-    PublishError Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nodeerror-objects">
-    NodeError Objects
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#downloaderror-objects">
-    DownloadError Objects
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#ipfstool-objects">
     IPFSTool Objects
   </a>
@@ -1866,13 +1841,33 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#is_a_package">
+    is_a_package
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all_pins">
+    all_pins
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#add">
     add
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#pin">
+    pin
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#remove">
     remove
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#remove_unpinned_files">
+    remove_unpinned_files
   </a>
 </li>
 <li class="md-nav__item">
@@ -1933,7 +1928,7 @@
 </ul>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.__init__"></a></p>
 <h4 id="__init__"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">api_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:5001"</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">node_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:5001"</span><span class="p">)</span>
 </code></pre></div>
 <p>Initialise IPFS daemon.</p>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSDaemon.is_started_externally"></a></p>
@@ -1971,31 +1966,6 @@
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__exit__</span><span class="p">(</span><span class="n">exc_type</span><span class="p">,</span> <span class="n">exc_val</span><span class="p">,</span> <span class="n">exc_tb</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
 <p>Terminate the ipfs daemon.</p>
-<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.BaseIPFSToolException"></a></p>
-<h2 id="baseipfstoolexception-objects">BaseIPFSToolException Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BaseIPFSToolException</span><span class="p">(</span><span class="ne">Exception</span><span class="p">)</span>
-</code></pre></div>
-<p>Base ipfs tool exception.</p>
-<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.RemoveError"></a></p>
-<h2 id="removeerror-objects">RemoveError Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">RemoveError</span><span class="p">(</span><span class="n">BaseIPFSToolException</span><span class="p">)</span>
-</code></pre></div>
-<p>Exception on remove.</p>
-<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.PublishError"></a></p>
-<h2 id="publisherror-objects">PublishError Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PublishError</span><span class="p">(</span><span class="n">BaseIPFSToolException</span><span class="p">)</span>
-</code></pre></div>
-<p>Exception on publish.</p>
-<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.NodeError"></a></p>
-<h2 id="nodeerror-objects">NodeError Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">NodeError</span><span class="p">(</span><span class="n">BaseIPFSToolException</span><span class="p">)</span>
-</code></pre></div>
-<p>Exception for node connection check.</p>
-<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.DownloadError"></a></p>
-<h2 id="downloaderror-objects">DownloadError Objects</h2>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">DownloadError</span><span class="p">(</span><span class="n">BaseIPFSToolException</span><span class="p">)</span>
-</code></pre></div>
-<p>Exception on download failed.</p>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool"></a></p>
 <h2 id="ipfstool-objects">IPFSTool Objects</h2>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">IPFSTool</span><span class="p">()</span>
@@ -2003,13 +1973,12 @@
 <p>IPFS tool to add, publish, remove, download directories.</p>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.__init__"></a></p>
 <h4 id="__init___1"><code>__</code>init<code>__</code></h4>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">addr</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">addr</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
 </code></pre></div>
 <p>Init tool.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
 <li><code>addr</code>: multiaddr string for IPFS client.</li>
-<li><code>offline</code>: ipfs mode.</li>
 </ul>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.addr"></a></p>
 <h4 id="addr">addr</h4>
@@ -2017,6 +1986,16 @@
 <span class="k">def</span> <span class="nf">addr</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Node address</p>
+<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.is_a_package"></a></p>
+<h4 id="is_a_package">is<code>_</code>a<code>_</code>package</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">is_a_package</span><span class="p">(</span><span class="n">package_hash</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>
+</code></pre></div>
+<p>Checks if a package with <code>package_hash</code> is pinned or not</p>
+<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.all_pins"></a></p>
+<h4 id="all_pins">all<code>_</code>pins</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">all_pins</span><span class="p">(</span><span class="n">recursive_only</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+</code></pre></div>
+<p>Returns a list of all pins.</p>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.add"></a></p>
 <h4 id="add">add</h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">dir_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">pin</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">]</span>
@@ -2030,6 +2009,11 @@
 </ul>
 <p><strong>Returns</strong>:</p>
 <p>dir name published, hash, list of items processed</p>
+<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.pin"></a></p>
+<h4 id="pin">pin</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">pin</span><span class="p">(</span><span class="n">hash_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span>
+</code></pre></div>
+<p>Pin content with hash_id</p>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.remove"></a></p>
 <h4 id="remove">remove</h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="n">hash_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span>
@@ -2041,9 +2025,14 @@
 </ul>
 <p><strong>Returns</strong>:</p>
 <p>dict with unlinked items.</p>
+<p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.remove_unpinned_files"></a></p>
+<h4 id="remove_unpinned_files">remove<code>_</code>unpinned<code>_</code>files</h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">remove_unpinned_files</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+<p>Remove dir added by it's hash.</p>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.download"></a></p>
 <h4 id="download">download</h4>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">hash_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">target_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">fix_path</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">hash_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">target_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">fix_path</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span>
 </code></pre></div>
 <p>Download dir by it's hash.</p>
 <p><strong>Arguments</strong>:</p>
@@ -2052,6 +2041,8 @@
 <li><code>target_dir</code>: str. directory to place downloaded</li>
 <li><code>fix_path</code>: bool. default True. on download don't wrap result in to hash_id directory.</li>
 </ul>
+<p><strong>Returns</strong>:</p>
+<p>downloaded path</p>
 <p><a id="plugins.aea-cli-ipfs.aea_cli_ipfs.ipfs_utils.IPFSTool.publish"></a></p>
 <h4 id="publish">publish</h4>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">publish</span><span class="p">(</span><span class="n">hash_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span>
