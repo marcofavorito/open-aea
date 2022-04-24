@@ -102,6 +102,39 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header__source">
         <a href="https://github.com/valory-xyz/open-aea" title="Go to repository" class="md-source" data-md-component="source">
@@ -2418,6 +2451,20 @@
   
   
     <li class="md-nav__item">
+      <a href="/open-aea/api/helpers/dependency_tree/" class="md-nav__link">
+        Dependency Tree
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="/open-aea/api/helpers/env_vars/" class="md-nav__link">
         Env Vars
       </a>
@@ -2533,18 +2580,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_14" type="checkbox" id="__nav_8_5_20_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_15" type="checkbox" id="__nav_8_5_20_15" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_5_20_14">
+        <label class="md-nav__link" for="__nav_8_5_20_15">
           IPFS
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="IPFS" data-md-level="4">
-        <label class="md-nav__title" for="__nav_8_5_20_14">
+        <label class="md-nav__title" for="__nav_8_5_20_15">
           <span class="md-nav__icon md-icon"></span>
           IPFS
         </label>
@@ -2608,18 +2655,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_16" type="checkbox" id="__nav_8_5_20_16" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_17" type="checkbox" id="__nav_8_5_20_17" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_5_20_16">
+        <label class="md-nav__link" for="__nav_8_5_20_17">
           MultiAddress
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="MultiAddress" data-md-level="4">
-        <label class="md-nav__title" for="__nav_8_5_20_16">
+        <label class="md-nav__title" for="__nav_8_5_20_17">
           <span class="md-nav__icon md-icon"></span>
           MultiAddress
         </label>
@@ -2683,18 +2730,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_19" type="checkbox" id="__nav_8_5_20_19" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_20" type="checkbox" id="__nav_8_5_20_20" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_5_20_19">
+        <label class="md-nav__link" for="__nav_8_5_20_20">
           Preferences
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Preferences" data-md-level="4">
-        <label class="md-nav__title" for="__nav_8_5_20_19">
+        <label class="md-nav__title" for="__nav_8_5_20_20">
           <span class="md-nav__icon md-icon"></span>
           Preferences
         </label>
@@ -2744,18 +2791,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_21" type="checkbox" id="__nav_8_5_20_21" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_22" type="checkbox" id="__nav_8_5_20_22" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_5_20_21">
+        <label class="md-nav__link" for="__nav_8_5_20_22">
           Search
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Search" data-md-level="4">
-        <label class="md-nav__title" for="__nav_8_5_20_21">
+        <label class="md-nav__title" for="__nav_8_5_20_22">
           <span class="md-nav__icon md-icon"></span>
           Search
         </label>
@@ -2819,18 +2866,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_23" type="checkbox" id="__nav_8_5_20_23" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_24" type="checkbox" id="__nav_8_5_20_24" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_5_20_23">
+        <label class="md-nav__link" for="__nav_8_5_20_24">
           Storage
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Storage" data-md-level="4">
-        <label class="md-nav__title" for="__nav_8_5_20_23">
+        <label class="md-nav__title" for="__nav_8_5_20_24">
           <span class="md-nav__icon md-icon"></span>
           Storage
         </label>
@@ -2859,18 +2906,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_23_2" type="checkbox" id="__nav_8_5_20_23_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_24_2" type="checkbox" id="__nav_8_5_20_24_2" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_5_20_23_2">
+        <label class="md-nav__link" for="__nav_8_5_20_24_2">
           Backends
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Backends" data-md-level="5">
-        <label class="md-nav__title" for="__nav_8_5_20_23_2">
+        <label class="md-nav__title" for="__nav_8_5_20_24_2">
           <span class="md-nav__icon md-icon"></span>
           Backends
         </label>
@@ -2941,18 +2988,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_25" type="checkbox" id="__nav_8_5_20_25" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5_20_26" type="checkbox" id="__nav_8_5_20_26" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_5_20_25">
+        <label class="md-nav__link" for="__nav_8_5_20_26">
           Transaction
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Transaction" data-md-level="4">
-        <label class="md-nav__title" for="__nav_8_5_20_25">
+        <label class="md-nav__title" for="__nav_8_5_20_26">
           <span class="md-nav__icon md-icon"></span>
           Transaction
         </label>
@@ -3742,6 +3789,20 @@
     <li class="md-nav__item">
       <a href="/open-aea/api/plugins/aea_cli_ipfs/core/" class="md-nav__link">
         API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/open-aea/api/plugins/aea_cli_ipfs/exceptions/" class="md-nav__link">
+        Exceptions
       </a>
     </li>
   
